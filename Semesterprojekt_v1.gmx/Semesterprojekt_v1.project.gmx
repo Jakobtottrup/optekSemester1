@@ -5,7 +5,9 @@
   </Configs>
   <NewExtensions/>
   <sounds name="sound"/>
-  <sprites name="sprites"/>
+  <sprites name="sprites">
+    <sprite>sprites\sprite0</sprite>
+  </sprites>
   <backgrounds name="background"/>
   <paths name="paths"/>
   <fonts name="fonts">
@@ -16,7 +18,6 @@
   </objects>
   <rooms name="rooms">
     <room>rooms\room1</room>
-    <room>rooms\roomtest</room>
   </rooms>
   <help>
     <rtf>help.rtf</rtf>
