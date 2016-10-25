@@ -14,6 +14,7 @@
   <objects name="objects">
     <object>objects\obj_vent1</object>
     <object>objects\obj_screen</object>
+    <object>objects\obj_control</object>
   </objects>
   <rooms name="rooms">
     <room>rooms\room1_jakob</room>
