@@ -7,14 +7,16 @@
   <sounds name="sound"/>
   <sprites name="sprites">
     <sprite>sprites\jim_sprite1</sprite>
+    <sprite>sprites\spr_vent1</sprite>
+    <sprite>sprites\spr_screen</sprite>
   </sprites>
   <backgrounds name="background"/>
   <paths name="paths"/>
-  <scripts name="scripts">
-    <script>scripts\script0.gml</script>
-  </scripts>
+  <scripts name="scripts"/>
   <objects name="objects">
     <object>objects\seb_object</object>
+    <object>objects\obj_vent1</object>
+    <object>objects\obj_screen</object>
   </objects>
   <rooms name="rooms">
     <room>rooms\room1_jakob</room>
