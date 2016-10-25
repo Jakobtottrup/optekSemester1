@@ -10,9 +10,12 @@
   </sprites>
   <backgrounds name="background"/>
   <paths name="paths"/>
-  <scripts name="scripts">
-    <script>scripts\script0.gml</script>
-  </scripts>
+  <objects name="objects">
+    <object>objects\seb_object</object>
+  </objects>
+  <rooms name="rooms">
+    <room>rooms\room1_jakob</room>
+  </rooms>
   <help>
     <rtf>help.rtf</rtf>
   </help>
