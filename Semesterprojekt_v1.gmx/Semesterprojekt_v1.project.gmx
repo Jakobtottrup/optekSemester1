@@ -9,8 +9,7 @@
     <sprite>sprites\spr_vent1</sprite>
     <sprite>sprites\spr_screen</sprite>
     <sprite>sprites\spr_maze_dot_seb</sprite>
-    <sprite>sprites\spr_maze_hor_seb</sprite>
-    <sprite>sprites\spr_maze_ver_seb</sprite>
+    <sprite>sprites\spr_maze_seb</sprite>
   </sprites>
   <backgrounds name="background"/>
   <paths name="paths"/>
