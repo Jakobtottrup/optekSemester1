@@ -12,6 +12,8 @@ cpu_y = 150;
 cpu_offset_x = 0;
 cpu_offset_y = 0;
 
+cpu_button_offset = 80;
+
 //lots of comments because it looks nice
 scr_maze_generate_seb()
 
