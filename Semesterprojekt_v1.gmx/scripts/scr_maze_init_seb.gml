@@ -1,5 +1,5 @@
 //world size - paths horizontaly + vertically
-maze_width = 3;  //horizontal paths  |  |  |
+maze_width = 4;  //horizontal paths  |  |  |
 maze_height = 3; //vertical paths     -- --
 
 //security screen size

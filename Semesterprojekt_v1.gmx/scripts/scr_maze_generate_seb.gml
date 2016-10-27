@@ -19,7 +19,7 @@ if ((cpu_width/maze_width) > (cpu_height/maze_height)) {
 
 
 //generate maze - currently fixed maze data
-maze_data = string('011'+'1011'+'111'+'1011'+'110');
+maze_data = string('111'+'1011'+'110'+'1111'+'101');
 
 
 //ID 1 o  o--o--o      0 1 1
