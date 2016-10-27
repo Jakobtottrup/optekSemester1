@@ -10,9 +10,9 @@
     <sprite>sprites\spr_screen</sprite>
     <sprite>sprites\spr_maze_dot_seb</sprite>
     <sprite>sprites\spr_maze_seb</sprite>
-<<<<<<< Updated upstream
+
     <sprite>sprites\spr_button_red_jvt</sprite>
-=======
+
     <sprites name="spr_vent01">
       <sprite>sprites\spr_vent_00</sprite>
       <sprite>sprites\spr_vent_01</sprite>
@@ -24,7 +24,7 @@
       <sprite>sprites\spr_vent_07</sprite>
       <sprite>sprites\spr_vent_08</sprite>
     </sprites>
->>>>>>> Stashed changes
+
   </sprites>
   <backgrounds name="background"/>
   <paths name="paths"/>
@@ -43,11 +43,11 @@
     <object>objects\obj_maze_dot_seb</object>
     <object>objects\obj_maze_hor_seb</object>
     <object>objects\obj_maze_ver_seb</object>
-<<<<<<< Updated upstream
+
     <object>objects\obj_button_red_jvt</object>
-=======
+
     <object>objects\obj_vent2</object>
->>>>>>> Stashed changes
+
   </objects>
   <rooms name="rooms">
     <room>rooms\room1_jakob</room>
