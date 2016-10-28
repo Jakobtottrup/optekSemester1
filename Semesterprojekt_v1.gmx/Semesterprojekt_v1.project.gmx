@@ -6,10 +6,11 @@
   <NewExtensions/>
   <sounds name="sound">
     <sound>sound\snd_btn_click</sound>
-    <sound>sound\snd_music</sound>
+    <sound>sound\sound2</sound>
   </sounds>
   <sprites name="sprites">
     <sprite>sprites\spr_vent1</sprite>
+    <sprite>sprites\spr_security_monitor_border</sprite>
     <sprite>sprites\spr_screen</sprite>
     <sprite>sprites\spr_maze_dot_seb</sprite>
     <sprite>sprites\spr_maze_seb</sprite>
@@ -31,6 +32,8 @@
   <scripts name="scripts">
     <script>scripts\scr_maze_init_seb.gml</script>
     <script>scripts\scr_maze_generate_seb.gml</script>
+    <script>scripts\scr_draw_view_cs.gml</script>
+    <script>scripts\for_testing_only_cs.gml</script>
     <script>scripts\scr_maze_build_seb.gml</script>
     <script>scripts\scr_screen_buttons_place_seb.gml</script>
   </scripts>
@@ -44,6 +47,7 @@
     <object>objects\obj_maze_dot_seb</object>
     <object>objects\obj_maze_hor_seb</object>
     <object>objects\obj_maze_ver_seb</object>
+    <object>objects\obj_control_draw_view_cs</object>
     <object>objects\obj_button_red_jvt</object>
     <object>objects\obj_vent2</object>
   </objects>

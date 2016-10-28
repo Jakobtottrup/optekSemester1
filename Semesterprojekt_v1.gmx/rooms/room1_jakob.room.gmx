@@ -52,8 +52,9 @@
   </views>
   <instances>
     <instance objName="obj_vent1" x="0" y="0" name="inst_95003583" locked="0" code="" scaleX="2.29999995231628" scaleY="1.51321280002594" colour="4294967295" rotation="0"/>
-    <instance objName="obj_control" x="1888" y="0" name="inst_65E80DB5" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_screen" x="896" y="192" name="inst_F07C6B5D" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_control_draw_view_cs" x="1856" y="0" name="inst_90434CFE" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_control" x="1888" y="0" name="inst_DD079395" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
   </instances>
   <tiles/>
   <PhysicsWorld>0</PhysicsWorld>

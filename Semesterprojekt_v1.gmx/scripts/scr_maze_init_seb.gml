@@ -19,3 +19,4 @@ scr_maze_generate_seb()
 
 //more comments
 
+player_view_id = 8;
