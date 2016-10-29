@@ -1,9 +1,12 @@
-//for horizontal
+//the maze is build from two grids on each other - one for horizontal and one for vertical.
+//this code moves to each point in the grid, and checks in the maze_data string if it is allowed to place a maze-section
 
 var i,j;       //counter for x, y
 var h;         //counter for maze_data
 var maze_bit;  //holder for char at pos in string
 
+
+//for horizontal
 
 h = 1;
 //set start y

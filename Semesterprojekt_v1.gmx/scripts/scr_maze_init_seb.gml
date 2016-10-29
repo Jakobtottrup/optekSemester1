@@ -1,6 +1,8 @@
+//this script sets all variables needed to build and place the maze
+
 //world size - paths horizontaly + vertically
-maze_width = 4;  //horizontal paths  |  |  |
-maze_height = 3; //vertical paths     -- --
+maze_width = 6;  //horizontal paths  |  |  |
+maze_height = 4; //vertical paths     -- --
 
 //security screen size
 cpu_width = 900;
@@ -14,9 +16,10 @@ cpu_offset_y = 0;
 
 cpu_button_offset = 80;
 
+global.player_view_id = 0;
+
 //lots of comments because it looks nice
+    //randomize(); //use new seed for every run
 scr_maze_generate_seb()
 
 //more comments
-
-player_view_id = 8;

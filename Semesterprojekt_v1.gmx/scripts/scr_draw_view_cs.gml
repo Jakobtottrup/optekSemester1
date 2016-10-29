@@ -9,7 +9,7 @@ y = spr_y;
 //var player_view_id;
 //player_view_id = 8;
 
-switch (player_view_id)  //get player_view_id and draw proper sprite
+switch (global.player_view_id)  //get player_view_id and draw proper sprite
     {
     case 0: draw_sprite(spr_vent_00, 0, spr_x, spr_y)   break;  //dead end
     case 1: draw_sprite(spr_vent_01, 0, spr_x, spr_y)   break;  //left
