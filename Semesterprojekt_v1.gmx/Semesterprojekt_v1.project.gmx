@@ -16,6 +16,11 @@
     <sprite>sprites\spr_maze_seb</sprite>
     <sprite>sprites\spr_button_red_jvt</sprite>
     <sprite>sprites\spr_player_seb</sprite>
+    <sprites name="spr_vent_ani">
+      <sprite>sprites\spr_sword_2</sprite>
+      <sprite>sprites\spr_sword_1</sprite>
+      <sprite>sprites\spr_sword_0</sprite>
+    </sprites>
     <sprites name="spr_vent01">
       <sprite>sprites\spr_vent_00</sprite>
       <sprite>sprites\spr_vent_01</sprite>
@@ -60,7 +65,6 @@
       <object>objects\obj_button_red_jvt</object>
     </objects>
     <objects name="vent">
-      <object>objects\obj_vent2</object>
       <object>objects\obj_control_draw_view_cs</object>
     </objects>
     <objects name="temp screen">
