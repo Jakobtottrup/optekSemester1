@@ -51,6 +51,13 @@
       <script>scripts\scr_player_move_right_seb.gml</script>
       <script>scripts\scr_player_move_left_seb.gml</script>
       <script>scripts\scr_player_move_up_seb.gml</script>
+      <script>scripts\scr_player_move_down_seb.gml</script>
+      <scripts name="player movement functions">
+        <script>scripts\scr_player_move_function_up_seb.gml</script>
+        <script>scripts\scr_player_move_function_down_seb.gml</script>
+        <script>scripts\scr_player_move_function_right_seb.gml</script>
+        <script>scripts\scr_player_move_function_left_seb.gml</script>
+      </scripts>
     </scripts>
   </scripts>
   <fonts name="fonts">

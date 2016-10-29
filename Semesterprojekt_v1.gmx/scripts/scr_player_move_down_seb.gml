@@ -1,0 +1,11 @@
+
+if (player_move_down) {
+    //backward
+    scr_player_move_function_down_seb(); 
+    //backward
+    scr_player_move_function_down_seb();
+     
+    //update view
+    scr_player_getView_seb();
+}
+

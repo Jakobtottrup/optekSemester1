@@ -1,11 +1,11 @@
 
 if (player_move_up) {
     //forward
-    x = x + (cos((direction * pi) / 180) * global.maze_steplength);
-    y = y - (sin((direction * pi) / 180) * global.maze_steplength); 
+    scr_player_move_function_up_seb();
     //forward
-    x = x + (cos((direction * pi) / 180) * global.maze_steplength);
-    y = y - (sin((direction * pi) / 180) * global.maze_steplength);
+    scr_player_move_function_up_seb();
+    
+    //update view
     scr_player_getView_seb();
 }
 

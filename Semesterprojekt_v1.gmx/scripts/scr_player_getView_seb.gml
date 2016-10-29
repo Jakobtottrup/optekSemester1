@@ -19,6 +19,7 @@ player_view_count = 0;
 player_move_right = false;
 player_move_left = false;
 player_move_up = false;
+player_move_down = false;
 
 
 /*
@@ -61,16 +62,16 @@ if (position_meeting(x, y, obj_maze_hor_seb) || position_meeting(x, y, obj_maze_
        *** Actual Code *** 
        ***             *** */
 
+
+//Look for possible path forward-right, forward-forward, forward-left, return what you see
        
 //forward
-x = x + (cos((direction * pi) / 180) * global.maze_steplength);
-y = y - (sin((direction * pi) / 180) * global.maze_steplength); 
+scr_player_move_function_up_seb();
 
 //check for goal
 
 //left
-x = x + (cos(((direction + 90) * pi) / 180) * global.maze_steplength);
-y = y - (sin(((direction + 90) * pi) / 180) * global.maze_steplength); 
+scr_player_move_function_left_seb();  
 
 //check, +1
 if (position_meeting(x, y, obj_maze_hor_seb) || position_meeting(x, y, obj_maze_ver_seb)) {
@@ -78,13 +79,9 @@ if (position_meeting(x, y, obj_maze_hor_seb) || position_meeting(x, y, obj_maze_
     player_move_left = true; //enable moving down
 }
 
-//right
-x = x + (cos(((direction - 90) * pi) / 180) * global.maze_steplength);
-y = y - (sin(((direction - 90) * pi) / 180) * global.maze_steplength); 
-
-//forward
-x = x + (cos((direction * pi) / 180) * global.maze_steplength);
-y = y - (sin((direction * pi) / 180) * global.maze_steplength); 
+//right, forward
+scr_player_move_function_right_seb(); 
+scr_player_move_function_up_seb();
 
 //check, +2
 if (position_meeting(x, y, obj_maze_hor_seb) || position_meeting(x, y, obj_maze_ver_seb)) {
@@ -92,13 +89,9 @@ if (position_meeting(x, y, obj_maze_hor_seb) || position_meeting(x, y, obj_maze_
     player_move_up = true; //enable moving up
 }
 
-//backwards
-x = x - (cos((direction * pi) / 180) * global.maze_steplength);
-y = y + (sin((direction * pi) / 180) * global.maze_steplength);
-
-//right
-x = x + (cos(((direction - 90) * pi) / 180) * global.maze_steplength);
-y = y - (sin(((direction - 90) * pi) / 180) * global.maze_steplength); 
+//backwards, right
+scr_player_move_function_down_seb(); 
+scr_player_move_function_right_seb();
 
 //check, +4
 if (position_meeting(x, y, obj_maze_hor_seb) || position_meeting(x, y, obj_maze_ver_seb)) {
@@ -106,17 +99,30 @@ if (position_meeting(x, y, obj_maze_hor_seb) || position_meeting(x, y, obj_maze_
     player_move_right = true; //enable moving right
 }
 
-//left
-x = x + (cos(((direction + 90) * pi) / 180) * global.maze_steplength);
-y = y - (sin(((direction + 90) * pi) / 180) * global.maze_steplength); 
-
-//backwards
-x = x - (cos((direction * pi) / 180) * global.maze_steplength);
-y = y + (sin((direction * pi) / 180) * global.maze_steplength);
-
+//left, backwards
+scr_player_move_function_left_seb(); 
+scr_player_move_function_down_seb();  
 
 
 global.player_view_id = player_view_count;
 
+
+
+
+
+//Check if it is possible to move back from where you are
+
+//2x backwards
+scr_player_move_function_down_seb(); 
+scr_player_move_function_down_seb(); 
+
+//check, backtrack
+if (position_meeting(x, y, obj_maze_hor_seb) || position_meeting(x, y, obj_maze_ver_seb)) {
+    player_move_down = true; //enable moving down
+}
+
+//2x forward
+scr_player_move_function_up_seb();
+scr_player_move_function_up_seb(); 
 
 
