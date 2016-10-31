@@ -32,6 +32,7 @@
       <sprite>sprites\spr_vent_07</sprite>
       <sprite>sprites\spr_vent_08</sprite>
     </sprites>
+    <sprite>sprites\spr_button_blink_jvt</sprite>
   </sprites>
   <backgrounds name="background"/>
   <paths name="paths"/>
@@ -70,6 +71,7 @@
       <object>objects\obj_maze_ver_seb</object>
       <object>objects\obj_maze_hor_seb</object>
       <object>objects\obj_button_red_jvt</object>
+      <object>objects\obj_button_red_vertical</object>
     </objects>
     <objects name="vent">
       <object>objects\obj_control_draw_view_cs</object>
@@ -78,6 +80,8 @@
       <object>objects\obj_screen</object>
       <object>objects\obj_vent1</object>
     </objects>
+    <object>objects\obj_button_blink_horiz</object>
+    <object>objects\obj_button_blink_vert</object>
   </objects>
   <rooms name="rooms">
     <room>rooms\room1_jakob</room>

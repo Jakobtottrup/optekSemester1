@@ -85,7 +85,7 @@
         <arguments>
           <argument>
             <kind>10</kind>
-            <object>obj_button_blink_horiz</object>
+            <object>obj_button_blink_vert</object>
           </argument>
           <argument>
             <kind>0</kind>
