@@ -70,6 +70,7 @@ scr_player_move_function_up_seb();
 
 //check for goal
 
+
 //left
 scr_player_move_function_left_seb();  
 
