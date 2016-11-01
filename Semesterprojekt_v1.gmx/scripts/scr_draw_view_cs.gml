@@ -4,8 +4,8 @@
 var spr_x = (700/2)-(1080/2);   //horizontal position
 var spr_y = 0;                  //vertical position
 
-var global.thief_x = spr_x;
-var global.thief_y = spr_y;
+//var global.thief_x = spr_x;
+//var global.thief_y = spr_y;
 
 x = spr_x;  //redefine x
 y = spr_y;  //redefine y
@@ -23,11 +23,6 @@ switch (global.player_view_id)  //get player_view_id and draw proper sprite
     case 8: draw_sprite(spr_vent_08, 0, spr_x, spr_y)   break;  //finish
     default: draw_text(spr_x, spr_y, "player_view_id not recognized");  //When player_view_id is invald
     }
-
-<<<<<<< HEAD
-
-=======
->>>>>>> c36247ddb28f7bafc199fa7dce109c74d3f47fc3
 
 //draw_sprite(spr_nightvision, 0, 0, 0);
 draw_sprite(spr_security_monitor_border, 0, 0, 0);  //draw sprite for security screen border
@@ -52,8 +47,8 @@ switch (global.sword_ani_id)    //get sword_ani_id and compare to player_view_id
     default: draw_sprite(spr_sword_0, 0, spr_x, spr_y);         //When no animation is needed or sword_ani_id is invalid
     }
 
-draw_sprite(spr_nightvision, 0, spr_x, spr_y);
-draw_sprite(spr_security_monitor_border, 0, 0, 0);  //draw sprite for security screen border
+//draw_sprite(spr_nightvision, 0, spr_x, spr_y);
+//draw_sprite(spr_security_monitor_border, 0, 0, 0);  //draw sprite for security screen border
     
 /*      //play sound for sword
 if global.sword_ani_id != 0
