@@ -21,9 +21,9 @@ switch (global.player_view_id)  //get player_view_id and draw proper sprite
     default: draw_text(spr_x, spr_y, "player_view_id not recognized");  //When player_view_id is invald
     }
 
-draw_sprite(spr_nightvision, 0, spr_x, spr_y);
-draw_sprite(spr_security_monitor_border, 0, 0, 0);  //draw sprite for security screen border
 
+//draw_sprite(spr_nightvision, 0, 0, 0);
+draw_sprite(spr_security_monitor_border, 0, 0, 0);  //draw sprite for security screen border
     
 // animation speed control (1 = roomspeed)
 image_speed = 0.2;
