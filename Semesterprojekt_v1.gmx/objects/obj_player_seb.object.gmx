@@ -49,6 +49,8 @@
           </argument>
         </arguments>
       </action>
+    </event>
+    <event eventtype="3" enumb="2">
       <action>
         <libid>1</libid>
         <id>601</id>
