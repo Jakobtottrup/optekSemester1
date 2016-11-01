@@ -3,7 +3,7 @@
   <spriteName>&lt;undefined&gt;</spriteName>
   <solid>0</solid>
   <visible>-1</visible>
-  <depth>5</depth>
+  <depth>0</depth>
   <persistent>0</persistent>
   <parentName>&lt;undefined&gt;</parentName>
   <maskName>&lt;undefined&gt;</maskName>
@@ -25,8 +25,8 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>draw_sprite(spr_nightvision, 0, 0, 0);
-draw_sprite(spr_security_monitor_border, 0, 0, 0);  //draw sprite for security screen border
+            <string>draw_sprite(spr_nightvision, 0, (350-540), 0);
+draw_sprite(spr_security_monitor_border, 0, 0, 0); 
 </string>
           </argument>
         </arguments>
