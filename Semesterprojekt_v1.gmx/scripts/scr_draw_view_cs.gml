@@ -4,6 +4,9 @@
 var spr_x = (700/2)-(1080/2);   //horizontal position
 var spr_y = 0;                  //vertical position
 
+var global.thief_x = spr_x;
+var global.thief_y = spr_y;
+
 x = spr_x;  //redefine x
 y = spr_y;  //redefine y
 
@@ -21,8 +24,7 @@ switch (global.player_view_id)  //get player_view_id and draw proper sprite
     default: draw_text(spr_x, spr_y, "player_view_id not recognized");  //When player_view_id is invald
     }
 
-draw_sprite(spr_nightvision, 0, spr_x, spr_y);
-draw_sprite(spr_security_monitor_border, 0, 0, 0);  //draw sprite for security screen border
+
 
     
 // animation speed control (1 = roomspeed)
@@ -45,7 +47,9 @@ switch (global.sword_ani_id)    //get sword_ani_id and compare to player_view_id
     default: draw_sprite(spr_sword_0, 0, spr_x, spr_y);         //When no animation is needed or sword_ani_id is invalid
     }
 
-
+draw_sprite(spr_nightvision, 0, spr_x, spr_y);
+draw_sprite(spr_security_monitor_border, 0, 0, 0);  //draw sprite for security screen border
+    
 /*      //play sound for sword
 if global.sword_ani_id != 0
     {

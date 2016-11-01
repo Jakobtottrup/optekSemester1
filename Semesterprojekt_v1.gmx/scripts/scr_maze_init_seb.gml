@@ -17,7 +17,7 @@ cpu_offset_y = 0;
 cpu_button_offset = 80;
 
 global.player_view_id = 0;
-global.sword_ani_id = 0;
+global.sword_ani_id = 2;
 
 //lots of comments because it looks nice
     //randomize(); //use new seed for every run
