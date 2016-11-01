@@ -83,6 +83,7 @@
     </objects>
     <object>objects\obj_button_blink_horiz</object>
     <object>objects\obj_button_blink_vert</object>
+    <object>objects\obj_win</object>
   </objects>
   <rooms name="rooms">
     <room>rooms\room1_jakob</room>
