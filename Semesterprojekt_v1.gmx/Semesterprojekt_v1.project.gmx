@@ -7,6 +7,7 @@
   <sounds name="sound">
     <sound>sound\snd_btn_click</sound>
     <sound>sound\snd_mission_impossible</sound>
+    <sound>sound\snd_nightvision_activate</sound>
   </sounds>
   <sprites name="sprites">
     <sprite>sprites\spr_vent1</sprite>
@@ -34,6 +35,7 @@
       <sprite>sprites\spr_vent_08</sprite>
     </sprites>
     <sprite>sprites\spr_button_blink_jvt</sprite>
+    <sprite>sprites\spr_big_circle</sprite>
   </sprites>
   <backgrounds name="background"/>
   <paths name="paths"/>
@@ -84,6 +86,9 @@
     <object>objects\obj_button_blink_horiz</object>
     <object>objects\obj_button_blink_vert</object>
     <object>objects\obj_win</object>
+    <object>objects\obj_nightvision</object>
+    <object>objects\obj_big_circle_horiz</object>
+    <object>objects\obj_big_circle_vert</object>
   </objects>
   <rooms name="rooms">
     <room>rooms\room1_jakob</room>
