@@ -17,6 +17,7 @@
     <sprite>sprites\spr_maze_dot_seb</sprite>
     <sprite>sprites\spr_maze_seb</sprite>
     <sprite>sprites\spr_button_red_jvt</sprite>
+    <sprite>sprites\spr_button_inactive</sprite>
     <sprite>sprites\spr_player_seb</sprite>
     <sprites name="spr_vent_ani">
       <sprite>sprites\spr_sword_2</sprite>
@@ -74,6 +75,8 @@
       <object>objects\obj_maze_ver_seb</object>
       <object>objects\obj_maze_hor_seb</object>
       <object>objects\obj_button_red_jvt</object>
+      <object>objects\obj_button_inactive</object>
+      <object>objects\obj_button_inactive_vertical</object>
       <object>objects\obj_button_red_vertical</object>
     </objects>
     <objects name="vent">
