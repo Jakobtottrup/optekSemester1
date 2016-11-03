@@ -68,7 +68,19 @@ if (position_meeting(x, y, obj_maze_hor_seb) || position_meeting(x, y, obj_maze_
 //forward
 scr_player_move_function_up_seb();
 
+
+
+
+
 //check for goal
+if (position_meeting(x, y, obj_win)) {
+    global.player_view_goal = true;
+} else {
+    global.player_view_goal = false;
+}
+
+
+
 
 
 //left
@@ -106,6 +118,15 @@ scr_player_move_function_down_seb();
 
 
 global.player_view_id = player_view_count;
+
+if (global.player_view_goal) {
+    global.player_view_id = 8;
+}
+
+
+
+
+
 
 
 

@@ -447,6 +447,34 @@
           </argument>
         </arguments>
       </action>
+      <action>
+        <libid>1</libid>
+        <id>514</id>
+        <kind>0</kind>
+        <userelative>-1</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>1</exetype>
+        <functionname>action_draw_text</functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>2</kind>
+            <string>"goal in front: " + string(global.player_view_goal)</string>
+          </argument>
+          <argument>
+            <kind>0</kind>
+            <string>800</string>
+          </argument>
+          <argument>
+            <kind>0</kind>
+            <string>90</string>
+          </argument>
+        </arguments>
+      </action>
     </event>
     <event eventtype="9" enumb="50">
       <action>
