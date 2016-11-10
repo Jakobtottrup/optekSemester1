@@ -13,9 +13,10 @@ for (i=0; i<maze_height; i++) {
 
 //for horizontal
 y = cpu_y + cpu_height + cpu_button_offset;
-x = cpu_x - cpu_offset_x;
+x = cpu_x + cpu_offset_x;
 
 for (i=0; i<maze_width; i++) {
     instance_create(x, y, obj_button_red_vertical);
     x += global.maze_steplength*2;
 }
+

@@ -1,48 +1,161 @@
-//create steplength - the length of the step for the player to walk to check next path
-//the steplength is used to scale the maze to the screen, but also for every other objekt to know how far to look and move in the maze
+scr_maze_generate_steplength_seb();
+scr_maze_generate_init_seb();
 
-//if the maze is wider than it's heigh compared to the screen
-if ((cpu_width/maze_width) > (cpu_height/maze_height)) {
-        //set steplength to match the maze height
-    global.maze_steplength = (cpu_height/(maze_height-1))/2;
-        //center on x
-    cpu_offset_x = (cpu_width - ((maze_width - 1) * global.maze_steplength * 2)) / 2;
-} else {
-        //set steplength to match the maze width
-    global.maze_steplength = (cpu_width/(maze_width-1))/2;
-        //center on y
-    cpu_offset_y = (cpu_height - ((maze_height - 1) * global.maze_steplength * 2)) / 2;
+
+
+
+/*  0 1 2 3 4 5 6
+    1 o o o o o o      4*3
+    2 o o o o o o
+    3 o o o o o o
+    4 o o o o o o
+*/
+
+
+var check_ran, check_ran_fin;
+var check_up, check_down, check_right, check_left;
+var check_all, check_back, check_running;
+
+//begin in top left cornor
+var i = 0; var j = 0;
+check_running = 1;
+maze_gen_data[i, j] = 1;
+
+
+//loop
+while(check_running == 1) {
+        //get empty posibilities
+        check_all = 0;
+        
+        //check right
+        check_right = 0;
+        if (i < ((maze_width-1)*2)-1) { //if j - 2 is inside grid
+            if (maze_gen_data[i+2, j] == 0) {
+                check_right = 1;
+                check_all = 1;
+            }
+        }
+        //check left
+        check_left = 0;
+        if (i > 1) { //if i - 2 is inside grid
+            if (maze_gen_data[i-2, j] == 0) {
+                check_left = 1;
+                check_all = 1;
+            }
+        }
+        //check up
+        check_up = 0;
+        if (j > 1) { //if j - 2 is inside grid
+            if (maze_gen_data[i, j-2] == 0) {
+                check_up = 1;
+                check_all = 1;
+            }
+        }
+        //check down
+        check_down = 0;
+        if (j < ((maze_height-1)*2)-1) { //if j + 2 is inside grid
+            if (maze_gen_data[i, j+2] == 0) {
+                check_down = 1;
+                check_all = 1;
+            }
+        }
+
+        
+        
+
+
+    if (check_all == 1) { //if any possibilities
+        //choose random direction
+        check_ran_fin = 0;
+        while (check_ran_fin == 0) {
+            check_ran = floor(random(4)) //random 0, 1, 2, 3
+            if (check_ran == 0) { //if random is 0
+                if (check_right == 1) { //if right is possible
+                    maze_gen_data[i+1, j] = 1; //mark path
+                    maze_gen_data[i+2, j] = 1; //mark destination
+                    i += 2; //move pointer two to the right
+                    check_ran_fin = 1; //stop search
+                }
+            } else if (check_ran == 1) {
+                if (check_up == 1) { //if up is possible
+                    maze_gen_data[i, j-1] = 1; //mark path
+                    maze_gen_data[i, j-2] = 1; //mark destination
+                    j -= 2; //move pointer two to the right
+                    check_ran_fin = 1; //stop search
+                }
+            } else if (check_ran == 2) {
+                if (check_left == 1) { //if left is possible
+                    maze_gen_data[i-1, j] = 1; //mark path
+                    maze_gen_data[i-2, j] = 1; //mark destination
+                    i -= 2; //move pointer two to the right
+                    check_ran_fin = 1; //stop search
+                }
+            } else {
+                if (check_down == 1) { //if down is possible
+                    maze_gen_data[i, j+1] = 1; //mark path
+                    maze_gen_data[i, j+2] = 1; //mark destination
+                    j += 2; //move pointer two to the right
+                    check_ran_fin = 1; //stop search
+                }
+            }
+        }
+    } else {
+        //backtrack
+        //get visited posibilities
+        check_back = 0;
+        
+        //check right
+        if (i < ((maze_width-1)*2)-1) { //if j - 2 is inside grid
+            if (maze_gen_data[i+1, j] == 1) {
+                check_back = 1;
+                maze_gen_data[i, j] = 2; //mark path
+                maze_gen_data[i+1, j] = 2; //mark destination
+                i += 2;
+            }
+        }
+        if (check_back == 0) {
+            //check left
+            if (i > 1) { //if i - 2 is inside grid
+                if (maze_gen_data[i-1, j] == 1) {
+                    check_back = 1;
+                    maze_gen_data[i, j] = 2; //mark path
+                    maze_gen_data[i-1, j] = 2; //mark destination
+                    i -= 2;
+                }
+            }
+        }
+        if (check_back == 0) {
+            //check up
+            if (j > 1) { //if j - 2 is inside grid
+                if (maze_gen_data[i, j-1] == 1) {
+                    check_back = 1;
+                    maze_gen_data[i, j] = 2; //mark path
+                    maze_gen_data[i, j-1] = 2; //mark destination
+                    j -= 2;
+                }
+            }
+        }
+        if (check_back == 0) {
+            //check down
+            if (j < ((maze_height-1)*2)-1) { //if j + 2 is inside grid
+                if (maze_gen_data[i, j+1] == 1) {
+                    check_back = 1;
+                    maze_gen_data[i, j] = 2; //mark path
+                    maze_gen_data[i, j+1] = 2; //mark destination
+                    j += 2;
+                }
+            }
+        }
+        if (check_back == 0) {
+            //finished
+            check_running = 0;
+        }
+    }
 }
 
+scr_maze_generate_convert_seb();
 
 
 
-
-
-//generate maze - currently fixed maze data
-maze_data = string('11011'+'101101'+'01110'+'101011'+'10111'+'101011'+'11010');
-
-
-//ID 1 o  o--o--o      0 1 1
-//     |     |  |     1 0 1 1
-//     o--o--o--o      1 1 1          '011'+'1011'+'111'+'1011'+'110'
-//     |     |  |     1 0 1 1
-//     o--o--o  o      1 1 0
-
-
-//ID 2 o--o--o--o      1 1 1
-//     |     |  |     1 0 1 1
-//     o--o--o  o      1 1 0          '111'+'1011'+'110'+'1111'+'101'
-//     |  |  |  |     1 1 1 1
-//     o--o  o--o      1 0 1
-
-
-//ID 3 o--o--o  o--o--o      1 1 0 1 1
-//     |     |  |     |     1 0 1 1 0 1
-//     o  o--o--o--o  o      0 1 1 1 0         '11011'+'101101'+'01110'+'101011'+'10111'+'101011'+'11010'
-//     |     |     |  |     1 0 1 0 1 1
-//     o--o  o--o--o--o      1 0 1 1 1
-//     |     |     |  |     1 0 1 0 1 1
-//     o--o--o  o--o  o      1 1 0 1 0
 
 
