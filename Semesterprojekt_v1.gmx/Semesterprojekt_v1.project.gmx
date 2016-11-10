@@ -9,6 +9,8 @@
     <sound>sound\snd_btn_click</sound>
     <sound>sound\snd_mission_impossible</sound>
     <sound>sound\snd_nightvision_activate</sound>
+    <sound>sound\snd_ventilation_test</sound>
+    <sound>sound\snd_constant</sound>
   </sounds>
   <sprites name="sprites">
     <sprites name="Main Menu">
@@ -51,6 +53,7 @@
       <sprite>sprites\spr_vent_08</sprite>
     </sprites>
     <sprite>sprites\spr_button_blink_jvt</sprite>
+    <sprite>sprites\sprite_button_sword_jvt</sprite>
     <sprite>sprites\spr_big_circle</sprite>
   </sprites>
   <backgrounds name="background"/>
@@ -80,6 +83,8 @@
         <script>scripts\scr_player_move_function_left_seb.gml</script>
       </scripts>
     </scripts>
+    <script>scripts\scr_sound_control.gml</script>
+    <script>scripts\scr_diode_volume.gml</script>
   </scripts>
   <fonts name="fonts">
     <font>fonts\fnt_testfont</font>
@@ -115,6 +120,7 @@
       <object>objects\obj_vent1</object>
     </objects>
     <object>objects\obj_button_blink_horiz</object>
+    <object>objects\obj_button_sword_blink_horiz</object>
     <object>objects\obj_button_blink_vert</object>
     <object>objects\obj_win</object>
     <object>objects\obj_nightvision</object>
