@@ -5,11 +5,26 @@
   </Configs>
   <NewExtensions/>
   <sounds name="sound">
+    <sound>sound\Sound_Button_Menu</sound>
     <sound>sound\snd_btn_click</sound>
     <sound>sound\snd_mission_impossible</sound>
     <sound>sound\snd_nightvision_activate</sound>
   </sounds>
   <sprites name="sprites">
+    <sprites name="Main Menu">
+      <sprite>sprites\spr_NewGame</sprite>
+      <sprite>sprites\spr_Options</sprite>
+      <sprite>sprites\spr_ExitGame</sprite>
+      <sprite>sprites\spr_Back</sprite>
+      <sprite>sprites\spr_customize</sprite>
+      <sprite>sprites\spr_Cursor</sprite>
+    </sprites>
+    <sprites name="Customize Menu">
+      <sprite>sprites\spr_Vertical_Plus</sprite>
+      <sprite>sprites\spr_Vertical_Minus</sprite>
+      <sprite>sprites\spr_Horizontal_Plus</sprite>
+      <sprite>sprites\spr_Horizontal_Minus</sprite>
+    </sprites>
     <sprite>sprites\spr_vent1</sprite>
     <sprite>sprites\spr_security_monitor_border</sprite>
     <sprite>sprites\spr_nightvision</sprite>
@@ -41,6 +56,7 @@
   <backgrounds name="background"/>
   <paths name="paths"/>
   <scripts name="scripts">
+    <script>scripts\scr_mouse_hover.gml</script>
     <script>scripts\scr_draw_view_cs.gml</script>
     <script>scripts\for_testing_only_cs.gml</script>
     <script>scripts\scr_player_getView_seb.gml</script>
@@ -69,6 +85,18 @@
     <font>fonts\fnt_testfont</font>
   </fonts>
   <objects name="objects">
+    <object>objects\obj_NewGame</object>
+    <object>objects\obj_Options</object>
+    <object>objects\obj_ExitGame</object>
+    <object>objects\obj_back</object>
+    <object>objects\obj_cursor</object>
+    <object>objects\obj_customize</object>
+    <objects name="Customize Buttons">
+      <object>objects\obj_Vertical_Plus</object>
+      <object>objects\obj_Vertical_Minus</object>
+      <object>objects\obj_Horizontal_Plus</object>
+      <object>objects\obj_Horizontal_Minus</object>
+    </objects>
     <object>objects\obj_control</object>
     <object>objects\obj_player_seb</object>
     <objects name="office">
@@ -94,6 +122,9 @@
     <object>objects\obj_big_circle_vert</object>
   </objects>
   <rooms name="rooms">
+    <room>rooms\rm_MainMenu</room>
+    <room>rooms\rm_options</room>
+    <room>rooms\rm_customize</room>
     <room>rooms\room1_jakob</room>
   </rooms>
   <help>
