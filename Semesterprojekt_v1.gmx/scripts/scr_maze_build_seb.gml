@@ -3,9 +3,64 @@
 
 var i,j;       //counter for x, y
 var h;         //counter for maze_data
-var maze_bit;  //holder for char at pos in string
 
 
+
+
+
+
+//for horizontal
+
+h = 0;
+//set start y
+y = cpu_y + cpu_offset_y;
+for (j=0; j < maze_height; j++) {
+    //set start x
+    x = cpu_x + cpu_offset_x + global.maze_steplength;
+    for (i=1; i < maze_width; i++) {
+        //check if maze section is allowed here
+        if (maze_data_hor[h] != 0) {
+            //place all horizontal pieces
+            instance_create(x, y, obj_maze_hor_seb);
+        }
+        h += 1;
+        x += global.maze_steplength*2;
+    }
+    y += global.maze_steplength*2;
+}
+
+
+
+//vertical
+h = 0;
+//set start y
+y = cpu_y + cpu_offset_y + global.maze_steplength;
+for (j=1; j < maze_height; j++) {
+    //set start x
+    x = cpu_x + cpu_offset_x;
+    for (i=0; i < maze_width; i++) {
+        //check if maze section is allowed here
+        if (maze_data_ver[h] != 0) {
+            //place all vertical pieces
+            instance_create(x, y, obj_maze_ver_seb);
+        }
+        h += 1;
+        x += global.maze_steplength*2;
+    }
+    y += global.maze_steplength*2;
+}
+
+
+
+
+
+
+
+
+
+//********** Backup **********//
+
+/*
 //for horizontal
 
 h = 1;
@@ -53,3 +108,5 @@ for (j=1; j<maze_height; j++) {
     h += (maze_width - 1);
     y += global.maze_steplength*2;
 }
+
+*/
