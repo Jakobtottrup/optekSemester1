@@ -64,11 +64,16 @@
     <script>scripts\scr_player_getView_seb.gml</script>
     <scripts name="initialize">
       <script>scripts\scr_maze_init_seb.gml</script>
-      <script>scripts\scr_maze_generate_seb.gml</script>
       <script>scripts\scr_maze_build_seb.gml</script>
       <script>scripts\scr_screen_buttons_place_seb.gml</script>
       <script>scripts\scr_player_spawn_seb.gml</script>
       <script>scripts\scr_player_init_seb.gml</script>
+    </scripts>
+    <scripts name="maze generation">
+      <script>scripts\scr_maze_generate_seb.gml</script>
+      <script>scripts\scr_maze_generate_steplength_seb.gml</script>
+      <script>scripts\scr_maze_generate_init_seb.gml</script>
+      <script>scripts\scr_maze_generate_convert_seb.gml</script>
     </scripts>
     <scripts name="player movement">
       <script>scripts\scr_player_move_right_seb.gml</script>
