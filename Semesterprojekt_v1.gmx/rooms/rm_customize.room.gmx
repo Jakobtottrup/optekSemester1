@@ -3,12 +3,12 @@
   <caption></caption>
   <width>1920</width>
   <height>1080</height>
-  <vsnap>10</vsnap>
-  <hsnap>10</hsnap>
+  <vsnap>32</vsnap>
+  <hsnap>32</hsnap>
   <isometric>0</isometric>
   <speed>30</speed>
   <persistent>0</persistent>
-  <colour>0</colour>
+  <colour>12632256</colour>
   <showcolour>-1</showcolour>
   <code></code>
   <enableViews>0</enableViews>
@@ -51,15 +51,12 @@
     <view visible="0" objName="&lt;undefined&gt;" xview="0" yview="0" wview="1024" hview="768" xport="0" yport="0" wport="1024" hport="768" hborder="32" vborder="32" hspeed="-1" vspeed="-1"/>
   </views>
   <instances>
-    <instance objName="obj_vent1" x="0" y="0" name="inst_95003583" locked="0" code="" scaleX="2.29999995231628" scaleY="1.51321280002594" colour="4294967295" rotation="0"/>
-    <instance objName="obj_screen" x="850" y="150" name="inst_F07C6B5D" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_control_draw_view_cs" x="1856" y="0" name="inst_90434CFE" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_control" x="1888" y="0" name="inst_DD079395" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_win" x="1033" y="590" name="inst_1B9B425A" locked="0" code="" scaleX="0.8125" scaleY="0.660000026226044" colour="4294967295" rotation="0"/>
-    <instance objName="obj_win" x="1390" y="770" name="inst_662F9F6F" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_win" x="1750" y="770" name="inst_B3D558CE" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_cursor" x="140" y="140" name="inst_95FB3D18" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_back" x="270" y="970" name="inst_06825705" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_back" x="320" y="928" name="inst_FE116978" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_cursor" x="64" y="64" name="inst_8E1DD8D3" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_Vertical_Plus" x="288" y="224" name="inst_B9AB0D7A" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_Vertical_Minus" x="288" y="512" name="inst_C92C6E37" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_Horizontal_Plus" x="1152" y="800" name="inst_0880FDE2" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_Horizontal_Minus" x="800" y="800" name="inst_36D08FE9" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
   </instances>
   <tiles/>
   <PhysicsWorld>0</PhysicsWorld>
