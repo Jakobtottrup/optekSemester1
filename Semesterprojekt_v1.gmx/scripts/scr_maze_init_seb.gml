@@ -1,8 +1,8 @@
 //this script sets all variables needed to build and place the maze
 
 //world size - paths horizontaly + vertically
-maze_width = 18;  //horizontal paths  |  |  |
-maze_height = 12; //vertical paths     -- --
+maze_width = global.customize_grid_x;  //horizontal paths  |  |  |
+maze_height = global.customize_grid_y; //vertical paths     -- --
 
 //security screen size
 cpu_width = 900;
