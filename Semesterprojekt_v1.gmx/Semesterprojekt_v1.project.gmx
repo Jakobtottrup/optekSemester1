@@ -5,11 +5,28 @@
   </Configs>
   <NewExtensions/>
   <sounds name="sound">
+    <sound>sound\Sound_Button_Menu</sound>
     <sound>sound\snd_btn_click</sound>
     <sound>sound\snd_mission_impossible</sound>
     <sound>sound\snd_nightvision_activate</sound>
+    <sound>sound\snd_ventilation_test</sound>
+    <sound>sound\snd_constant</sound>
   </sounds>
   <sprites name="sprites">
+    <sprites name="Main Menu">
+      <sprite>sprites\spr_NewGame</sprite>
+      <sprite>sprites\spr_Options</sprite>
+      <sprite>sprites\spr_ExitGame</sprite>
+      <sprite>sprites\spr_Back</sprite>
+      <sprite>sprites\spr_customize</sprite>
+      <sprite>sprites\spr_Cursor</sprite>
+    </sprites>
+    <sprites name="Customize Menu">
+      <sprite>sprites\spr_Vertical_Plus</sprite>
+      <sprite>sprites\spr_Vertical_Minus</sprite>
+      <sprite>sprites\spr_Horizontal_Plus</sprite>
+      <sprite>sprites\spr_Horizontal_Minus</sprite>
+    </sprites>
     <sprite>sprites\spr_vent1</sprite>
     <sprite>sprites\spr_security_monitor_border</sprite>
     <sprite>sprites\spr_nightvision</sprite>
@@ -17,6 +34,7 @@
     <sprite>sprites\spr_maze_dot_seb</sprite>
     <sprite>sprites\spr_maze_seb</sprite>
     <sprite>sprites\spr_button_red_jvt</sprite>
+    <sprite>sprites\spr_button_inactive</sprite>
     <sprite>sprites\spr_player_seb</sprite>
     <sprites name="spr_vent_ani">
       <sprite>sprites\spr_sword_2</sprite>
@@ -35,21 +53,30 @@
       <sprite>sprites\spr_vent_08</sprite>
     </sprites>
     <sprite>sprites\spr_button_blink_jvt</sprite>
+    <sprite>sprites\sprite_button_sword_jvt</sprite>
     <sprite>sprites\spr_big_circle</sprite>
   </sprites>
   <backgrounds name="background"/>
   <paths name="paths"/>
   <scripts name="scripts">
+    <script>scripts\scr_mouse_hover.gml</script>
+    <script>scripts\Scr_Customize_Var_Set.gml</script>
+    <script>scripts\scr_customize_draw.gml</script>
     <script>scripts\scr_draw_view_cs.gml</script>
     <script>scripts\for_testing_only_cs.gml</script>
     <script>scripts\scr_player_getView_seb.gml</script>
     <scripts name="initialize">
       <script>scripts\scr_maze_init_seb.gml</script>
-      <script>scripts\scr_maze_generate_seb.gml</script>
       <script>scripts\scr_maze_build_seb.gml</script>
       <script>scripts\scr_screen_buttons_place_seb.gml</script>
       <script>scripts\scr_player_spawn_seb.gml</script>
       <script>scripts\scr_player_init_seb.gml</script>
+    </scripts>
+    <scripts name="maze generation">
+      <script>scripts\scr_maze_generate_seb.gml</script>
+      <script>scripts\scr_maze_generate_steplength_seb.gml</script>
+      <script>scripts\scr_maze_generate_init_seb.gml</script>
+      <script>scripts\scr_maze_generate_convert_seb.gml</script>
     </scripts>
     <scripts name="player movement">
       <script>scripts\scr_player_move_right_seb.gml</script>
@@ -63,17 +90,35 @@
         <script>scripts\scr_player_move_function_left_seb.gml</script>
       </scripts>
     </scripts>
+    <script>scripts\scr_sound_control.gml</script>
+    <script>scripts\scr_diode_volume.gml</script>
   </scripts>
   <fonts name="fonts">
     <font>fonts\fnt_testfont</font>
+    <font>fonts\font_customize</font>
   </fonts>
   <objects name="objects">
+    <object>objects\obj_NewGame</object>
+    <object>objects\obj_Options</object>
+    <object>objects\obj_ExitGame</object>
+    <object>objects\obj_back</object>
+    <object>objects\obj_cursor</object>
+    <object>objects\obj_customize</object>
+    <objects name="Customize Buttons">
+      <object>objects\obj_Vertical_Plus</object>
+      <object>objects\obj_Vertical_Minus</object>
+      <object>objects\obj_Horizontal_Plus</object>
+      <object>objects\obj_Horizontal_Minus</object>
+    </objects>
+    <object>objects\obj_Customize_Controller</object>
     <object>objects\obj_control</object>
     <object>objects\obj_player_seb</object>
     <objects name="office">
       <object>objects\obj_maze_ver_seb</object>
       <object>objects\obj_maze_hor_seb</object>
       <object>objects\obj_button_red_jvt</object>
+      <object>objects\obj_button_inactive</object>
+      <object>objects\obj_button_inactive_vertical</object>
       <object>objects\obj_button_red_vertical</object>
     </objects>
     <objects name="vent">
@@ -84,6 +129,7 @@
       <object>objects\obj_vent1</object>
     </objects>
     <object>objects\obj_button_blink_horiz</object>
+    <object>objects\obj_button_sword_blink_horiz</object>
     <object>objects\obj_button_blink_vert</object>
     <object>objects\obj_win</object>
     <object>objects\obj_nightvision</object>
@@ -91,6 +137,9 @@
     <object>objects\obj_big_circle_vert</object>
   </objects>
   <rooms name="rooms">
+    <room>rooms\rm_MainMenu</room>
+    <room>rooms\rm_options</room>
+    <room>rooms\rm_customize</room>
     <room>rooms\room1_jakob</room>
   </rooms>
   <help>
