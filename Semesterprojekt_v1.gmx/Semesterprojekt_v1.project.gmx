@@ -60,10 +60,7 @@
   <paths name="paths"/>
   <scripts name="scripts">
     <script>scripts\scr_mouse_hover.gml</script>
-    <script>scripts\Scr_Customize_Var_Set.gml</script>
-    <script>scripts\scr_customize_draw.gml</script>
     <script>scripts\scr_draw_view_cs.gml</script>
-    <script>scripts\for_testing_only_cs.gml</script>
     <script>scripts\scr_player_getView_seb.gml</script>
     <scripts name="initialize">
       <script>scripts\scr_maze_init_seb.gml</script>
@@ -92,25 +89,17 @@
     </scripts>
     <script>scripts\scr_sound_control.gml</script>
     <script>scripts\scr_diode_volume.gml</script>
+    <scripts name="menu">
+      <script>scripts\scr_customize_draw.gml</script>
+      <script>scripts\Scr_Customize_Var_Set.gml</script>
+    </scripts>
   </scripts>
   <fonts name="fonts">
     <font>fonts\fnt_testfont</font>
     <font>fonts\font_customize</font>
   </fonts>
   <objects name="objects">
-    <object>objects\obj_NewGame</object>
-    <object>objects\obj_Options</object>
-    <object>objects\obj_ExitGame</object>
-    <object>objects\obj_back</object>
     <object>objects\obj_cursor</object>
-    <object>objects\obj_customize</object>
-    <objects name="Customize Buttons">
-      <object>objects\obj_Vertical_Plus</object>
-      <object>objects\obj_Vertical_Minus</object>
-      <object>objects\obj_Horizontal_Plus</object>
-      <object>objects\obj_Horizontal_Minus</object>
-    </objects>
-    <object>objects\obj_Customize_Controller</object>
     <object>objects\obj_control</object>
     <object>objects\obj_player_seb</object>
     <objects name="office">
@@ -135,6 +124,20 @@
     <object>objects\obj_nightvision</object>
     <object>objects\obj_big_circle_horiz</object>
     <object>objects\obj_big_circle_vert</object>
+    <objects name="menu">
+      <object>objects\obj_NewGame</object>
+      <object>objects\obj_Options</object>
+      <object>objects\obj_ExitGame</object>
+      <object>objects\obj_back</object>
+      <object>objects\obj_customize</object>
+      <objects name="Customize Buttons">
+        <object>objects\obj_Vertical_Plus</object>
+        <object>objects\obj_Vertical_Minus</object>
+        <object>objects\obj_Horizontal_Plus</object>
+        <object>objects\obj_Horizontal_Minus</object>
+      </objects>
+      <object>objects\obj_Customize_Controller</object>
+    </objects>
   </objects>
   <rooms name="rooms">
     <room>rooms\rm_MainMenu</room>

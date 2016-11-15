@@ -91,7 +91,7 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>if (global.customize_grid_x &gt; 3) {
+            <string>if (global.customize_grid_x &gt; 4) {
     global.customize_grid_x -= 1;
 }
 </string>
