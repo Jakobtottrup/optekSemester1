@@ -36,12 +36,8 @@
     <sprite>sprites\spr_button_red_jvt</sprite>
     <sprite>sprites\spr_button_inactive</sprite>
     <sprite>sprites\spr_player_seb</sprite>
-    <sprites name="spr_vent_ani">
-      <sprite>sprites\spr_sword_2</sprite>
-      <sprite>sprites\spr_sword_1</sprite>
-      <sprite>sprites\spr_sword_0</sprite>
-    </sprites>
-    <sprites name="spr_vent01">
+    <sprite>sprites\spr_button_blink_jvt</sprite>
+    <sprites name="spr_vent_static">
       <sprite>sprites\spr_vent_00</sprite>
       <sprite>sprites\spr_vent_01</sprite>
       <sprite>sprites\spr_vent_02</sprite>
@@ -52,7 +48,27 @@
       <sprite>sprites\spr_vent_07</sprite>
       <sprite>sprites\spr_vent_08</sprite>
     </sprites>
-    <sprite>sprites\spr_button_blink_jvt</sprite>
+    <sprites name="animations">
+      <sprites name="spr_sword_animation">
+        <sprite>sprites\spr_sword_2</sprite>
+        <sprite>sprites\spr_sword_1</sprite>
+        <sprite>sprites\spr_sword_0</sprite>
+      </sprites>
+      <sprites name="spr_vent_animation">
+        <sprite>sprites\spr_vent_anim_01_left</sprite>
+        <sprite>sprites\spr_vent_anim_02_straight</sprite>
+        <sprite>sprites\spr_vent_anim_03_straight</sprite>
+        <sprite>sprites\spr_vent_anim_03_left</sprite>
+        <sprite>sprites\spr_vent_anim_04_right</sprite>
+        <sprite>sprites\spr_vent_anim_05_right</sprite>
+        <sprite>sprites\spr_vent_anim_05_left</sprite>
+        <sprite>sprites\spr_vent_anim_06_straight</sprite>
+        <sprite>sprites\spr_vent_anim_06_right</sprite>
+        <sprite>sprites\spr_vent_anim_07_straight</sprite>
+        <sprite>sprites\spr_vent_anim_07_right</sprite>
+        <sprite>sprites\spr_vent_anim_07_left</sprite>
+      </sprites>
+    </sprites>
     <sprite>sprites\sprite_button_sword_jvt</sprite>
     <sprite>sprites\spr_big_circle</sprite>
   </sprites>
@@ -60,8 +76,14 @@
   <paths name="paths"/>
   <scripts name="scripts">
     <script>scripts\scr_mouse_hover.gml</script>
-    <script>scripts\scr_draw_view_cs.gml</script>
     <script>scripts\scr_player_getView_seb.gml</script>
+    <scripts name="animation_cs">
+      <script>scripts\scr_animation_init.gml</script>
+      <script>scripts\scr_sword_animation.gml</script>
+      <script>scripts\scr_draw_arrows.gml</script>
+      <script>scripts\scr_animation_control.gml</script>
+      <script>scripts\scr_draw_view.gml</script>
+    </scripts>
     <scripts name="initialize">
       <script>scripts\scr_maze_init_seb.gml</script>
       <script>scripts\scr_maze_build_seb.gml</script>
@@ -111,6 +133,17 @@
       <object>objects\obj_button_red_vertical</object>
     </objects>
     <objects name="vent">
+      <objects name="static">
+        <object>objects\obj_left</object>
+        <object>objects\obj_right</object>
+        <object>objects\obj_forward_right</object>
+        <object>objects\obj_left_right</object>
+        <object>objects\obj_dead_end</object>
+        <object>objects\obj_forward_right_left</object>
+        <object>objects\obj_goal</object>
+        <object>objects\obj_forward_left</object>
+        <object>objects\obj_forward</object>
+      </objects>
       <object>objects\obj_control_draw_view_cs</object>
     </objects>
     <objects name="temp screen">
