@@ -3,7 +3,9 @@
   <Configs name="configs">
     <Config>Configs\Default</Config>
   </Configs>
-  <NewExtensions/>
+  <NewExtensions>
+    <extension index="0">extensions\Jade UI</extension>
+  </NewExtensions>
   <sounds name="sound">
     <sound>sound\Sound_Button_Menu</sound>
     <sound>sound\snd_btn_click</sound>
@@ -34,7 +36,10 @@
     <sprite>sprites\spr_maze_dot_seb</sprite>
     <sprite>sprites\spr_maze_seb</sprite>
     <sprite>sprites\spr_button_red_jvt</sprite>
+    <sprite>sprites\spr_button_charge</sprite>
+    <sprite>sprites\spr_button_red_nomouse</sprite>
     <sprite>sprites\spr_button_inactive</sprite>
+    <sprite>sprites\spr_button_inactive_nomouse</sprite>
     <sprite>sprites\spr_player_seb</sprite>
     <sprite>sprites\spr_button_blink_jvt</sprite>
     <sprites name="spr_vent_static">
@@ -71,8 +76,46 @@
     </sprites>
     <sprite>sprites\sprite_button_sword_jvt</sprite>
     <sprite>sprites\spr_big_circle</sprite>
+    <sprites name="jade">
+      <sprites name="buttons">
+        <sprite>sprites\spr_jade_btn_end</sprite>
+        <sprite>sprites\spr_jade_btn</sprite>
+        <sprite>sprites\spr_jade_tabs</sprite>
+        <sprite>sprites\spr_jade_btn_single</sprite>
+        <sprite>sprites\spr_jade_btn_sm</sprite>
+      </sprites>
+      <sprites name="header">
+        <sprite>sprites\spr_jade_head_small_btn</sprite>
+        <sprite>sprites\spr_jade_head</sprite>
+        <sprite>sprites\spr_jade_head_arr_btn</sprite>
+        <sprite>sprites\spr_jade_head_sm</sprite>
+        <sprite>sprites\spr_jade_head_btn</sprite>
+        <sprite>sprites\spr_jade_head_btn_end</sprite>
+      </sprites>
+      <sprites name="controls">
+        <sprite>sprites\spr_jade_switch</sprite>
+        <sprite>sprites\spr_jade_checkbox</sprite>
+        <sprite>sprites\spr_jade_radio</sprite>
+      </sprites>
+      <sprites name="textfields">
+        <sprite>sprites\spr_jade_field</sprite>
+        <sprite>sprites\spr_jade_field_sm_round</sprite>
+        <sprite>sprites\spr_jade_field_sm</sprite>
+      </sprites>
+      <sprites name="misc">
+        <sprite>sprites\spr_jade_stage</sprite>
+        <sprite>sprites\spr_jade_stars</sprite>
+        <sprite>sprites\spr_jade_panel</sprite>
+        <sprite>sprites\spr_jade_list</sprite>
+      </sprites>
+    </sprites>
   </sprites>
-  <backgrounds name="background"/>
+  <backgrounds name="background">
+    <backgrounds name="jade">
+      <background>background\bkg_jade_spritesheet</background>
+      <background>background\bkg_jade_pattern</background>
+    </backgrounds>
+  </backgrounds>
   <paths name="paths"/>
   <scripts name="scripts">
     <script>scripts\scr_mouse_hover.gml</script>
@@ -152,6 +195,7 @@
     </objects>
     <object>objects\obj_button_blink_horiz</object>
     <object>objects\obj_button_sword_blink_horiz</object>
+    <object>objects\obj_button_sword_blink_vert</object>
     <object>objects\obj_button_blink_vert</object>
     <object>objects\obj_win</object>
     <object>objects\obj_nightvision</object>
@@ -171,6 +215,7 @@
       </objects>
       <object>objects\obj_Customize_Controller</object>
     </objects>
+    <object>objects\obj_button_charge</object>
   </objects>
   <rooms name="rooms">
     <room>rooms\rm_MainMenu</room>
