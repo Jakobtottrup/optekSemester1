@@ -1,103 +1,88 @@
-///draw player_view_id sprite on level
+//draw player_view_id sprite on level
 
-global.last_move = 0;   //sets the last player input to "none"
-global.player_movement = true;  //allows the player to move
-anim_end = false;   //sets the animaiton end to 'false' - set 'true' if animation is on last subimage
 
 /*
 switch (global.player_view_id)  //get player_view_id and draw proper sprite
     {
-    case 0: draw_sprite(spr_vent_00, 0, spr_x, spr_y);                 break;  //dead end
-    case 1: draw_sprite(spr_vent_anim_01_left, all, spr_x, spr_y);     break;  //left
-    case 2: draw_sprite(spr_vent_anim_02_straight, all, spr_x, spr_y); break;  //forward
-    case 3: draw_sprite(spr_vent_anim_03_left, all, spr_x, spr_y);     break;  //forward, left
-    case 4: draw_sprite(spr_vent_anim_04_right, all, spr_x, spr_y);    break;  //right
-    case 5: draw_sprite(spr_vent_anim_05_left, all, spr_x, spr_y);     break;  //left, right
-    case 6: draw_sprite(spr_vent_anim_06_right, all, spr_x, spr_y);    break;  //forward, right
-    case 7: draw_sprite(spr_vent_anim_07_straight, all, spr_x, spr_y); break;  //forward, right, left   
-    case 8: draw_sprite(spr_vent_08, 0, spr_x, spr_y);                 break;  //finish
+    case 0: instance_change(obj_dead_end, true);              break;  //dead end
+    case 1: instance_change(obj_left, true);                  break;  //left
+    case 2: instance_change(obj_forward, true);               break;  //forward
+    case 3: instance_change(obj_forward_left, true);          break;  //forward, left
+    case 4: instance_change(obj_right, true);                 break;  //right
+    case 5: instance_change(obj_left_right, true);            break;  //left, right
+    case 6: instance_change(obj_forward_right, true);         break;  //forward, right
+    case 7: instance_change(obj_forward_right_left, true);    break;  //forward, right, left   
+    case 8: instance_change(obj_goal, true);                  break;  //finish
     default: draw_text(spr_x, spr_y, "player_view_id not recognized");  //When player_view_id is invald
     }
 
-
-if (timer < 0) {
-    timer++;
-    image_speed = 100;
+if (instance_exists(inst)) {
+    instance_destroy();
 }
 */
 
-if (keyboard_check_pressed(vk_space)) {global.player_movement = true;}
 
-//dead end
-if(global.player_view_id == 0) {
-    draw_sprite(spr_vent_00, 0, spr_x, spr_y);
-}
-
-//left
-if(global.player_view_id == 1) {
-    draw_sprite(spr_vent_anim_01_left, all, spr_x, spr_y);
-}
-
-//forward
-if(global.player_view_id == 2) {
-    draw_sprite(spr_vent_anim_02_straight, all, spr_x, spr_y);
-}
-
-//forward, left
-if(global.player_view_id == 3) {
-    draw_sprite(spr_vent_anim_03_straight, all, spr_x, spr_y);
-}
-
-//right
-if(global.player_view_id == 4) {
-    draw_sprite(spr_vent_anim_04_right, all, spr_x, spr_y);
-}
-
-//right, left
-if(global.player_view_id == 5) {
-    draw_sprite(spr_vent_anim_05_right, all, spr_x, spr_y);
-}
-
-//forward, right
-if(global.player_view_id == 6) {
-    draw_sprite(spr_vent_anim_06_straight, all, spr_x, spr_y);
-    //draw_sprite(spr_vent_anim_06_right, image_index, spr_x, spr_y);
-}
-
-//forward, right, left
-if(global.player_view_id == 7) {
-    
-    while(anim_end == false) {
-    global.player_movement = true;
-    for(i=0; i< 11; i++;){
-    draw_sprite(spr_vent_anim_07_straight, i, spr_x, spr_y);
+if(global.player_moving == true)
+{    
+    //dead end
+    if(global.player_view_id == 0) {
+        //instance_create(spr_x, spr_y, obj_00_entry);
+        instance_change(obj_00_entry, true);
     }
-    anim_end = true;
+        
+    //left
+    if(global.player_view_id == 1) {
+        //instance_create(spr_x, spr_y, obj_01_entry);
+        instance_change(obj_01_entry, true);
     }
-    /*if(global.last_move == 1) {
-    global.player_movement = false;
-    draw_sprite(spr_vent_anim_07_straight, all, spr_x, spr_y);
+        
+    //forward
+    if(global.player_view_id == 2) {
+        //instance_create(spr_x, spr_y, obj_02_entry);
+        instance_change(obj_02_entry, true);
     }
-    if(global.last_move == 2) {
-    global.player_movement = false;
-    draw_sprite(spr_vent_anim_07_left, all, spr_x, spr_y);
+        
+    //forward, left
+    if(global.player_view_id == 3) {
+        //instance_create(spr_x, spr_y, obj_03_entry);
+        instance_change(obj_03_entry, true);
     }
-    if(global.last_move == 3) {
-    global.player_movement = false;
-    draw_sprite(spr_vent_anim_07_right, all, spr_x, spr_y);
-    }*/
+      
+    //right
+    if(global.player_view_id == 4) {
+        //instance_create(spr_x, spr_y, obj_04_entry);
+        instance_change(obj_04_entry, true);
+    }
+        
+    //right, left
+    if(global.player_view_id == 5) {
+        //instance_create(spr_x, spr_y, obj_05_entry);
+        instance_change(obj_05_entry, true);
+    }
+       
+    //forward, right
+    if(global.player_view_id == 6) {
+        //instance_create(spr_x, spr_y, obj_06_entry);
+        instance_change(obj_06_entry, true);
+    }
+        
+    //forward, right, left
+    if(global.player_view_id == 7) {
+        //instance_create(spr_x, spr_y, obj_07_entry);
+        instance_change(obj_07_entry, true);
+    }
+        
+    //finish
+    if(global.player_view_id == 8) {
+        //instance_create(spr_x, spr_y, obj_08_entry);
+        instance_change(obj_08_entry, true);
+    }
 }
 
-//finish
-if(global.player_view_id == 8) {
-    draw_sprite(spr_vent_08, 0, spr_x, spr_y);
-}
-
-//draw_sprite(spr_security_monitor_border, 0, spr_x+100, spr_y);
-
-
+///////last_move values////////
 //neutral   (0)
 //forward   (1)
 //left      (2)
 //right     (3)
 //backwards (4)
+

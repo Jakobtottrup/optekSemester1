@@ -37,17 +37,6 @@
     <sprite>sprites\spr_button_inactive</sprite>
     <sprite>sprites\spr_player_seb</sprite>
     <sprite>sprites\spr_button_blink_jvt</sprite>
-    <sprites name="spr_vent_static">
-      <sprite>sprites\spr_vent_00</sprite>
-      <sprite>sprites\spr_vent_01</sprite>
-      <sprite>sprites\spr_vent_02</sprite>
-      <sprite>sprites\spr_vent_03</sprite>
-      <sprite>sprites\spr_vent_04</sprite>
-      <sprite>sprites\spr_vent_05</sprite>
-      <sprite>sprites\spr_vent_06</sprite>
-      <sprite>sprites\spr_vent_07</sprite>
-      <sprite>sprites\spr_vent_08</sprite>
-    </sprites>
     <sprites name="animations">
       <sprites name="spr_sword_animation">
         <sprite>sprites\spr_sword_2</sprite>
@@ -55,18 +44,30 @@
         <sprite>sprites\spr_sword_0</sprite>
       </sprites>
       <sprites name="spr_vent_animation">
-        <sprite>sprites\spr_vent_anim_01_left</sprite>
-        <sprite>sprites\spr_vent_anim_02_straight</sprite>
-        <sprite>sprites\spr_vent_anim_03_straight</sprite>
-        <sprite>sprites\spr_vent_anim_03_left</sprite>
-        <sprite>sprites\spr_vent_anim_04_right</sprite>
-        <sprite>sprites\spr_vent_anim_05_right</sprite>
-        <sprite>sprites\spr_vent_anim_05_left</sprite>
-        <sprite>sprites\spr_vent_anim_06_straight</sprite>
-        <sprite>sprites\spr_vent_anim_06_right</sprite>
-        <sprite>sprites\spr_vent_anim_07_straight</sprite>
-        <sprite>sprites\spr_vent_anim_07_right</sprite>
-        <sprite>sprites\spr_vent_anim_07_left</sprite>
+        <sprite>sprites\spr_vent_00_entry</sprite>
+        <sprite>sprites\spr_vent_00_exit</sprite>
+        <sprite>sprites\spr_vent_01_entry</sprite>
+        <sprite>sprites\spr_vent_01_exit_left</sprite>
+        <sprite>sprites\spr_vent_02_entry</sprite>
+        <sprite>sprites\spr_vent_02_exit_striaght</sprite>
+        <sprite>sprites\spr_vent_02_backwards</sprite>
+        <sprite>sprites\spr_vent_03_entry</sprite>
+        <sprite>sprites\spr_vent_03_exit_left</sprite>
+        <sprite>sprites\spr_vent_03_exit_straight</sprite>
+        <sprite>sprites\spr_vent_04_entry</sprite>
+        <sprite>sprites\spr_vent_04_exit_right</sprite>
+        <sprite>sprites\spr_vent_05_entry</sprite>
+        <sprite>sprites\spr_vent_05_exit_left</sprite>
+        <sprite>sprites\spr_vent_05_exit_right</sprite>
+        <sprite>sprites\spr_vent_06_entry</sprite>
+        <sprite>sprites\spr_vent_06_exit_straight</sprite>
+        <sprite>sprites\spr_vent_06_exit_right</sprite>
+        <sprite>sprites\spr_vent_07_entry</sprite>
+        <sprite>sprites\spr_vent_07_exit_left</sprite>
+        <sprite>sprites\spr_vent_07_exit_straight</sprite>
+        <sprite>sprites\spr_vent_07_exit_right</sprite>
+        <sprite>sprites\spr_vent_08_entry</sprite>
+        <sprite>sprites\spr_vent_08_exit</sprite>
       </sprites>
     </sprites>
     <sprite>sprites\sprite_button_sword_jvt</sprite>
@@ -77,11 +78,10 @@
   <scripts name="scripts">
     <script>scripts\scr_mouse_hover.gml</script>
     <script>scripts\scr_player_getView_seb.gml</script>
-    <scripts name="animation_cs">
+    <scripts name="vent_animation_cs">
       <script>scripts\scr_animation_init.gml</script>
       <script>scripts\scr_sword_animation.gml</script>
-      <script>scripts\scr_draw_arrows.gml</script>
-      <script>scripts\scr_animation_control.gml</script>
+      <script>scripts\scr_play_animation.gml</script>
       <script>scripts\scr_draw_view.gml</script>
     </scripts>
     <scripts name="initialize">
@@ -132,19 +132,48 @@
       <object>objects\obj_button_inactive_vertical</object>
       <object>objects\obj_button_red_vertical</object>
     </objects>
-    <objects name="vent">
+    <objects name="vent_animations_cs">
+      <object>objects\obj_control_draw_view</object>
+      <object>objects\obj_animation_start</object>
+      <object>objects\obj_animation_parent</object>
+      <object>objects\obj_static_parent</object>
       <objects name="static">
-        <object>objects\obj_left</object>
-        <object>objects\obj_right</object>
-        <object>objects\obj_forward_right</object>
-        <object>objects\obj_left_right</object>
-        <object>objects\obj_dead_end</object>
-        <object>objects\obj_forward_right_left</object>
-        <object>objects\obj_goal</object>
-        <object>objects\obj_forward_left</object>
-        <object>objects\obj_forward</object>
+        <object>objects\obj_00_dead_end</object>
+        <object>objects\obj_01_left</object>
+        <object>objects\obj_02_forward</object>
+        <object>objects\obj_03_forward_left</object>
+        <object>objects\obj_04_right</object>
+        <object>objects\obj_05_left_right</object>
+        <object>objects\obj_06_forward_right</object>
+        <object>objects\obj_07_forward_right_left</object>
+        <object>objects\obj_08_goal</object>
       </objects>
-      <object>objects\obj_control_draw_view_cs</object>
+      <objects name="animations">
+        <object>objects\obj_00_entry</object>
+        <object>objects\obj_02_backwards</object>
+        <object>objects\obj_00_exit</object>
+        <object>objects\obj_01_entry</object>
+        <object>objects\obj_01_exit_left</object>
+        <object>objects\obj_02_entry</object>
+        <object>objects\obj_02_exit_straight</object>
+        <object>objects\obj_03_entry</object>
+        <object>objects\obj_03_exit_left</object>
+        <object>objects\obj_03_exit_straight</object>
+        <object>objects\obj_04_entry</object>
+        <object>objects\obj_04_exit_right</object>
+        <object>objects\obj_05_entry</object>
+        <object>objects\obj_05_exit_left</object>
+        <object>objects\obj_05_exit_right</object>
+        <object>objects\obj_06_entry</object>
+        <object>objects\obj_06_exit_straight</object>
+        <object>objects\obj_06_exit_right</object>
+        <object>objects\obj_07_entry</object>
+        <object>objects\obj_07_exit_left</object>
+        <object>objects\obj_07_exit_straight</object>
+        <object>objects\obj_07_exit_right</object>
+        <object>objects\obj_08_entry</object>
+        <object>objects\obj_08_exit</object>
+      </objects>
     </objects>
     <objects name="temp screen">
       <object>objects\obj_screen</object>
@@ -172,6 +201,9 @@
       <object>objects\obj_Customize_Controller</object>
     </objects>
   </objects>
+  <timelines name="timelines">
+    <timeline>timelines\timeline0</timeline>
+  </timelines>
   <rooms name="rooms">
     <room>rooms\rm_MainMenu</room>
     <room>rooms\rm_options</room>

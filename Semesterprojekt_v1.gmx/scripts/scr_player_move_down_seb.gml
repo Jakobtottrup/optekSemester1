@@ -1,3 +1,4 @@
+global.player_moving = true;
 if(global.player_movement == true){
     global.last_move=4;    
     if (player_move_down) {
