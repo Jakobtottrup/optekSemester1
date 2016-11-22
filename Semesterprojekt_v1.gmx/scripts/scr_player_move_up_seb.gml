@@ -1,5 +1,5 @@
-global.player_moving = true;
-if(global.player_movement = true){
+//global.player_moving = true;
+//if(global.player_movement = true){
     global.last_move=1;    
     if (player_move_up) {
         //forward
@@ -13,4 +13,4 @@ if(global.player_movement = true){
         //single step forward to reach goal
         scr_player_move_function_up_seb();
     }
-}
+//}

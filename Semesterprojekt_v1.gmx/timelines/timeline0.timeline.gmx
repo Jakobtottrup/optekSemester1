@@ -19,7 +19,7 @@
         <arguments>
           <argument>
             <kind>10</kind>
-            <object>obj_control_draw_view</object>
+            <object>&lt;undefined&gt;</object>
           </argument>
           <argument>
             <kind>0</kind>

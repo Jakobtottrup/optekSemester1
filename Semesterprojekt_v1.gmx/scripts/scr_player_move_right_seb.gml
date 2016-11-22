@@ -1,5 +1,5 @@
-global.player_moving = true;
-if(global.player_movement == true){
+//global.player_moving = true;
+//if(global.player_movement == true){
     global.last_move=3;
     if (player_move_right) {
         //forward
@@ -16,5 +16,5 @@ if(global.player_movement == true){
            
     //update view
     scr_player_getView_seb();
-}
+//}
 
