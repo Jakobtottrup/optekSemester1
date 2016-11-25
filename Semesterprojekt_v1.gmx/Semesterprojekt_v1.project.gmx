@@ -165,7 +165,6 @@
     </objects>
     <object>objects\obj_button_charge</object>
   </objects>
-  <timelines name="timelines"/>
   <rooms name="rooms">
     <room>rooms\rm_MainMenu</room>
     <room>rooms\rm_options</room>
