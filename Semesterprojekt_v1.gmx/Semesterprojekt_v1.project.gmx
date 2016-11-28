@@ -13,6 +13,7 @@
     <sound>sound\snd_nightvision_activate</sound>
     <sound>sound\snd_ventilation_test</sound>
     <sound>sound\snd_constant</sound>
+    <sound>sound\snd_menu</sound>
   </sounds>
   <sprites name="sprites">
     <sprites name="Main Menu">
@@ -168,6 +169,7 @@
     </objects>
     <object>objects\obj_button_charge</object>
     <object>objects\obj_NV_code_creator</object>
+    <object>objects\obj_menu_controller</object>
   </objects>
   <rooms name="rooms">
     <room>rooms\rm_MainMenu</room>
