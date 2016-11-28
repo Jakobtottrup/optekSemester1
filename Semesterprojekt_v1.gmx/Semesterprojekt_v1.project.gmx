@@ -14,6 +14,7 @@
     <sound>sound\snd_ventilation_test</sound>
     <sound>sound\snd_constant</sound>
     <sound>sound\snd_menu</sound>
+    <sound>sound\snd_machinegun</sound>
   </sounds>
   <sprites name="sprites">
     <sprites name="Main Menu">
@@ -23,6 +24,7 @@
       <sprite>sprites\spr_Back</sprite>
       <sprite>sprites\spr_customize</sprite>
       <sprite>sprites\spr_Cursor</sprite>
+      <sprite>sprites\spr_bulletholes</sprite>
     </sprites>
     <sprites name="Customize Menu">
       <sprite>sprites\spr_Vertical_Plus</sprite>
@@ -155,8 +157,8 @@
     <object>objects\obj_big_circle_vert</object>
     <objects name="menu">
       <object>objects\obj_NewGame</object>
-      <object>objects\obj_Options</object>
       <object>objects\obj_ExitGame</object>
+      <object>objects\obj_Options</object>
       <object>objects\obj_back</object>
       <object>objects\obj_customize</object>
       <objects name="Customize Buttons">
@@ -166,10 +168,12 @@
         <object>objects\obj_Horizontal_Minus</object>
       </objects>
       <object>objects\obj_Customize_Controller</object>
+      <object>objects\obj_bulletholes</object>
     </objects>
     <object>objects\obj_button_charge</object>
     <object>objects\obj_NV_code_creator</object>
     <object>objects\obj_menu_controller</object>
+    <object>objects\obj_lightcontrol</object>
   </objects>
   <rooms name="rooms">
     <room>rooms\rm_MainMenu</room>
