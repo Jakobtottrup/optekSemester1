@@ -15,6 +15,7 @@
     <sound>sound\snd_constant</sound>
     <sound>sound\snd_menu</sound>
     <sound>sound\snd_machinegun</sound>
+    <sound>sound\snd_swing</sound>
   </sounds>
   <sprites name="sprites">
     <sprites name="Main Menu">
@@ -80,6 +81,8 @@
         <sprite>sprites\spr_jade_list</sprite>
       </sprites>
     </sprites>
+    <sprite>sprites\spr_sword</sprite>
+    <sprite>sprites\spr_sword_spin</sprite>
   </sprites>
   <backgrounds name="background">
     <backgrounds name="jade">
@@ -138,23 +141,26 @@
     <objects name="office">
       <object>objects\obj_maze_ver_seb</object>
       <object>objects\obj_maze_hor_seb</object>
-      <object>objects\obj_button_red_jvt</object>
-      <object>objects\obj_button_inactive</object>
-      <object>objects\obj_button_inactive_vertical</object>
-      <object>objects\obj_button_red_vertical</object>
+      <objects name="buttons">
+        <object>objects\obj_button_red_vertical</object>
+        <object>objects\obj_button_inactive_vertical</object>
+        <object>objects\obj_button_inactive</object>
+        <object>objects\obj_button_red_jvt</object>
+        <object>objects\obj_button_blink_horiz</object>
+        <object>objects\obj_button_sword_blink_horiz</object>
+        <object>objects\obj_button_sword_blink_vert</object>
+        <object>objects\obj_button_blink_vert</object>
+        <object>objects\obj_big_circle_horiz</object>
+        <object>objects\obj_big_circle_vert</object>
+        <object>objects\obj_button_charge</object>
+      </objects>
     </objects>
     <objects name="temp screen">
       <object>objects\obj_screen</object>
       <object>objects\obj_vent1</object>
     </objects>
-    <object>objects\obj_button_blink_horiz</object>
-    <object>objects\obj_button_sword_blink_horiz</object>
-    <object>objects\obj_button_sword_blink_vert</object>
-    <object>objects\obj_button_blink_vert</object>
     <object>objects\obj_win</object>
     <object>objects\obj_nightvision</object>
-    <object>objects\obj_big_circle_horiz</object>
-    <object>objects\obj_big_circle_vert</object>
     <objects name="menu">
       <object>objects\obj_NewGame</object>
       <object>objects\obj_ExitGame</object>
@@ -170,10 +176,10 @@
       <object>objects\obj_Customize_Controller</object>
       <object>objects\obj_bulletholes</object>
     </objects>
-    <object>objects\obj_button_charge</object>
     <object>objects\obj_NV_code_creator</object>
     <object>objects\obj_menu_controller</object>
     <object>objects\obj_lightcontrol</object>
+    <object>objects\obj_sword_spin</object>
   </objects>
   <rooms name="rooms">
     <room>rooms\rm_MainMenu</room>
