@@ -16,6 +16,7 @@
     <sound>sound\snd_menu</sound>
     <sound>sound\snd_machinegun</sound>
     <sound>sound\snd_swing</sound>
+    <sound>sound\snd_charging</sound>
   </sounds>
   <sprites name="sprites">
     <sprites name="Main Menu">
