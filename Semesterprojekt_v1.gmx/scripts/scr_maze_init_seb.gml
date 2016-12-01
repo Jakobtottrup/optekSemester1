@@ -27,6 +27,7 @@ global.player_return = false;
 
 //detail animation info
 global.sword_ani_id = 0;
+global.button_scale = 1;
 
 //max number of goals
 maze_num_goals = 3;
