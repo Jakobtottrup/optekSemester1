@@ -20,6 +20,8 @@
     <sound>sound\snd_fired</sound>
     <sound>sound\snd_squish</sound>
     <sound>sound\snd_scream</sound>
+    <sound>sound\snd_stamp</sound>
+    <sound>sound\snd_slash</sound>
   </sounds>
   <sprites name="sprites">
     <sprites name="Main Menu">
@@ -142,6 +144,8 @@
     <sprite>sprites\spr_sword</sprite>
     <sprite>sprites\spr_sword_spin</sprite>
     <sprite>sprites\spr_thief_death</sprite>
+    <sprite>sprites\spr_fired</sprite>
+    <sprite>sprites\spr_slash</sprite>
   </sprites>
   <backgrounds name="background">
     <backgrounds name="jade">
@@ -251,7 +255,7 @@
         <object>objects\obj_Horizontal_Minus</object>
       </objects>
       <object>objects\obj_Customize_Controller</object>
-      <object>objects\obj_bulletholes</object>
+      <object>objects\obj_slashes</object>
       <object>objects\obj_cursor</object>
     </objects>
     <objects name="control">
