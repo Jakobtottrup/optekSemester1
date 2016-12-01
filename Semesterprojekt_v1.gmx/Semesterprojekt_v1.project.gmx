@@ -18,6 +18,8 @@
     <sound>sound\snd_swing</sound>
     <sound>sound\snd_charging</sound>
     <sound>sound\snd_fired</sound>
+    <sound>sound\snd_squish</sound>
+    <sound>sound\snd_scream</sound>
   </sounds>
   <sprites name="sprites">
     <sprites name="Main Menu">
@@ -139,6 +141,7 @@
     <sprite>sprites\spr_player_seb</sprite>
     <sprite>sprites\spr_sword</sprite>
     <sprite>sprites\spr_sword_spin</sprite>
+    <sprite>sprites\spr_thief_death</sprite>
   </sprites>
   <backgrounds name="background">
     <backgrounds name="jade">
@@ -229,6 +232,7 @@
       <object>objects\obj_sword_spin</object>
       <object>objects\obj_NV_code_creator</object>
       <object>objects\obj_win</object>
+      <object>objects\obj_thief_death</object>
     </objects>
     <objects name="temp screen">
       <object>objects\obj_screen</object>
