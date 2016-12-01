@@ -35,21 +35,6 @@
       <sprite>sprites\spr_Horizontal_Plus</sprite>
       <sprite>sprites\spr_Horizontal_Minus</sprite>
     </sprites>
-    <sprite>sprites\spr_vent1</sprite>
-    <sprite>sprites\spr_security_monitor_border</sprite>
-    <sprite>sprites\spr_nightvision</sprite>
-    <sprite>sprites\spr_screen</sprite>
-    <sprite>sprites\spr_maze_dot_seb</sprite>
-    <sprite>sprites\spr_maze_seb</sprite>
-    <sprite>sprites\spr_button_red_jvt</sprite>
-    <sprite>sprites\spr_button_charge</sprite>
-    <sprite>sprites\spr_button_red_nomouse</sprite>
-    <sprite>sprites\spr_button_inactive</sprite>
-    <sprite>sprites\spr_button_inactive_nomouse</sprite>
-    <sprite>sprites\spr_player_seb</sprite>
-    <sprite>sprites\spr_button_blink_jvt</sprite>
-    <sprite>sprites\sprite_button_sword_jvt</sprite>
-    <sprite>sprites\spr_big_circle</sprite>
     <sprites name="jade">
       <sprites name="buttons">
         <sprite>sprites\spr_jade_btn_end</sprite>
@@ -83,6 +68,75 @@
         <sprite>sprites\spr_jade_list</sprite>
       </sprites>
     </sprites>
+    <sprites name="buttons">
+      <sprite>sprites\spr_button_red_jvt</sprite>
+      <sprite>sprites\spr_button_red_nomouse</sprite>
+      <sprite>sprites\spr_button_charge</sprite>
+      <sprite>sprites\spr_button_blink_jvt</sprite>
+      <sprite>sprites\sprite_button_sword_jvt</sprite>
+      <sprite>sprites\spr_button_inactive</sprite>
+      <sprite>sprites\spr_button_inactive_nomouse</sprite>
+      <sprite>sprites\spr_big_circle</sprite>
+    </sprites>
+    <sprites name="vent animations">
+      <sprites name="vent 00">
+        <sprite>sprites\spr_vent_00_entry</sprite>
+        <sprite>sprites\spr_vent_00_return_right</sprite>
+        <sprite>sprites\spr_vent_00_return_left</sprite>
+      </sprites>
+      <sprites name="vent 01">
+        <sprite>sprites\spr_vent_01_return</sprite>
+        <sprite>sprites\spr_vent_01_entry</sprite>
+        <sprite>sprites\spr_vent_01_exit_left</sprite>
+      </sprites>
+      <sprites name="vent 02">
+        <sprite>sprites\spr_vent_02_entry</sprite>
+        <sprite>sprites\spr_vent_02_return_right</sprite>
+        <sprite>sprites\spr_vent_02_return_left</sprite>
+        <sprite>sprites\spr_vent_02_exit</sprite>
+      </sprites>
+      <sprites name="vent 03">
+        <sprite>sprites\spr_vent_03_return</sprite>
+        <sprite>sprites\spr_vent_03_entry</sprite>
+        <sprite>sprites\spr_vent_03_exit_left</sprite>
+        <sprite>sprites\spr_vent_03_exit_straigth</sprite>
+      </sprites>
+      <sprites name="vent 04">
+        <sprite>sprites\spr_vent_04_entry</sprite>
+        <sprite>sprites\spr_vent_04_exit_right</sprite>
+        <sprite>sprites\spr_vent_04_return</sprite>
+      </sprites>
+      <sprites name="vent 05">
+        <sprite>sprites\spr_vent_05_entry</sprite>
+        <sprite>sprites\spr_vent_05_return</sprite>
+        <sprite>sprites\spr_vent_05_exit_right</sprite>
+        <sprite>sprites\spr_vent_05_exit_left</sprite>
+      </sprites>
+      <sprites name="vent 06">
+        <sprite>sprites\spr_vent_06_entry</sprite>
+        <sprite>sprites\spr_vent_06_exit_right</sprite>
+        <sprite>sprites\spr_vent_06_exit_straigth</sprite>
+        <sprite>sprites\spr_vent_06_return</sprite>
+      </sprites>
+      <sprites name="vent 07">
+        <sprite>sprites\spr_vent_07_entry</sprite>
+        <sprite>sprites\spr_vent_07_return</sprite>
+        <sprite>sprites\spr_vent_07_exit_right</sprite>
+        <sprite>sprites\spr_vent_07_exit_left</sprite>
+        <sprite>sprites\spr_vent_07_exit_straigth</sprite>
+      </sprites>
+      <sprites name="vent 08">
+        <sprite>sprites\spr_vent_08_entry</sprite>
+        <sprite>sprites\spr_vent_08_exit</sprite>
+      </sprites>
+    </sprites>
+    <sprite>sprites\spr_vent1</sprite>
+    <sprite>sprites\spr_security_monitor_border</sprite>
+    <sprite>sprites\spr_nightvision</sprite>
+    <sprite>sprites\spr_screen</sprite>
+    <sprite>sprites\spr_maze_dot_seb</sprite>
+    <sprite>sprites\spr_maze_seb</sprite>
+    <sprite>sprites\spr_player_seb</sprite>
     <sprite>sprites\spr_sword</sprite>
     <sprite>sprites\spr_sword_spin</sprite>
   </sprites>
@@ -94,39 +148,55 @@
   </backgrounds>
   <paths name="paths"/>
   <scripts name="scripts">
-    <script>scripts\scr_mouse_hover.gml</script>
-    <script>scripts\scr_player_getView_seb.gml</script>
-    <scripts name="initialize">
-      <script>scripts\scr_maze_init_seb.gml</script>
-      <script>scripts\scr_maze_build_seb.gml</script>
-      <script>scripts\scr_screen_buttons_place_seb.gml</script>
-      <script>scripts\scr_player_spawn_seb.gml</script>
-      <script>scripts\scr_player_init_seb.gml</script>
-    </scripts>
     <scripts name="maze generation">
-      <script>scripts\scr_maze_generate_seb.gml</script>
+      <script>scripts\scr_maze_init_seb.gml</script>
+      <script>scripts\scr_player_spawn_seb.gml</script>
       <script>scripts\scr_maze_generate_steplength_seb.gml</script>
-      <script>scripts\scr_maze_generate_init_seb.gml</script>
-      <script>scripts\scr_maze_generate_convert_seb.gml</script>
+      <script>scripts\scr_maze_spawn_goals.gml</script>
+      <script>scripts\scr_screen_buttons_place_seb.gml</script>
+      <script>scripts\scr_maze_build_seb.gml</script>
+      <scripts name="generate maze data">
+        <script>scripts\scr_maze_generate_init_seb.gml</script>
+        <script>scripts\scr_maze_generate_seb.gml</script>
+        <script>scripts\scr_maze_generate_convert_seb.gml</script>
+        <script>scripts\scr_maze_generate_get_ends.gml</script>
+        <script>scripts\scr_maze_generate_main.gml</script>
+        <script>scripts\scr_maze_create_extra_paths.gml</script>
+        <script>scripts\scr_maze_generate_protect_tight_paths.gml</script>
+      </scripts>
     </scripts>
     <scripts name="player movement">
-      <script>scripts\scr_player_move_right_seb.gml</script>
-      <script>scripts\scr_player_move_left_seb.gml</script>
-      <script>scripts\scr_player_move_up_seb.gml</script>
-      <script>scripts\scr_player_move_down_seb.gml</script>
+      <scripts name="player move">
+        <script>scripts\scr_player_move_right_seb.gml</script>
+        <script>scripts\scr_player_move_left_seb.gml</script>
+        <script>scripts\scr_player_move_up_seb.gml</script>
+        <script>scripts\scr_player_move_down_seb.gml</script>
+      </scripts>
       <scripts name="player movement functions">
         <script>scripts\scr_player_move_function_up_seb.gml</script>
         <script>scripts\scr_player_move_function_down_seb.gml</script>
         <script>scripts\scr_player_move_function_right_seb.gml</script>
         <script>scripts\scr_player_move_function_left_seb.gml</script>
       </scripts>
+      <scripts name="start movement sprite">
+        <script>scripts\scr_player_moved_init.gml</script>
+        <script>scripts\scr_player_moved_ani.gml</script>
+      </scripts>
+      <script>scripts\scr_player_init_seb.gml</script>
     </scripts>
-    <script>scripts\scr_diode_volume.gml</script>
     <scripts name="menu">
       <script>scripts\scr_customize_draw.gml</script>
       <script>scripts\Scr_Customize_Var_Set.gml</script>
     </scripts>
+    <scripts name="vent">
+      <script>scripts\scr_vent_ani_end.gml</script>
+      <script>scripts\scr_vent_ani_start.gml</script>
+      <script>scripts\scr_player_getView_seb.gml</script>
+      <script>scripts\scr_vent_static.gml</script>
+    </scripts>
     <script>scripts\draw_binary_NV.gml</script>
+    <script>scripts\scr_diode_volume.gml</script>
+    <script>scripts\scr_mouse_hover.gml</script>
     <script>scripts\scr_destroy_diode.gml</script>
     <script>scripts\scr_destroy_diode_vert.gml</script>
   </scripts>
@@ -184,6 +254,11 @@
       <object>objects\obj_lightcontrol</object>
       <object>objects\obj_menu_controller</object>
       <object>objects\obj_control</object>
+    </objects>
+    <objects name="vent">
+      <object>objects\obj_vent_ani_start</object>
+      <object>objects\obj_vent_ani_end</object>
+      <object>objects\obj_vent_static</object>
     </objects>
     <object>objects\obj_firedtext</object>
   </objects>

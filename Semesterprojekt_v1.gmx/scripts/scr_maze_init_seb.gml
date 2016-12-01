@@ -16,11 +16,27 @@ cpu_offset_y = 0;
 
 cpu_button_offset = 80;
 
+//view id
 global.player_view_id = 0;
+global.player_view_id_old = 0;
+global.player_last_dir = 0;
+
+//movement info
+global.player_movement = true;
+global.player_return = false;
+
+//detail animation info
 global.sword_ani_id = 0;
 
-//lots of comments because it looks nice
-    randomize(); //use new seed for every run
+//max number of goals
+maze_num_goals = 3;
+//percent extra paths
+maze_extra_path_percent = 20;
+
+
+
+//start maze generation
+randomize(); //use new seed for every run
 scr_maze_generate_seb()
 
-//more comments
+

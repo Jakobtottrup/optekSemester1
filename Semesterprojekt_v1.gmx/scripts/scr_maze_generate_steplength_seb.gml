@@ -13,3 +13,8 @@ if ((cpu_width/maze_width) > (cpu_height/maze_height)) {
         //center on y
     cpu_offset_y = (cpu_height - ((maze_height - 1) * global.maze_steplength * 2)) / 2;
 }
+
+
+
+//adjust steplength with scale to fit inside screen
+//global.maze_steplength = global.maze_steplength * (1);

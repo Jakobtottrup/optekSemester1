@@ -19,7 +19,7 @@ for (j=0; j < maze_height; j++) {
     x = cpu_x + cpu_offset_x + global.maze_steplength;
     for (i=1; i < maze_width; i++) {
         //check if maze section is allowed here
-        if (maze_data_hor[h] != 0) {
+        if (maze_data_hor[h] == 2) {
             //place all horizontal pieces
             instance_create(x, y, obj_maze_hor_seb);
         }
@@ -40,7 +40,7 @@ for (j=1; j < maze_height; j++) {
     x = cpu_x + cpu_offset_x;
     for (i=0; i < maze_width; i++) {
         //check if maze section is allowed here
-        if (maze_data_ver[h] != 0) {
+        if (maze_data_ver[h] == 2) {
             //place all vertical pieces
             instance_create(x, y, obj_maze_ver_seb);
         }
