@@ -112,7 +112,7 @@
         <arguments>
           <argument>
             <kind>0</kind>
-            <string>30</string>
+            <string>60</string>
           </argument>
           <argument>
             <kind>4</kind>
@@ -136,15 +136,15 @@
         <arguments>
           <argument>
             <kind>10</kind>
-            <object>obj_bulletholes</object>
+            <object>obj_slashes</object>
           </argument>
           <argument>
             <kind>0</kind>
-            <string>-200</string>
+            <string>-360</string>
           </argument>
           <argument>
             <kind>0</kind>
-            <string>-70</string>
+            <string>-120</string>
           </argument>
         </arguments>
       </action>
@@ -164,7 +164,7 @@
         <arguments>
           <argument>
             <kind>6</kind>
-            <sound>snd_machinegun</sound>
+            <sound>snd_slash</sound>
           </argument>
           <argument>
             <kind>3</kind>
