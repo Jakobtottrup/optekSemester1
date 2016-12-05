@@ -114,7 +114,7 @@
             <string>if (instance_exists(obj_button_sword_blink_horiz)) //is the instance  here?
 {
     //check if instance x is within bounds of the room
-    if obj_button_sword_blink_horiz.x  &gt;= (room_width -170)
+    if obj_button_sword_blink_horiz.x  &gt;= (room_width -170) &amp;&amp; instance_exists(obj_player_seb)
     {
       instance_destroy();
       if lives &gt; 0 {
