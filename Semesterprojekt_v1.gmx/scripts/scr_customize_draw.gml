@@ -16,7 +16,7 @@ draw_line_width_colour(x,y,x,y+grid_hight,10,c_black,c_black);
 x+=grid_width/(global.customize_grid_x-1);
 }
 
-    //Draw horisontal//
+    //Draw horisontal lines//
 
 x=350
 y=100
