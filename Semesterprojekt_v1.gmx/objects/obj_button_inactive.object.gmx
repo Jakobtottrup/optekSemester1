@@ -49,7 +49,7 @@
         <arguments>
           <argument>
             <kind>5</kind>
-            <sprite>spr_button_inactive</sprite>
+            <sprite>spr_button_inactive_nomouse</sprite>
           </argument>
           <argument>
             <kind>0</kind>
