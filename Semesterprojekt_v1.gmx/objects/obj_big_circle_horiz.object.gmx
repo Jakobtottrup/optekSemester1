@@ -57,7 +57,7 @@
           </argument>
           <argument>
             <kind>0</kind>
-            <string>global.maze_steplength/5</string>
+            <string>12</string>
           </argument>
         </arguments>
       </action>

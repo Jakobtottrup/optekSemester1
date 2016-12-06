@@ -239,6 +239,7 @@
       <object>objects\obj_NV_code_creator</object>
       <object>objects\obj_win</object>
       <object>objects\obj_thief_death</object>
+      <object>objects\obj_thief_win</object>
     </objects>
     <objects name="temp screen">
       <object>objects\obj_screen</object>
