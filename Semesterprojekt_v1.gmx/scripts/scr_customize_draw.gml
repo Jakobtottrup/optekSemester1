@@ -26,7 +26,14 @@ draw_line_width_colour(x,y,x+grid_width,y,10,c_black,c_black);
 y+=grid_hight/(global.customize_grid_y-1);
 }
 
+    //Draw Goal variable in room
 
+draw_text (1733-(string_width(string(global.custom_num_goal))/2), 190, global.custom_num_goal);
+    
+    //Draw Door variable in room
+
+draw_text (1737-(string_width(string(global.custom_num_door))/2), 730, global.custom_num_door);
+    
 //draw_line(350,100,350,100+700)//
 //draw_line(1570,100,1570,100+700)//
 //draw_line(350,100,350+1220,100)//
