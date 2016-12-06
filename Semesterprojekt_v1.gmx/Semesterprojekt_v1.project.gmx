@@ -156,6 +156,13 @@
   </backgrounds>
   <paths name="paths"/>
   <scripts name="scripts">
+    <script>scripts\scr_game_init.gml</script>
+    <scripts name="tutorial">
+      <script>scripts\scr_maze_init_tutorial.gml</script>
+      <script>scripts\scr_spawn_player_tutorial.gml</script>
+      <script>scripts\scr_tuto_1_manuskript.gml</script>
+      <script>scripts\scr_hide_for_tutorial.gml</script>
+    </scripts>
     <scripts name="maze generation">
       <script>scripts\scr_maze_init_seb.gml</script>
       <script>scripts\scr_player_spawn_seb.gml</script>
@@ -215,8 +222,10 @@
     <font>fonts\font_binary_NV</font>
     <font>fonts\font_text_NV</font>
     <font>fonts\fnt_fired</font>
+    <font>fonts\fnt_tutorial</font>
   </fonts>
   <objects name="objects">
+    <object>objects\obj_firedtext</object>
     <objects name="office">
       <object>objects\obj_maze_ver_seb</object>
       <object>objects\obj_maze_hor_seb</object>
@@ -270,18 +279,33 @@
       <object>objects\obj_lightcontrol</object>
       <object>objects\obj_menu_controller</object>
       <object>objects\obj_control</object>
+      <object>objects\obj_main</object>
     </objects>
     <objects name="vent">
       <object>objects\obj_vent_ani_start</object>
       <object>objects\obj_vent_ani_end</object>
       <object>objects\obj_vent_static</object>
     </objects>
-    <object>objects\obj_firedtext</object>
+    <objects name="tutorial">
+      <object>objects\obj_tuto_1_control</object>
+      <object>objects\obj_tuto_2_control</object>
+      <object>objects\obj_tuto_3_control</object>
+    </objects>
   </objects>
+  <timelines name="timelines">
+    <timeline>timelines\time_tuto_1</timeline>
+    <timeline>timelines\time_tuto_2</timeline>
+    <timeline>timelines\time_tuto_3</timeline>
+  </timelines>
   <rooms name="rooms">
-    <room>rooms\rm_MainMenu</room>
-    <room>rooms\rm_options</room>
-    <room>rooms\rm_customize</room>
+    <rooms name="menu">
+      <room>rooms\rm_MainMenu</room>
+      <room>rooms\rm_options</room>
+      <room>rooms\rm_customize</room>
+    </rooms>
+    <rooms name="tutorial">
+      <room>rooms\rm_tuto_1</room>
+    </rooms>
     <room>rooms\room1_jakob</room>
   </rooms>
   <help>

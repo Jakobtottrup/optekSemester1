@@ -29,6 +29,9 @@ global.player_return = false;
 global.sword_ani_id = 0;
 global.button_scale = 1;
 
+global.tutorial_state = 0;
+global.nightvision_mode = 0;
+
 //max number of goals
 maze_num_goals = 3;
 //percent extra paths
@@ -37,7 +40,6 @@ maze_extra_path_percent = 20;
 
 
 //start maze generation
-randomize(); //use new seed for every run
 scr_maze_generate_seb()
 
 
