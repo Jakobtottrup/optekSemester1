@@ -27,9 +27,14 @@
             <kind>1</kind>
             <string>
 if (global.nightvision_mode == 1) {
+    //draw nightvision
     draw_sprite(spr_nightvision, 0, (350-540), 0);
+} else {
+    //draw black filter to make the scene darker
+        //sprite missing
 }
 
+//draw office background
 draw_sprite(spr_security_monitor_border, 0, 0, 0); 
 
 </string>

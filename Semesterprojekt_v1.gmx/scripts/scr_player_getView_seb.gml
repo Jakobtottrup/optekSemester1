@@ -68,10 +68,6 @@ if (position_meeting(x, y, obj_maze_hor_seb) || position_meeting(x, y, obj_maze_
 //forward
 scr_player_move_function_up_seb();
 
-
-
-
-
 //check for goal
 if (position_meeting(x, y, obj_win)) {
     global.player_view_goal = true;
@@ -79,17 +75,22 @@ if (position_meeting(x, y, obj_win)) {
     global.player_view_goal = false;
 }
 
-
-
-
+//check for door in view
+if (position_meeting(x, y, obj_door_closed)) {
+    global.player_view_door = true;
+} else {
+    global.player_view_door = false;
+}
 
 //left
 scr_player_move_function_left_seb();  
 
 //check, +1
 if (position_meeting(x, y, obj_maze_hor_seb) || position_meeting(x, y, obj_maze_ver_seb)) {
-    player_view_count += 1;
-    player_move_left = true; //enable moving down
+    player_view_count += 1; //vent goes to the left
+    if (global.player_view_door == false) {
+        player_move_left = true; //enable moving down
+    }
 }
 
 //right, forward
@@ -98,8 +99,10 @@ scr_player_move_function_up_seb();
 
 //check, +2
 if (position_meeting(x, y, obj_maze_hor_seb) || position_meeting(x, y, obj_maze_ver_seb)) {
-    player_view_count += 2;
-    player_move_up = true; //enable moving up
+    player_view_count += 2; //vent goes forward
+    if (global.player_view_door == false) {
+        player_move_up = true; //enable moving up
+    }
 }
 
 //backwards, right
@@ -108,8 +111,10 @@ scr_player_move_function_right_seb();
 
 //check, +4
 if (position_meeting(x, y, obj_maze_hor_seb) || position_meeting(x, y, obj_maze_ver_seb)) {
-    player_view_count += 4;
-    player_move_right = true; //enable moving right
+    player_view_count += 4; //vent goes to the right
+    if (global.player_view_door == false) {
+        player_move_right = true; //enable moving right
+    }
 }
 
 //left, backwards
@@ -134,17 +139,45 @@ if (global.player_view_goal) {
 
 //Check if it is possible to move back from where you are
 
-//2x backwards
+//backwards
 scr_player_move_function_down_seb(); 
+
+//check for door
+if (position_meeting(x, y, obj_door_closed)) {
+    global.player_view_door_back = true;
+} else {
+    global.player_view_door_back = false;
+}
+
+//backwards
 scr_player_move_function_down_seb(); 
 
 //check, backtrack
 if (position_meeting(x, y, obj_maze_hor_seb) || position_meeting(x, y, obj_maze_ver_seb)) {
-    player_move_down = true; //enable moving down
+    if (global.player_view_door_back == false) {
+        player_move_down = true; //enable moving down
+    }
 }
 
 //2x forward
 scr_player_move_function_up_seb();
 scr_player_move_function_up_seb(); 
+
+
+
+//check if the door is shown when it shoudln't
+if (global.player_movement) {
+    if (global.player_view_door) {
+        if !instance_exists(obj_vent_door) {
+            instance_create(0, 0, obj_vent_door);
+        }
+    } else {
+        if instance_exists(obj_vent_door) {
+            instance_create(0, 0, obj_vent_door_remove);
+        }
+    }
+}
+
+
 
 
