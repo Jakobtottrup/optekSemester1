@@ -51,10 +51,10 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>size = 500;
+            <string>size = 900;
 draw_set_blend_mode(bm_subtract);
 surface_set_target(light);
-draw_ellipse_color(x-size/2-view_xview, y-size/2-view_yview, x+size/2-view_xview, y+size/2-view_yview, c_white, c_black, false);
+draw_ellipse_color(x-((size-100)-view_xview), y-(size-200)/2-view_yview, x+((size-100)-view_xview), y+(size-200)/2-view_yview, c_white, c_black, false);
 surface_reset_target();
 draw_set_blend_mode(bm_normal);
 
