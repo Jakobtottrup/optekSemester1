@@ -186,7 +186,7 @@
     </event>
   </entry>
   <entry>
-    <step>600</step>
+    <step>700</step>
     <event>
       <action>
         <libid>1</libid>
@@ -204,7 +204,7 @@
         <arguments>
           <argument>
             <kind>11</kind>
-            <room>rm_tuto_2</room>
+            <room>rm_MainMenu</room>
           </argument>
         </arguments>
       </action>

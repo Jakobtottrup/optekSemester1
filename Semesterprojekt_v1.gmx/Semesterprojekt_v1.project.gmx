@@ -22,6 +22,10 @@
     <sound>sound\snd_scream</sound>
     <sound>sound\snd_stamp</sound>
     <sound>sound\snd_slash</sound>
+    <sound>sound\snd_alarm</sound>
+    <sound>sound\snd_laser1</sound>
+    <sound>sound\snd_laser_constant</sound>
+    <sound>sound\snd_laser_reverse</sound>
   </sounds>
   <sprites name="sprites">
     <sprites name="Main Menu">
@@ -148,13 +152,20 @@
       <sprite>sprites\spr_maze_door</sprite>
       <sprite>sprites\spr_door</sprite>
     </sprites>
+    <sprites name="PDA">
+      <sprite>sprites\spr_PDA_Paper</sprite>
+      <sprite>sprites\spr_PDA_frame</sprite>
+      <sprite>sprites\spr_PDA_player</sprite>
+      <sprite>sprites\spr_PDA</sprite>
+      <sprite>sprites\spr_PDA_folder</sprite>
+    </sprites>
     <sprites name="tutorial">
       <sprite>sprites\spr_black_splitscreen</sprite>
-      <sprite>sprites\spr_black_screen</sprite>
     </sprites>
     <sprite>sprites\spr_thief_death</sprite>
     <sprite>sprites\spr_fired</sprite>
     <sprite>sprites\spr_slash</sprite>
+    <sprite>sprites\spr_arrow</sprite>
   </sprites>
   <backgrounds name="background">
     <backgrounds name="jade">
@@ -224,6 +235,11 @@
       <script>scripts\scr_player_getView_seb.gml</script>
       <script>scripts\scr_vent_static.gml</script>
     </scripts>
+    <scripts name="PDA">
+      <script>scripts\scr_PDA_spawn.gml</script>
+      <script>scripts\scr_PDA_paper_spawn.gml</script>
+      <script>scripts\scr_start_minigame.gml</script>
+    </scripts>
     <script>scripts\draw_binary_NV.gml</script>
     <script>scripts\scr_diode_volume.gml</script>
     <script>scripts\scr_mouse_hover.gml</script>
@@ -266,6 +282,7 @@
       <object>objects\obj_thief_win</object>
       <object>objects\obj_door_open</object>
       <object>objects\obj_door_closed</object>
+      <object>objects\obj_arrow</object>
     </objects>
     <objects name="temp screen">
       <object>objects\obj_screen</object>
@@ -309,6 +326,14 @@
       <object>objects\obj_tuto_1_control</object>
       <object>objects\obj_tuto_2_control</object>
       <object>objects\obj_tuto_3_control</object>
+    </objects>
+    <objects name="PDA">
+      <object>objects\obj_PDA_folder</object>
+      <object>objects\obj_PDA_controller</object>
+      <object>objects\obj_PDA_paper</object>
+      <object>objects\obj_PDA_frame</object>
+      <object>objects\obj_PDA_player</object>
+      <object>objects\obj_PDA</object>
     </objects>
   </objects>
   <timelines name="timelines">

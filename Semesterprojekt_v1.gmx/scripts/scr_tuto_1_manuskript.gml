@@ -36,3 +36,5 @@ if (tutorial_page == 3) {
         draw_healthbar(1100, 600, 1500, 650, global.tutorial_task[3], c_black, c_red, c_green, 0, false, false);
     draw_text(1300, 600, "Move backwards");
 }
+
+
