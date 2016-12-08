@@ -8,7 +8,7 @@ maze_height = global.customize_grid_y; //vertical paths     -- --
 cpu_width = 900;
 cpu_height = 700;
 
-cpu_x = 950;
+cpu_x = 850;
 cpu_y = 150;
 
 cpu_offset_x = 0;

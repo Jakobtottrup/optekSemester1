@@ -64,3 +64,12 @@ maze_data_ver[9]  = 0;
 maze_data_ver[10] = 2;
 maze_data_ver[11] = 2;
 
+//reset tutorial tasks
+global.tutorial_task[0] = 0; //move forward
+global.tutorial_task[1] = 0; //turn
+global.tutorial_task[2] = 0; //move back
+global.tutorial_task[3] = 0; //turn around
+
+global.tutorial_task[4] = 0;
+global.tutorial_task[5] = 0;
+
