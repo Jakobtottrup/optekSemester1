@@ -53,7 +53,6 @@
   <instances>
     <instance objName="obj_back" x="320" y="928" name="inst_398EBEDA" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_cursor" x="96" y="64" name="inst_1341B48F" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_PDA_controller" x="160" y="160" name="inst_058D18C8" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
   </instances>
   <tiles/>
   <PhysicsWorld>0</PhysicsWorld>

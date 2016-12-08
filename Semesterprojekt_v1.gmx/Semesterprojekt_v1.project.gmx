@@ -22,10 +22,6 @@
     <sound>sound\snd_scream</sound>
     <sound>sound\snd_stamp</sound>
     <sound>sound\snd_slash</sound>
-    <sound>sound\snd_alarm</sound>
-    <sound>sound\snd_laser1</sound>
-    <sound>sound\snd_laser_constant</sound>
-    <sound>sound\snd_laser_reverse</sound>
   </sounds>
   <sprites name="sprites">
     <sprites name="Main Menu">
@@ -150,19 +146,15 @@
       <sprite>sprites\spr_sword</sprite>
       <sprite>sprites\spr_sword_spin</sprite>
       <sprite>sprites\spr_maze_door</sprite>
+      <sprite>sprites\spr_door</sprite>
     </sprites>
-    <sprites name="PDA">
-      <sprite>sprites\spr_PDA_Paper</sprite>
-      <sprite>sprites\spr_PDA_frame</sprite>
-      <sprite>sprites\spr_PDA_player</sprite>
-      <sprite>sprites\spr_PDA</sprite>
-      <sprite>sprites\spr_PDA_folder</sprite>
+    <sprites name="tutorial">
+      <sprite>sprites\spr_black_splitscreen</sprite>
+      <sprite>sprites\spr_black_screen</sprite>
     </sprites>
     <sprite>sprites\spr_thief_death</sprite>
     <sprite>sprites\spr_fired</sprite>
     <sprite>sprites\spr_slash</sprite>
-    <sprite>sprites\spr_door</sprite>
-    <sprite>sprites\spr_arrow</sprite>
   </sprites>
   <backgrounds name="background">
     <backgrounds name="jade">
@@ -210,6 +202,18 @@
       </scripts>
       <script>scripts\scr_player_init_seb.gml</script>
     </scripts>
+    <scripts name="tutorial">
+      <scripts name="create">
+        <script>scripts\scr_maze_init_tutorial.gml</script>
+        <script>scripts\scr_spawn_player_tutorial.gml</script>
+        <script>scripts\scr_hide_for_tutorial.gml</script>
+      </scripts>
+      <scripts name="manuskripts">
+        <script>scripts\scr_tuto_1_manuskript.gml</script>
+        <script>scripts\scr_tuto_2_manuskript.gml</script>
+        <script>scripts\scr_tuto_3_manuskript.gml</script>
+      </scripts>
+    </scripts>
     <scripts name="menu">
       <script>scripts\scr_customize_var_set.gml</script>
       <script>scripts\scr_customize_draw.gml</script>
@@ -219,17 +223,6 @@
       <script>scripts\scr_vent_ani_start.gml</script>
       <script>scripts\scr_player_getView_seb.gml</script>
       <script>scripts\scr_vent_static.gml</script>
-    </scripts>
-    <scripts name="tutorial">
-      <script>scripts\scr_maze_init_tutorial.gml</script>
-      <script>scripts\scr_spawn_player_tutorial.gml</script>
-      <script>scripts\scr_tuto_1_manuskript.gml</script>
-      <script>scripts\scr_hide_for_tutorial.gml</script>
-    </scripts>
-    <scripts name="PDA">
-      <script>scripts\scr_PDA_spawn.gml</script>
-      <script>scripts\scr_PDA_paper_spawn.gml</script>
-      <script>scripts\scr_start_minigame.gml</script>
     </scripts>
     <script>scripts\draw_binary_NV.gml</script>
     <script>scripts\scr_diode_volume.gml</script>
@@ -273,7 +266,6 @@
       <object>objects\obj_thief_win</object>
       <object>objects\obj_door_open</object>
       <object>objects\obj_door_closed</object>
-      <object>objects\obj_arrow</object>
     </objects>
     <objects name="temp screen">
       <object>objects\obj_screen</object>
@@ -318,14 +310,6 @@
       <object>objects\obj_tuto_2_control</object>
       <object>objects\obj_tuto_3_control</object>
     </objects>
-    <objects name="PDA">
-      <object>objects\obj_PDA_folder</object>
-      <object>objects\obj_PDA_controller</object>
-      <object>objects\obj_PDA_paper</object>
-      <object>objects\obj_PDA_frame</object>
-      <object>objects\obj_PDA_player</object>
-      <object>objects\obj_PDA</object>
-    </objects>
   </objects>
   <timelines name="timelines">
     <timeline>timelines\time_tuto_1</timeline>
@@ -340,6 +324,8 @@
     </rooms>
     <rooms name="tutorial">
       <room>rooms\rm_tuto_1</room>
+      <room>rooms\rm_tuto_2</room>
+      <room>rooms\rm_tuto_3</room>
     </rooms>
     <room>rooms\room1_jakob</room>
   </rooms>
