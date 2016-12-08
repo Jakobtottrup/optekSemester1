@@ -22,6 +22,10 @@
     <sound>sound\snd_scream</sound>
     <sound>sound\snd_stamp</sound>
     <sound>sound\snd_slash</sound>
+    <sound>sound\snd_alarm</sound>
+    <sound>sound\snd_laser1</sound>
+    <sound>sound\snd_laser_constant</sound>
+    <sound>sound\snd_laser_reverse</sound>
   </sounds>
   <sprites name="sprites">
     <sprites name="Main Menu">
@@ -158,6 +162,7 @@
     <sprite>sprites\spr_fired</sprite>
     <sprite>sprites\spr_slash</sprite>
     <sprite>sprites\spr_door</sprite>
+    <sprite>sprites\spr_arrow</sprite>
   </sprites>
   <backgrounds name="background">
     <backgrounds name="jade">
@@ -268,6 +273,7 @@
       <object>objects\obj_thief_win</object>
       <object>objects\obj_door_open</object>
       <object>objects\obj_door_closed</object>
+      <object>objects\obj_arrow</object>
     </objects>
     <objects name="temp screen">
       <object>objects\obj_screen</object>
