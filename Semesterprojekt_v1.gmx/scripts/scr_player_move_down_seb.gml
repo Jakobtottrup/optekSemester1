@@ -1,4 +1,4 @@
-
+if (!instance_exists(obj_vent_ani_start) && !instance_exists(obj_vent_ani_end)) { 
 if (player_move_down) {
     //backward
     scr_player_move_function_down_seb(); 
@@ -14,4 +14,4 @@ if (player_move_down) {
     
     scr_player_moved_ani();
 }
-
+}
