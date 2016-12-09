@@ -225,6 +225,10 @@
         <script>scripts\scr_tuto_3_manuskript.gml</script>
       </scripts>
     </scripts>
+    <scripts name="intro">
+      <script>scripts\scr_intro_manuskript.gml</script>
+      <script>scripts\scr_intro_init.gml</script>
+    </scripts>
     <scripts name="menu">
       <script>scripts\scr_customize_var_set.gml</script>
       <script>scripts\scr_customize_draw.gml</script>
@@ -240,12 +244,14 @@
       <script>scripts\scr_PDA_paper_spawn.gml</script>
       <script>scripts\scr_start_minigame.gml</script>
     </scripts>
-    <script>scripts\draw_binary_NV.gml</script>
-    <script>scripts\scr_diode_volume.gml</script>
-    <script>scripts\scr_mouse_hover.gml</script>
-    <script>scripts\scr_destroy_diode.gml</script>
-    <script>scripts\scr_destroy_diode_vert.gml</script>
-    <script>scripts\scr_destroy_charge.gml</script>
+    <scripts name="Midlertidigt rod">
+      <script>scripts\draw_binary_NV.gml</script>
+      <script>scripts\scr_diode_volume.gml</script>
+      <script>scripts\scr_mouse_hover.gml</script>
+      <script>scripts\scr_destroy_diode.gml</script>
+      <script>scripts\scr_destroy_diode_vert.gml</script>
+      <script>scripts\scr_destroy_charge.gml</script>
+    </scripts>
   </scripts>
   <fonts name="fonts">
     <font>fonts\fnt_testfont</font>
@@ -254,6 +260,7 @@
     <font>fonts\font_text_NV</font>
     <font>fonts\fnt_fired</font>
     <font>fonts\fnt_tutorial</font>
+    <font>fonts\fnt_intro</font>
   </fonts>
   <objects name="objects">
     <object>objects\obj_firedtext</object>
@@ -287,6 +294,9 @@
     <objects name="temp screen">
       <object>objects\obj_screen</object>
       <object>objects\obj_vent1</object>
+    </objects>
+    <objects name="intro">
+      <object>objects\obj_intro_controller</object>
     </objects>
     <objects name="menu">
       <object>objects\obj_NewGame</object>
@@ -337,11 +347,15 @@
     </objects>
   </objects>
   <timelines name="timelines">
-    <timeline>timelines\time_tuto_1</timeline>
-    <timeline>timelines\time_tuto_2</timeline>
-    <timeline>timelines\time_tuto_3</timeline>
+    <timelines name="tutorial">
+      <timeline>timelines\time_tuto_1</timeline>
+      <timeline>timelines\time_tuto_2</timeline>
+      <timeline>timelines\time_tuto_3</timeline>
+    </timelines>
+    <timeline>timelines\time_intro</timeline>
   </timelines>
   <rooms name="rooms">
+    <room>rooms\rm_intro</room>
     <rooms name="menu">
       <room>rooms\rm_MainMenu</room>
       <room>rooms\rm_options</room>
