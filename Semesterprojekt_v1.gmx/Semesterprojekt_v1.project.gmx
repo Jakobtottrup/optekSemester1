@@ -230,8 +230,9 @@
       </scripts>
     </scripts>
     <scripts name="intro">
-      <script>scripts\scr_intro_manuskript.gml</script>
       <script>scripts\scr_intro_init.gml</script>
+      <script>scripts\scr_intro_manuskript.gml</script>
+      <script>scripts\scr_intro_textdraw.gml</script>
     </scripts>
     <scripts name="menu">
       <script>scripts\scr_customize_var_set.gml</script>

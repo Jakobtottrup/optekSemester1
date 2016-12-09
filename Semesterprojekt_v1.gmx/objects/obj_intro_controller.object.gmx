@@ -159,7 +159,7 @@
         <arguments>
           <argument>
             <kind>9</kind>
-            <script>scr_intro_manuskript</script>
+            <script>scr_intro_textdraw</script>
           </argument>
           <argument>
             <kind>0</kind>
