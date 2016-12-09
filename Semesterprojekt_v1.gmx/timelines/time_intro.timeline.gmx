@@ -302,7 +302,7 @@
     </event>
   </entry>
   <entry>
-    <step>1800</step>
+    <step>1750</step>
     <event>
       <action>
         <libid>1</libid>
@@ -331,7 +331,7 @@
     </event>
   </entry>
   <entry>
-    <step>1900</step>
+    <step>1751</step>
     <event>
       <action>
         <libid>1</libid>
