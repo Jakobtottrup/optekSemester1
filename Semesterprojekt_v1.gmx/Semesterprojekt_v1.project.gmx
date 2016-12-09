@@ -28,6 +28,8 @@
     <sound>sound\snd_laser_reverse</sound>
     <sound>sound\intro_mission_impossible_uncut</sound>
     <sound>sound\intro_mission_impossible_cut</sound>
+    <sound>sound\snd_hello</sound>
+    <sound>sound\snd_thief_death</sound>
   </sounds>
   <sprites name="sprites">
     <sprites name="Main Menu">
@@ -315,7 +317,7 @@
         <object>objects\obj_door_minus</object>
       </objects>
       <object>objects\obj_Customize_Controller</object>
-      <object>objects\obj_slashes</object>
+      <object>objects\obj_bulletholes</object>
       <object>objects\obj_cursor</object>
     </objects>
     <objects name="control">
