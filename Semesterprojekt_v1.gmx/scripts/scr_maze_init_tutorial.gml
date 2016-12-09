@@ -4,6 +4,8 @@
 maze_width = 4;  //horizontal paths  |  |  |
 maze_height = 4; //vertical paths     -- --
 
+global.count_moves = 0;
+
 //security screen size
 cpu_x = 1100;
 cpu_y = 250;
