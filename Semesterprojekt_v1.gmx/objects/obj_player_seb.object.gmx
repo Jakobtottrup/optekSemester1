@@ -2,7 +2,7 @@
 <object>
   <spriteName>spr_player_seb</spriteName>
   <solid>0</solid>
-  <visible>-1</visible>
+  <visible>0</visible>
   <depth>-60</depth>
   <persistent>-1</persistent>
   <parentName>&lt;undefined&gt;</parentName>

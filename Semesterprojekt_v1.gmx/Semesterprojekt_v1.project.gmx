@@ -26,6 +26,8 @@
     <sound>sound\snd_laser1</sound>
     <sound>sound\snd_laser_constant</sound>
     <sound>sound\snd_laser_reverse</sound>
+    <sound>sound\intro_mission_impossible_uncut</sound>
+    <sound>sound\intro_mission_impossible_cut</sound>
   </sounds>
   <sprites name="sprites">
     <sprites name="Main Menu">
@@ -295,9 +297,6 @@
       <object>objects\obj_screen</object>
       <object>objects\obj_vent1</object>
     </objects>
-    <objects name="intro">
-      <object>objects\obj_intro_controller</object>
-    </objects>
     <objects name="menu">
       <object>objects\obj_NewGame</object>
       <object>objects\obj_ExitGame</object>
@@ -336,6 +335,9 @@
       <object>objects\obj_tuto_1_control</object>
       <object>objects\obj_tuto_2_control</object>
       <object>objects\obj_tuto_3_control</object>
+    </objects>
+    <objects name="intro">
+      <object>objects\obj_intro_controller</object>
     </objects>
     <objects name="PDA">
       <object>objects\obj_PDA_folder</object>
