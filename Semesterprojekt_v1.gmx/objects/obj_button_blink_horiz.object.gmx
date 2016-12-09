@@ -111,7 +111,7 @@
         <arguments>
           <argument>
             <kind>6</kind>
-            <sound>snd_constant</sound>
+            <sound>snd_ventilation_test</sound>
           </argument>
         </arguments>
       </action>
