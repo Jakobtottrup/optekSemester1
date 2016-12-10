@@ -272,6 +272,7 @@
     <font>fonts\fnt_fired</font>
     <font>fonts\fnt_tutorial</font>
     <font>fonts\fnt_intro</font>
+    <font>fonts\fnt_intro_kinda</font>
   </fonts>
   <objects name="objects">
     <object>objects\obj_firedtext</object>

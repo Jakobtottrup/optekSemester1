@@ -209,6 +209,11 @@ if (intro_page == 20) {
 //*******************//
 
 for (i = 1; i < array_length_1d(intro_fade); i++) {
+    if (i == 19) {
+        draw_set_font(fnt_intro_kinda);
+    } else {
+        draw_set_font(fnt_intro);
+    }
     draw_set_alpha(intro_fade[i]);
     draw_text_transformed(intro_x[i], intro_y[i], intro_manus[i], intro_scale[i], intro_scale[i], 0);
 }
