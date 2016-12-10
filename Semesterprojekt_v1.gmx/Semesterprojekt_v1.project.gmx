@@ -163,6 +163,9 @@
       <sprite>sprites\spr_PDA</sprite>
       <sprite>sprites\spr_PDA_folder</sprite>
     </sprites>
+    <sprites name="intro">
+      <sprite>sprites\spr_intro_vent_1</sprite>
+    </sprites>
     <sprites name="tutorial">
       <sprite>sprites\spr_black_splitscreen</sprite>
     </sprites>
@@ -222,17 +225,20 @@
         <script>scripts\scr_maze_init_tutorial.gml</script>
         <script>scripts\scr_spawn_player_tutorial.gml</script>
         <script>scripts\scr_hide_for_tutorial.gml</script>
+        <script>scripts\scr_tutorial_spawn_goal.gml</script>
       </scripts>
       <scripts name="manuskripts">
         <script>scripts\scr_tuto_1_manuskript.gml</script>
         <script>scripts\scr_tuto_2_manuskript.gml</script>
         <script>scripts\scr_tuto_3_manuskript.gml</script>
       </scripts>
+      <script>scripts\scr_tuto_1_mission_control.gml</script>
     </scripts>
     <scripts name="intro">
       <script>scripts\scr_intro_init.gml</script>
       <script>scripts\scr_intro_manuskript.gml</script>
       <script>scripts\scr_intro_textdraw.gml</script>
+      <script>scripts\scr_intro_picdraw.gml</script>
     </scripts>
     <scripts name="menu">
       <script>scripts\scr_customize_var_set.gml</script>

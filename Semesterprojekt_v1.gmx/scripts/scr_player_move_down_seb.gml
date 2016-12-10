@@ -3,9 +3,12 @@ if (!instance_exists(obj_vent_ani_start) && !instance_exists(obj_vent_ani_end)) 
         //tutorial task move backwards
         if (global.tutorial_state == 2) {
             if (global.tutorial_task[3] < 100) {
-                global.tutorial_task[3] += 20;
+                //move backwards 2 times
+                global.tutorial_task[3] += 50;
             }
         }
+        
+        //** actual movement **//
         
         //backward
         scr_player_move_function_down_seb(); 
