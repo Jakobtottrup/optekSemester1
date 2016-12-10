@@ -25,7 +25,7 @@
         <arguments>
           <argument>
             <kind>6</kind>
-            <sound>intro_mission_impossible_cut</sound>
+            <sound>snd_menu</sound>
           </argument>
           <argument>
             <kind>3</kind>
