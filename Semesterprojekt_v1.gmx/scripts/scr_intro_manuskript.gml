@@ -116,4 +116,4 @@ intro_scale[19] = 1;
 intro_manus[20] = "< space to skip >";
     intro_y[20] = room_height-100;
     intro_x[20] = room_width/2;
-intro_scale[20] = 0.7;
+intro_scale[20] = 1;

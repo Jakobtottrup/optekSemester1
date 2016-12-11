@@ -1503,7 +1503,7 @@
     </event>
   </entry>
   <entry>
-    <step>1450</step>
+    <step>1490</step>
     <event>
       <action>
         <libid>1</libid>
@@ -1777,7 +1777,7 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>space to skip</string>
+            <string>empty</string>
           </argument>
         </arguments>
       </action>
@@ -1808,28 +1808,8 @@
     </event>
   </entry>
   <entry>
-    <step>2040</step>
+    <step>2100</step>
     <event>
-      <action>
-        <libid>1</libid>
-        <id>605</id>
-        <kind>0</kind>
-        <userelative>0</userelative>
-        <isquestion>0</isquestion>
-        <useapplyto>0</useapplyto>
-        <exetype>0</exetype>
-        <functionname></functionname>
-        <codestring></codestring>
-        <whoName>self</whoName>
-        <relative>0</relative>
-        <isnot>0</isnot>
-        <arguments>
-          <argument>
-            <kind>1</kind>
-            <string>empty</string>
-          </argument>
-        </arguments>
-      </action>
       <action>
         <libid>1</libid>
         <id>611</id>
@@ -1850,52 +1830,27 @@
           </argument>
           <argument>
             <kind>0</kind>
-            <string>0</string>
+            <string>20</string>
           </argument>
         </arguments>
       </action>
-    </event>
-  </entry>
-  <entry>
-    <step>2160</step>
-    <event>
       <action>
         <libid>1</libid>
-        <id>212</id>
+        <id>605</id>
         <kind>0</kind>
         <userelative>0</userelative>
         <isquestion>0</isquestion>
         <useapplyto>0</useapplyto>
-        <exetype>1</exetype>
-        <functionname>action_end_sound</functionname>
+        <exetype>0</exetype>
+        <functionname></functionname>
         <codestring></codestring>
         <whoName>self</whoName>
         <relative>0</relative>
         <isnot>0</isnot>
         <arguments>
           <argument>
-            <kind>6</kind>
-            <sound>intro_mission_impossible_cut</sound>
-          </argument>
-        </arguments>
-      </action>
-      <action>
-        <libid>1</libid>
-        <id>224</id>
-        <kind>0</kind>
-        <userelative>0</userelative>
-        <isquestion>0</isquestion>
-        <useapplyto>0</useapplyto>
-        <exetype>1</exetype>
-        <functionname>action_another_room</functionname>
-        <codestring></codestring>
-        <whoName>self</whoName>
-        <relative>0</relative>
-        <isnot>0</isnot>
-        <arguments>
-          <argument>
-            <kind>11</kind>
-            <room>rm_MainMenu</room>
+            <kind>1</kind>
+            <string>space to skip</string>
           </argument>
         </arguments>
       </action>

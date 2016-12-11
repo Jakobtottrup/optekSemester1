@@ -3,12 +3,9 @@ if (!instance_exists(obj_vent_ani_start) && !instance_exists(obj_vent_ani_end)) 
         //task move forward
         if (global.tutorial_state == 2) {
             if (global.tutorial_task[0] < 100) {
-                //move forward 4 times
-                global.tutorial_task[0] += 25;
+                global.tutorial_task[0] += 10;
             }
         }
-        
-        //** actual movement **//
         
         //forward
         scr_player_move_function_up_seb();

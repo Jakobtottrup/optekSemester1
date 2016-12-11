@@ -3,12 +3,9 @@ if (!instance_exists(obj_vent_ani_start) && !instance_exists(obj_vent_ani_end)) 
         //tutorial task take a turn
         if (global.tutorial_state == 2) {
             if (global.tutorial_task[1] < 100) {
-                //turn 5 times
-                global.tutorial_task[1] += 20;
+                global.tutorial_task[1] += 10;
             }
         }
-        
-        //** actual movement **//
         
         //forward
         scr_player_move_function_up_seb();
@@ -30,12 +27,9 @@ if (!instance_exists(obj_vent_ani_start) && !instance_exists(obj_vent_ani_end)) 
         //tutorial task turn around
         if (global.tutorial_state == 2) {
             if (global.tutorial_task[2] < 100) {
-                //turn around 2 times
-                global.tutorial_task[2] += 50;
+                global.tutorial_task[2] += 20;
             }
         }
-        
-        //** actual movement **//
         
         scr_player_moved_init();
         global.player_return = true;

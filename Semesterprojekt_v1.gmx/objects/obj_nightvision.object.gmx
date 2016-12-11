@@ -35,7 +35,7 @@ if (global.nightvision_mode == 1) {
 }
 
 //draw office background
-draw_sprite(spr_security_monitor_border, 0, 0, 0); 
+draw_sprite(spr_security_office, 0, 0, 0); 
 
 </string>
           </argument>
