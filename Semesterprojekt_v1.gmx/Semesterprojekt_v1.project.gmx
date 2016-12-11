@@ -10,6 +10,7 @@
     <sound>sound\Sound_Button_Menu</sound>
     <sound>sound\snd_btn_click</sound>
     <sound>sound\snd_mission_impossible</sound>
+    <sound>sound\snd_static_tvnoise</sound>
     <sound>sound\snd_nightvision_activate</sound>
     <sound>sound\snd_ventilation_test</sound>
     <sound>sound\snd_constant</sound>
@@ -168,6 +169,7 @@
       <sprite>sprites\spr_sword_spin</sprite>
       <sprite>sprites\spr_maze_door</sprite>
       <sprite>sprites\spr_door</sprite>
+      <sprite>sprites\spr_security_office</sprite>
     </sprites>
     <sprites name="PDA">
       <sprite>sprites\spr_PDA_Paper</sprite>
@@ -175,6 +177,7 @@
       <sprite>sprites\spr_PDA_player</sprite>
       <sprite>sprites\spr_PDA</sprite>
       <sprite>sprites\spr_PDA_folder</sprite>
+      <sprite>sprites\spr_PDA_tvnoise</sprite>
     </sprites>
     <sprites name="intro">
       <sprite>sprites\spr_intro_vent_1</sprite>
@@ -272,7 +275,7 @@
     <scripts name="PDA">
       <script>scripts\scr_PDA_spawn.gml</script>
       <script>scripts\scr_PDA_paper_spawn.gml</script>
-      <script>scripts\scr_start_minigame.gml</script>
+      <script>scripts\scr_end_minigame.gml</script>
     </scripts>
     <scripts name="Midlertidigt rod">
       <script>scripts\draw_binary_NV.gml</script>
