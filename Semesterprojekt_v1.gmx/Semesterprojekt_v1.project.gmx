@@ -33,14 +33,27 @@
   </sounds>
   <sprites name="sprites">
     <sprites name="Main Menu">
-      <sprite>sprites\spr_NewGame</sprite>
-      <sprite>sprites\spr_Options</sprite>
-      <sprite>sprites\spr_ExitGame</sprite>
-      <sprite>sprites\spr_Back</sprite>
-      <sprite>sprites\spr_Customize</sprite>
       <sprite>sprites\spr_Cursor</sprite>
       <sprite>sprites\spr_bulletholes</sprite>
-      <sprite>sprites\spr_Tutorial</sprite>
+      <sprites name="buttons">
+        <sprite>sprites\spr_Tutorial</sprite>
+        <sprite>sprites\spr_Customize</sprite>
+        <sprite>sprites\spr_Back</sprite>
+        <sprite>sprites\spr_ExitGame</sprite>
+        <sprite>sprites\spr_Options</sprite>
+        <sprite>sprites\spr_NewGame</sprite>
+      </sprites>
+      <sprites name="folders">
+        <sprite>sprites\spr_menu_folder_block</sprite>
+        <sprite>sprites\spr_menu_folder_cabinet</sprite>
+        <sprite>sprites\spr_menu_folder_credits</sprite>
+        <sprite>sprites\spr_menu_folder_customize</sprite>
+        <sprite>sprites\spr_menu_folder_options</sprite>
+        <sprite>sprites\spr_menu_folder_tutorial</sprite>
+        <sprite>sprites\spr_menu_folder_start</sprite>
+        <sprite>sprites\spr_menu_folder_drawer</sprite>
+        <sprite>sprites\spr_menu_folder_exit</sprite>
+      </sprites>
     </sprites>
     <sprites name="Customize Menu">
       <sprite>sprites\spr_Vertical_Plus</sprite>
@@ -243,6 +256,12 @@
     <scripts name="menu">
       <script>scripts\scr_customize_var_set.gml</script>
       <script>scripts\scr_customize_draw.gml</script>
+      <scripts name="folders">
+        <script>scripts\scr_menu_folder_init.gml</script>
+        <script>scripts\scr_menu_folder_control.gml</script>
+        <script>scripts\scr_menu_folder_draw.gml</script>
+        <script>scripts\scr_menu_folder_spawn.gml</script>
+      </scripts>
     </scripts>
     <scripts name="vent">
       <script>scripts\scr_vent_ani_end.gml</script>
@@ -308,13 +327,15 @@
       <object>objects\obj_vent1</object>
     </objects>
     <objects name="menu">
-      <object>objects\obj_NewGame</object>
-      <object>objects\obj_ExitGame</object>
-      <object>objects\obj_Options</object>
-      <object>objects\obj_back</object>
-      <object>objects\obj_customize</object>
-      <object>objects\obj_tutorial</object>
-      <objects name="Customize Buttons">
+      <objects name="buttons">
+        <object>objects\obj_tutorial</object>
+        <object>objects\obj_customize</object>
+        <object>objects\obj_back</object>
+        <object>objects\obj_Options</object>
+        <object>objects\obj_ExitGame</object>
+        <object>objects\obj_NewGame</object>
+      </objects>
+      <objects name="Customize">
         <object>objects\obj_vertical_plus</object>
         <object>objects\obj_vertical_minus</object>
         <object>objects\obj_horizontal_plus</object>
@@ -323,10 +344,21 @@
         <object>objects\obj_goal_minus</object>
         <object>objects\obj_door_plus</object>
         <object>objects\obj_door_minus</object>
+        <object>objects\obj_Customize_Controller</object>
       </objects>
-      <object>objects\obj_Customize_Controller</object>
-      <object>objects\obj_bulletholes</object>
-      <object>objects\obj_cursor</object>
+      <objects name="menu other">
+        <object>objects\obj_bulletholes</object>
+        <object>objects\obj_cursor</object>
+      </objects>
+      <objects name="folders">
+        <object>objects\obj_menu_folder_controller</object>
+        <object>objects\obj_menu_folder_credits</object>
+        <object>objects\obj_menu_folder_customize</object>
+        <object>objects\obj_menu_folder_options</object>
+        <object>objects\obj_menu_folder_tutorial</object>
+        <object>objects\obj_menu_folder_start</object>
+        <object>objects\obj_menu_folder_exit</object>
+      </objects>
     </objects>
     <objects name="control">
       <object>objects\obj_lightcontrol</object>
@@ -370,6 +402,7 @@
     <room>rooms\rm_intro</room>
     <rooms name="menu">
       <room>rooms\rm_MainMenu</room>
+      <room>rooms\rm_MenuCabinet</room>
       <room>rooms\rm_options</room>
       <room>rooms\rm_customize</room>
     </rooms>
