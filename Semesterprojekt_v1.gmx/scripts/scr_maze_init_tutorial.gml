@@ -73,9 +73,5 @@ global.tutorial_task[2] = 0; //move back
 global.tutorial_task[3] = 0; //turn around
 
 global.tutorial_task[4] = 0;
-global.tutorial_task[5] = 0; //page 1, mission state
+global.tutorial_task[5] = 0;
 
-global.tutorial_task[6] = 0; //slow move forward
-global.tutorial_task[7] = 0; //slow turn
-global.tutorial_task[8] = 0; //slow move back
-global.tutorial_task[9] = 0; //slow turn around

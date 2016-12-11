@@ -4,7 +4,7 @@
   <solid>0</solid>
   <visible>0</visible>
   <depth>-60</depth>
-  <persistent>0</persistent>
+  <persistent>-1</persistent>
   <parentName>&lt;undefined&gt;</parentName>
   <maskName>&lt;undefined&gt;</maskName>
   <events>
@@ -333,6 +333,34 @@
             <string>if (global.player_movement) {
     if ((global.tutorial_state == 0) || (global.tutorial_state == 2)) {
         scr_player_move_left_seb();
+    }
+}
+</string>
+          </argument>
+        </arguments>
+      </action>
+    </event>
+    <event eventtype="9" enumb="32">
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>if !instance_exists(obj_PDA_controller) {
+    if global.player_view_id &gt;= 0 &amp;&amp; global.player_view_id &lt;= 7 {
+        instance_create(500, 700, obj_PDA_controller);
+        global.player_movement = false;
     }
 }
 </string>
