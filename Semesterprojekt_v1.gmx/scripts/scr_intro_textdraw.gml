@@ -9,13 +9,6 @@ This is controlled by a timeline turning the "pages" of the manuskript
 */
 
 
-//DELETE THIS
-draw_set_alpha(1);
-if (intro_page == 0) {
-    draw_text(60, room_height-60, "Black");
-}
-//DELETE THE ABOVE
-
 
 
 
@@ -27,7 +20,7 @@ if (intro_page == 0) {
 //*************************//
 
 //fade out
-if (intro_page == 0 || intro_page == 20) {
+if (intro_page == 0) {
     for (i = 0; i < array_length_1d(intro_fade); i++) {
         if (intro_fade[i] > 0) {
             intro_fade[i] -= intro_fade_speed;
@@ -46,6 +39,9 @@ if (intro_page > 16) {
     if (intro_page > 18) {
         intro_scale[19] += intro_scale_speed/2;
         intro_y[19] += intro_scale_speed * 20;
+        
+        intro_scale[20] += intro_scale_speed/2;
+        intro_y[20] += intro_scale_speed * 10;
     }
 }
 
@@ -196,7 +192,11 @@ if (intro_page == 19) {
     }
 }
 
-
+if (intro_page == 20) {
+    if (intro_fade[20] < 1) {
+        intro_fade[20] += intro_fade_speed;
+    }
+}
 
 
 
@@ -209,6 +209,11 @@ if (intro_page == 19) {
 //*******************//
 
 for (i = 1; i < array_length_1d(intro_fade); i++) {
+    if (i == 19) {
+        draw_set_font(fnt_intro_kinda);
+    } else {
+        draw_set_font(fnt_intro);
+    }
     draw_set_alpha(intro_fade[i]);
     draw_text_transformed(intro_x[i], intro_y[i], intro_manus[i], intro_scale[i], intro_scale[i], 0);
 }
