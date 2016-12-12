@@ -30,7 +30,7 @@
     </event>
   </entry>
   <entry>
-    <step>60</step>
+    <step>10000</step>
     <event>
       <action>
         <libid>1</libid>

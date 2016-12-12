@@ -17,7 +17,7 @@ for (i = 0; i < 4; i++) {
 
 
 
-
+draw_text(40, 40, string(global.tutorial_state));
 
 
 
