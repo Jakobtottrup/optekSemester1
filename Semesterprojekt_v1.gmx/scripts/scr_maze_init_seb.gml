@@ -38,7 +38,7 @@ global.player_health = 100;
 //max number of goals
 maze_num_goals = 3;
 //max number of doors
-maze_num_doors = 4;
+maze_num_doors = 6;
 //percent extra paths
 maze_extra_path_percent = 20;
 
