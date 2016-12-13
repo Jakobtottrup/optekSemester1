@@ -193,6 +193,7 @@
     <sprite>sprites\spr_slash</sprite>
     <sprite>sprites\spr_arrow</sprite>
     <sprite>sprites\sprite108</sprite>
+    <sprite>sprites\spr_flashbang</sprite>
   </sprites>
   <backgrounds name="background">
     <backgrounds name="jade">
