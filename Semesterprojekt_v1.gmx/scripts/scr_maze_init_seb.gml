@@ -51,6 +51,8 @@ spawn_min_dist_goal = 30; //   '/.
 global.player_actual_view_x   = 0;
 global.player_actual_view_y   = 0;
 global.player_actual_view_dir = 0;
+global.shake_x = 0;
+global.shake_y = 0;
 //steps pr breath cycle
 player_breath_cycle_steps = 80;
 //fastest allowed breathing for exhausting
