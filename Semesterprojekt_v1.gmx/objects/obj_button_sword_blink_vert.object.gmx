@@ -172,13 +172,17 @@
       }
     
     
-    if !instance_exists(obj_sword_spin){
-        if lives=2{
-            instance_create(room_width-336, 100, obj_sword_spin);
+      if !instance_exists(obj_sword_spin){
+        if lives = 4{
+            instance_create(room_width-136, 60, obj_sword_spin);
+        } else if lives = 3{
+            instance_create(room_width-168, 60, obj_sword_spin);
+        } else if lives=2{
+            instance_create(room_width-200, 60, obj_sword_spin);
         } else if lives = 1{
-            instance_create(room_width-368, 100, obj_sword_spin);
+            instance_create(room_width-232, 60, obj_sword_spin);
         } else{
-            instance_create(room_width-400, 100, obj_sword_spin);
+            instance_create(room_width-264, 60, obj_sword_spin);
         }
       }
       }
