@@ -31,6 +31,7 @@
     <sound>sound\intro_mission_impossible_cut</sound>
     <sound>sound\snd_hello</sound>
     <sound>sound\snd_thief_death</sound>
+    <sound>sound\snd_turning_page</sound>
   </sounds>
   <sprites name="sprites">
     <sprites name="Main Menu">
@@ -200,7 +201,9 @@
       <background>background\bkg_jade_spritesheet</background>
       <background>background\bkg_jade_pattern</background>
     </backgrounds>
-    <background>background\bac_customize_menu_background</background>
+    <background>background\bkg_customize</background>
+    <background>background\bkg_options</background>
+    <background>background\bkg_credits</background>
   </backgrounds>
   <paths name="paths"/>
   <scripts name="scripts">
@@ -299,6 +302,7 @@
   <fonts name="fonts">
     <font>fonts\fnt_testfont</font>
     <font>fonts\font_customize</font>
+    <font>fonts\font_customize_text</font>
     <font>fonts\font_binary_NV</font>
     <font>fonts\font_text_NV</font>
     <font>fonts\fnt_fired</font>
@@ -416,10 +420,11 @@
   <rooms name="rooms">
     <room>rooms\rm_intro</room>
     <rooms name="menu">
-      <room>rooms\rm_MainMenu</room>
       <room>rooms\rm_MenuCabinet</room>
       <room>rooms\rm_options</room>
       <room>rooms\rm_customize</room>
+      <room>rooms\rm_credits</room>
+      <room>rooms\rm_MainMenu</room>
     </rooms>
     <rooms name="tutorial">
       <room>rooms\rm_tuto_1</room>
