@@ -49,7 +49,7 @@ temperature=39;
         <arguments>
           <argument>
             <kind>9</kind>
-            <script>draw_binary_NV</script>
+            <script>scr_draw_binary_NV</script>
           </argument>
           <argument>
             <kind>0</kind>

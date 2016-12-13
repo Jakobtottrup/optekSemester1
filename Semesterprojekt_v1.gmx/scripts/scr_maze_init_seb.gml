@@ -64,5 +64,3 @@ player_breath_count = 0;
 
 //start maze generation
 scr_maze_generate_seb()
-
-
