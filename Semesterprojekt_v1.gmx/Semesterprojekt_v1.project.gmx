@@ -213,6 +213,7 @@
       <script>scripts\scr_screen_buttons_place_seb.gml</script>
       <script>scripts\scr_maze_build_seb.gml</script>
       <scripts name="generate maze data">
+        <script>scripts\scr_maze_data_tempdraw.gml</script>
         <script>scripts\scr_maze_generate_init_seb.gml</script>
         <script>scripts\scr_maze_generate_seb.gml</script>
         <script>scripts\scr_maze_generate_convert_seb.gml</script>
@@ -220,6 +221,9 @@
         <script>scripts\scr_maze_generate_main.gml</script>
         <script>scripts\scr_maze_create_extra_paths.gml</script>
         <script>scripts\scr_maze_generate_protect_tight_paths.gml</script>
+        <script>scripts\scr_maze_generate_goal_distance.gml</script>
+        <script>scripts\scr_maze_generate_longest_distance.gml</script>
+        <script>scripts\scr_maze_generate_choose_spawn.gml</script>
       </scripts>
     </scripts>
     <scripts name="player movement">

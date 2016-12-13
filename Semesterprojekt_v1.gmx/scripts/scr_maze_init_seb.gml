@@ -14,7 +14,7 @@ cpu_y = 130;
 cpu_offset_x = 0;
 cpu_offset_y = 0;
 
-cpu_button_offset = 60;
+cpu_button_offset = 70;
 
 //view id
 global.player_view_id = 0;
@@ -42,7 +42,9 @@ maze_num_doors = 6;
 //percent extra paths
 maze_extra_path_percent = 20;
 
-
+//the top percent distances to choose from
+//when choosing the player spawn point
+spawn_min_dist_goal = 30; //   '/.
 
 //start maze generation
 scr_maze_generate_seb()
