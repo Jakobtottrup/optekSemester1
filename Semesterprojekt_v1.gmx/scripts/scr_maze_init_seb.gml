@@ -53,10 +53,21 @@ global.player_actual_view_y   = 0;
 global.player_actual_view_dir = 0;
 global.shake_x = 0;
 global.shake_y = 0;
+
+
+//**** breathing ****//
+
 //steps pr breath cycle
-player_breath_cycle_steps = 80;
-//fastest allowed breathing for exhausting
-player_breath_cycle_min   = 20;
+global.player_breath_cycle_steps = 60;
+//fastest allowed breathing for exhausting //fewest steps pr cycle
+player_breath_cycle_min = 20;
+//slowest allowed breathing //max steps pr cycle
+player_breath_cycle_max = 80;
+
+//steps shorter cycle each movement - cost of moving
+global.player_breath_move_cost = 15;
+//steps added to breath length each step - breath slower if exhausted
+player_breath_fitness = 0.08;
 //variable for x value in sin() and cos() curves
 player_breath_count = 0;
 
