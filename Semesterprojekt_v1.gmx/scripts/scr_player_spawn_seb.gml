@@ -1,3 +1,40 @@
+x = cpu_x + cpu_offset_x + (global.maze_steplength * player_spawnpoint_x);
+y = cpu_y + cpu_offset_y + (global.maze_steplength * player_spawnpoint_y);
+
+
+
+    if (player_spawndir) {
+        //horizontal
+        
+        with (instance_create(x, y, obj_player_seb)) {  //spawn player and give direction (with() )
+            pos_ran_dir = floor(random(2));
+            if (pos_ran_dir == 0) {
+                direction = 0;
+            } else {
+                direction = 180;
+            }
+        }
+    } else {
+        //vertical
+        with (instance_create(x, y, obj_player_seb)) {  //spawn player and give direction
+            pos_ran_dir = floor(random(2));
+            if (pos_ran_dir == 0) {
+                direction = 90;
+            } else {
+                direction = 270;
+            }
+        }
+    }
+
+
+
+
+
+
+
+
+
+/*
 //if random 1 or 0 = 1 -> spawn in horizontal grid - else -> spawn in vertical grid
 
 //choose random x 1-maze_width
@@ -68,5 +105,5 @@ while (pos_ran_seek && pos_ran_limit > 0) {
 if (pos_ran_limit <= 0) {
     show_message("No possible spawnpoint found");
 }
-
+*/
 
