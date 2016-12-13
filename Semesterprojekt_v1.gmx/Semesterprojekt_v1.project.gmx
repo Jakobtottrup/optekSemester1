@@ -293,7 +293,7 @@
       <script>scripts\scr_end_minigame.gml</script>
     </scripts>
     <scripts name="Midlertidigt rod">
-      <script>scripts\draw_binary_NV.gml</script>
+      <script>scripts\scr_draw_binary_NV.gml</script>
       <script>scripts\scr_diode_volume.gml</script>
       <script>scripts\scr_mouse_hover.gml</script>
       <script>scripts\scr_destroy_diode.gml</script>
