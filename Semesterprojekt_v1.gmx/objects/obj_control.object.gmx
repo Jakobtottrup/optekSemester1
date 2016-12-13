@@ -477,11 +477,11 @@
         <arguments>
           <argument>
             <kind>0</kind>
-            <string>room_width-400</string>
+            <string>room_width-250</string>
           </argument>
           <argument>
             <kind>0</kind>
-            <string>100</string>
+            <string>60</string>
           </argument>
           <argument>
             <kind>5</kind>
