@@ -26,8 +26,6 @@ if global.count_moves == 10{
     global.count_moves = 0;
 }
 
-//get exhausted
-global.player_breath_cycle_steps -= global.player_breath_move_cost;
 
 
 

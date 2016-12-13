@@ -58,6 +58,7 @@
     <instance objName="obj_back" x="270" y="970" name="inst_06825705" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_nightvision" x="1890" y="40" name="inst_F71D1A64" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_main" x="1890" y="20" name="inst_5FDC93D9" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_office_background" x="1900" y="70" name="inst_AE18839B" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
   </instances>
   <tiles/>
   <PhysicsWorld>0</PhysicsWorld>

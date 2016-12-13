@@ -91,7 +91,7 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>if (global.custom_num_door &gt; 0) {
+            <string>if (global.custom_num_door &gt; 1) {
     global.custom_num_door -= 1;
 }
 </string>

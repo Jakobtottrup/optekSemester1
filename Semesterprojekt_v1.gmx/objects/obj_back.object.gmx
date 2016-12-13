@@ -67,7 +67,7 @@
         <arguments>
           <argument>
             <kind>11</kind>
-            <room>rm_MenuCabinet</room>
+            <room>rm_MainMenu</room>
           </argument>
         </arguments>
       </action>

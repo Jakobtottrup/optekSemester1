@@ -14,8 +14,8 @@ if(distance_to_object(obj_player_seb) > global.maze_steplength*4){
     if !audio_is_playing(snd_ventilation_test){
         audio_play_sound(snd_ventilation_test, 1, false);
     }
-    global.shake_x = random_range(-10, 10);
-    global.shake_y = random_range(-10, 10);
+    view_xview = random_range(-10, 10);
+    view_yview = random_range(-10, 10);
 
 } else if (distance_to_object(obj_player_seb)< global.maze_steplength){
     vol = 1;
@@ -23,8 +23,8 @@ if(distance_to_object(obj_player_seb) > global.maze_steplength*4){
     if !audio_is_playing(snd_ventilation_test){
         audio_play_sound(snd_ventilation_test, 1, false);
     }
-    global.shake_x = random_range(-50, 50);
-    global.shake_y = random_range(-50, 50);
+    view_xview = random_range(-50, 50);
+    view_yview = random_range(-50, 50);
 
 }
 

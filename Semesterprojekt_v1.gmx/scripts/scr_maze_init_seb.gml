@@ -36,9 +36,9 @@ global.nightvision_mode = 0;
 global.player_health = 100;
 
 //max number of goals
-maze_num_goals = global.custom_num_goal;
+maze_num_goals = 3;
 //max number of doors
-maze_num_doors = global.custom_num_door;
+maze_num_doors = 6;
 //percent extra paths
 maze_extra_path_percent = 20;
 
@@ -51,23 +51,10 @@ spawn_min_dist_goal = 30; //   '/.
 global.player_actual_view_x   = 0;
 global.player_actual_view_y   = 0;
 global.player_actual_view_dir = 0;
-global.shake_x = 0;
-global.shake_y = 0;
-
-
-//**** breathing ****//
-
 //steps pr breath cycle
-global.player_breath_cycle_steps = 60;
-//fastest allowed breathing for exhausting //fewest steps pr cycle
-player_breath_cycle_min = 20;
-//slowest allowed breathing //max steps pr cycle
-player_breath_cycle_max = 80;
-
-//steps shorter cycle each movement - cost of moving
-global.player_breath_move_cost = 15;
-//steps added to breath length each step - breath slower if exhausted
-player_breath_fitness = 0.08;
+player_breath_cycle_steps = 80;
+//fastest allowed breathing for exhausting
+player_breath_cycle_min   = 20;
 //variable for x value in sin() and cos() curves
 player_breath_count = 0;
 
@@ -75,3 +62,5 @@ player_breath_count = 0;
 
 //start maze generation
 scr_maze_generate_seb()
+
+

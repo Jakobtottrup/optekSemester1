@@ -31,7 +31,6 @@
     <sound>sound\intro_mission_impossible_cut</sound>
     <sound>sound\snd_hello</sound>
     <sound>sound\snd_thief_death</sound>
-    <sound>sound\snd_turning_page</sound>
   </sounds>
   <sprites name="sprites">
     <sprites name="Main Menu">
@@ -109,8 +108,8 @@
     <sprites name="vent animations">
       <sprites name="vent 00">
         <sprite>sprites\spr_vent_00_entry</sprite>
-        <sprite>sprites\spr_vent_00_return_right</sprite>
         <sprite>sprites\spr_vent_00_return_left</sprite>
+        <sprite>sprites\spr_vent_00_return_right</sprite>
       </sprites>
       <sprites name="vent 01">
         <sprite>sprites\spr_vent_01_return</sprite>
@@ -130,8 +129,8 @@
         <sprite>sprites\spr_vent_03_exit_straigth</sprite>
       </sprites>
       <sprites name="vent 04">
-        <sprite>sprites\spr_vent_04_entry</sprite>
         <sprite>sprites\spr_vent_04_exit_right</sprite>
+        <sprite>sprites\spr_vent_04_entry</sprite>
         <sprite>sprites\spr_vent_04_return</sprite>
       </sprites>
       <sprites name="vent 05">
@@ -142,9 +141,9 @@
       </sprites>
       <sprites name="vent 06">
         <sprite>sprites\spr_vent_06_entry</sprite>
-        <sprite>sprites\spr_vent_06_exit_right</sprite>
-        <sprite>sprites\spr_vent_06_exit_straigth</sprite>
         <sprite>sprites\spr_vent_06_return</sprite>
+        <sprite>sprites\spr_vent_06_exit_straigth</sprite>
+        <sprite>sprites\spr_vent_06_exit_right</sprite>
       </sprites>
       <sprites name="vent 07">
         <sprite>sprites\spr_vent_07_entry</sprite>
@@ -155,8 +154,10 @@
       </sprites>
       <sprites name="vent 08">
         <sprite>sprites\spr_vent_08_entry</sprite>
+        <sprite>sprites\spr_vent_08_return</sprite>
         <sprite>sprites\spr_vent_08_exit</sprite>
       </sprites>
+      <sprite>sprites\spr_bulletanimation</sprite>
     </sprites>
     <sprites name="main">
       <sprite>sprites\spr_vent1</sprite>
@@ -201,9 +202,7 @@
       <background>background\bkg_jade_spritesheet</background>
       <background>background\bkg_jade_pattern</background>
     </backgrounds>
-    <background>background\bkg_customize</background>
-    <background>background\bkg_options</background>
-    <background>background\bkg_credits</background>
+    <background>background\bac_customize_menu_background</background>
   </backgrounds>
   <paths name="paths"/>
   <scripts name="scripts">
@@ -293,7 +292,7 @@
       <script>scripts\scr_end_minigame.gml</script>
     </scripts>
     <scripts name="Midlertidigt rod">
-      <script>scripts\scr_draw_binary_NV.gml</script>
+      <script>scripts\draw_binary_NV.gml</script>
       <script>scripts\scr_diode_volume.gml</script>
       <script>scripts\scr_mouse_hover.gml</script>
       <script>scripts\scr_destroy_diode.gml</script>
@@ -304,7 +303,6 @@
   <fonts name="fonts">
     <font>fonts\fnt_testfont</font>
     <font>fonts\font_customize</font>
-    <font>fonts\font_customize_text</font>
     <font>fonts\font_binary_NV</font>
     <font>fonts\font_text_NV</font>
     <font>fonts\fnt_fired</font>
@@ -316,6 +314,7 @@
     <object>objects\obj_firedtext</object>
     <objects name="office">
       <object>objects\obj_maze_ver_seb</object>
+      <object>objects\obj__theif_bulletholes</object>
       <object>objects\obj_maze_hor_seb</object>
       <object>objects\obj_player_seb</object>
       <object>objects\obj_nightvision</object>
@@ -334,6 +333,7 @@
       </objects>
       <object>objects\obj_sword_spin</object>
       <object>objects\obj_NV_code_creator</object>
+      <object>objects\obj_office_background</object>
       <object>objects\obj_win</object>
       <object>objects\obj_thief_death</object>
       <object>objects\obj_monitor_bluescreen</object>
@@ -422,11 +422,10 @@
   <rooms name="rooms">
     <room>rooms\rm_intro</room>
     <rooms name="menu">
+      <room>rooms\rm_MainMenu</room>
       <room>rooms\rm_MenuCabinet</room>
       <room>rooms\rm_options</room>
       <room>rooms\rm_customize</room>
-      <room>rooms\rm_credits</room>
-      <room>rooms\rm_MainMenu</room>
     </rooms>
     <rooms name="tutorial">
       <room>rooms\rm_tuto_1</room>
