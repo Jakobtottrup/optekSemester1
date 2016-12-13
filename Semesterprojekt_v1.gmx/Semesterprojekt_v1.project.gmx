@@ -248,6 +248,8 @@
         <script>scripts\scr_player_moved_ani.gml</script>
       </scripts>
       <script>scripts\scr_player_init_seb.gml</script>
+      <script>scripts\scr_player_breathing.gml</script>
+      <script>scripts\scr_vent_position_details.gml</script>
     </scripts>
     <scripts name="tutorial">
       <scripts name="create">
