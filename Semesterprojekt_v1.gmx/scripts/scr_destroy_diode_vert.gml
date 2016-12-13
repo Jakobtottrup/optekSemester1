@@ -4,6 +4,8 @@ if (instance_exists(obj_button_blink_vert)) //is the instance  here?
     if obj_button_blink_vert.y  <= 150
     {
       instance_destroy();
+      view_xview = 0;
+      view_yview = 0;
     }
 }
 
