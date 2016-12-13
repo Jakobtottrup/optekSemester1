@@ -1,14 +1,14 @@
-image_xscale = 1;
-image_yscale = 1;
+image_xscale = 4;
+image_yscale = 4;
 
 
 //animation moving forward or backwards
 if (global.player_last_dir == 0) {
     //backward speed
-    image_speed = -0.4;
+    image_speed = -0.2;
 } else {
     //forward speed
-    image_speed = 0.4;
+    image_speed = 0.2;
 }
 
 

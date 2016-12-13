@@ -3,11 +3,35 @@
   <spriteName>&lt;undefined&gt;</spriteName>
   <solid>0</solid>
   <visible>-1</visible>
-  <depth>3</depth>
+  <depth>1</depth>
   <persistent>0</persistent>
   <parentName>&lt;undefined&gt;</parentName>
   <maskName>&lt;undefined&gt;</maskName>
   <events>
+    <event eventtype="0" enumb="0">
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>//Sets the starting temperature of nightvision//
+temperature=38;
+</string>
+          </argument>
+        </arguments>
+      </action>
+    </event>
     <event eventtype="8" enumb="0">
       <action>
         <libid>1</libid>
@@ -27,9 +51,14 @@
             <kind>1</kind>
             <string>///DRAW NIGHTVISION
 if (global.nightvision_mode == 1) {
+    scr_draw_binary_NV();
     draw_sprite(spr_nightvision, 0, (350-540), 0);
     if (global.player_view_door == true &amp;&amp; !instance_exists(obj_flashbang)) {
         instance_create(0, 0, obj_flashbang);
+        /*draw_set_colour(c_white)
+        draw_set_alpha(1) //sets alpha blend/opacity
+        draw_rectangle(0, 0, 800, room_height, false)
+        draw_set_alpha(1) //resets opacity*/
 }
 
 } else {
