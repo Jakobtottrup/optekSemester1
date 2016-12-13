@@ -5,7 +5,8 @@
 //global.player_actual_view_x = random(20);
 //global.player_actual_view_y = random(20);
 
-breath_height_y = 24;
+breath_height = 24;
+breath_width = 10;
 breath_tilt = 0.4;
 
 //radians = degrees * pi / 180
@@ -20,7 +21,10 @@ f(t) = height/2 * sin( ((2*pi) / cycle_length) * t )
 */
 
 //y - koordinat
-global.player_actual_view_y = (breath_height_y / 2) * sin(((2 * pi) / player_breath_cycle_steps) * player_breath_count);
+global.player_actual_view_y = (breath_height / 2) * sin(((2 * pi) / player_breath_cycle_steps) * player_breath_count);
+
+//x - koordinat
+global.player_actual_view_x = -((breath_width / 2) * sin(((2 * pi) / player_breath_cycle_steps) * player_breath_count));
 
 //differentieringen af en sinuskurve bliver en cosinuskurve med de samme variabler.
 //hvis kameraret skal hælde i den ene retning ved stigning, og modsat ved fald
