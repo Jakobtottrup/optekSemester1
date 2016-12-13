@@ -37,7 +37,7 @@ for (i = 0; i < maze_num_doors; i++) {
                     }
                     
                     //if there is a path above
-                    if (position_meeting(x, y - global.maze_steplength, obj_maze_hor_seb)) {
+                    if (position_meeting(x, y - global.maze_steplength, obj_maze_ver_seb)) {
                         //and a door above
                         if position_meeting(x, y - (2 * global.maze_steplength), obj_door_open) {
                             //pick another spot
@@ -46,7 +46,7 @@ for (i = 0; i < maze_num_doors; i++) {
                     }
                     
                     //if there is a path below
-                    if (position_meeting(x, y + global.maze_steplength, obj_maze_hor_seb)) {
+                    if (position_meeting(x, y + global.maze_steplength, obj_maze_ver_seb)) {
                         //and a door below
                         if position_meeting(x, y + (2 * global.maze_steplength), obj_door_open) {
                             //pick another spot
