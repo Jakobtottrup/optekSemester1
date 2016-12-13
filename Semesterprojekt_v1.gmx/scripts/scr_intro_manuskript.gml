@@ -2,12 +2,12 @@
  //**** Manuskript ****//
 //********************//
 
-intro_manus[1]  = "Semesterprojekt";
+intro_manus[1]  = "Lærings- og Oplevelsesteknologi";
     intro_y[1]  = 220;
     intro_x[1]  = room_width/2;
 intro_scale[1]  = 1;
     
-intro_manus[2]  = "2016";
+intro_manus[2]  = "1. Semesterprojekt 2016";
     intro_y[2]  = 320;
     intro_x[2]  = room_width/2;
 intro_scale[2]  = 1;
@@ -16,17 +16,17 @@ intro_scale[2]  = 1;
 //****
 
 
-intro_manus[3]  = "Asymetrisk";
+intro_manus[3]  = "Asymmetrisk Multiplayer";
     intro_y[3]  = 220;
     intro_x[3]  = room_width/2;
 intro_scale[3]  = 1;
 
-intro_manus[4]  = "multiplayer";
+intro_manus[4]  = "Hotseat Versus Game";
     intro_y[4]  = 300;
     intro_x[4]  = room_width/2;
 intro_scale[4]  = 1;
 
-intro_manus[5]  = "Digital prototype";
+intro_manus[5]  = "Digital Prototype";
     intro_y[5]  = 690;
     intro_x[5]  = room_width/2;
 intro_scale[5]  = 1;

@@ -169,7 +169,6 @@
       <sprite>sprites\spr_sword_spin</sprite>
       <sprite>sprites\spr_maze_door</sprite>
       <sprite>sprites\spr_door</sprite>
-      <sprite>sprites\spr_security_office</sprite>
     </sprites>
     <sprites name="PDA">
       <sprite>sprites\spr_PDA_Paper</sprite>
@@ -177,7 +176,6 @@
       <sprite>sprites\spr_PDA_player</sprite>
       <sprite>sprites\spr_PDA</sprite>
       <sprite>sprites\spr_PDA_folder</sprite>
-      <sprite>sprites\spr_PDA_tvnoise</sprite>
     </sprites>
     <sprites name="intro">
       <sprite>sprites\spr_intro_vent_1</sprite>
@@ -185,10 +183,16 @@
     <sprites name="tutorial">
       <sprite>sprites\spr_black_splitscreen</sprite>
     </sprites>
+    <sprites name="office">
+      <sprite>sprites\spr_security_office</sprite>
+      <sprite>sprites\spr_monitor_bluescreen</sprite>
+      <sprite>sprites\spr_monitor_noise</sprite>
+    </sprites>
     <sprite>sprites\spr_thief_death</sprite>
     <sprite>sprites\spr_fired</sprite>
     <sprite>sprites\spr_slash</sprite>
     <sprite>sprites\spr_arrow</sprite>
+    <sprite>sprites\sprite108</sprite>
   </sprites>
   <backgrounds name="background">
     <backgrounds name="jade">
@@ -320,7 +324,9 @@
       <object>objects\obj_NV_code_creator</object>
       <object>objects\obj_win</object>
       <object>objects\obj_thief_death</object>
+      <object>objects\obj_monitor_bluescreen</object>
       <object>objects\obj_thief_win</object>
+      <object>objects\obj_flashbang</object>
       <object>objects\obj_door_open</object>
       <object>objects\obj_door_closed</object>
       <object>objects\obj_arrow</object>

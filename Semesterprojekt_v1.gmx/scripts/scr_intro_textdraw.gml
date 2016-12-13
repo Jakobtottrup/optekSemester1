@@ -210,7 +210,7 @@ if (intro_page == 20) {
 
 for (i = 1; i < array_length_1d(intro_fade); i++) {
     if (i == 19) {
-        draw_set_font(fnt_intro_kinda);
+        draw_set_font(fnt_intro);
     } else {
         draw_set_font(fnt_intro);
     }
