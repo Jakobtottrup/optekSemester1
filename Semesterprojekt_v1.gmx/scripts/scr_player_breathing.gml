@@ -1,0 +1,42 @@
+
+//the player is breathing using a sine curve
+//a full period is 2*pi
+
+//global.player_actual_view_x = random(20);
+//global.player_actual_view_y = random(20);
+
+breath_height_y = 24;
+breath_tilt = 0.4;
+
+//radians = degrees * pi / 180
+
+/*
+sines curve
+half height * sin( half length )
+
+length = 2 pi
+
+f(t) = height/2 * sin( ((2*pi) / cycle_length) * t )
+*/
+
+//y - koordinat
+global.player_actual_view_y = (breath_height_y / 2) * sin(((2 * pi) / player_breath_cycle_steps) * player_breath_count);
+
+//differentieringen af en sinuskurve bliver en cosinuskurve med de samme variabler.
+//hvis kameraret skal hælde i den ene retning ved stigning, og modsat ved fald
+
+//retning
+global.player_actual_view_dir = breath_tilt * cos(((2 * pi) / player_breath_cycle_steps) * player_breath_count);
+
+
+
+//change count, as in changing the x-value for the function
+player_breath_count ++;
+if (player_breath_count > player_breath_cycle_steps) {
+    player_breath_count = 0;
+}
+
+
+
+
+

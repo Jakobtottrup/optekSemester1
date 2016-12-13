@@ -46,6 +46,20 @@ maze_extra_path_percent = 20;
 //when choosing the player spawn point
 spawn_min_dist_goal = 30; //   '/.
 
+
+//this view adds an extra touch such as breathing and screenshake
+global.player_actual_view_x   = 0;
+global.player_actual_view_y   = 0;
+global.player_actual_view_dir = 0;
+//steps pr breath cycle
+player_breath_cycle_steps = 80;
+//fastest allowed breathing for exhausting
+player_breath_cycle_min   = 20;
+//variable for x value in sin() and cos() curves
+player_breath_count = 0;
+
+
+
 //start maze generation
 scr_maze_generate_seb()
 
