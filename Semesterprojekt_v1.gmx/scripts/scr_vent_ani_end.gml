@@ -1,13 +1,13 @@
 
-image_xscale = 4;
-image_yscale = 4;
+image_xscale = 2;
+image_yscale = 2;
 
 if (global.player_last_dir == 0) {
     //backward speed
-    image_speed = -0.2;
+    image_speed = -0.4;
 } else {
     //forward speed
-    image_speed = 0.2;
+    image_speed = 0.4;
 }
 
 if (global.player_last_dir == 0) {
