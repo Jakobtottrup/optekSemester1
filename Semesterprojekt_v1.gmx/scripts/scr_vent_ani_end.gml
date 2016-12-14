@@ -1,6 +1,6 @@
 
-image_xscale = 1;
-image_yscale = 1;
+image_xscale = 2;
+image_yscale = 2;
 
 if (global.player_last_dir == 0) {
     //backward speed
