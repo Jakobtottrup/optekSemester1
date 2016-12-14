@@ -5,13 +5,13 @@ draw_set_colour(c_white)
 
 for(i=0; i<15; i++;){
     if(floor(random(2)) == 0){
-        draw_text(450+(i*10),250,string(floor(random_range(0,2))));
+        draw_text(450+(i*10),320,string(floor(random_range(0,2))));
     }
     if(floor(random(2)) == 0){
-        draw_text(450+(i*10),250+15,string(floor(random_range(0,2))));
+        draw_text(450+(i*10),320+15,string(floor(random_range(0,2))));
     }
     if(floor(random(2)) == 0){
-        draw_text(450+(i*10),250+30,string(floor(random_range(0,2))));
+        draw_text(450+(i*10),320+30,string(floor(random_range(0,2))));
     }
 }
 

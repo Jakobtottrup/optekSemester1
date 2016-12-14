@@ -309,6 +309,7 @@
       <script>scripts\scr_end_minigame.gml</script>
     </scripts>
     <scripts name="Midlertidigt rod">
+      <script>scripts\scr_NV_graphic.gml</script>
       <script>scripts\scr_draw_binary_NV.gml</script>
       <script>scripts\scr_mouse_hover.gml</script>
     </scripts>
@@ -357,7 +358,6 @@
         <object>objects\obj_button_charge</object>
       </objects>
       <object>objects\obj_sword_spin</object>
-      <object>objects\obj_NV_code_creator</object>
       <object>objects\obj_win</object>
       <object>objects\obj_thief_death</object>
       <object>objects\obj_monitor_bluescreen</object>

@@ -27,6 +27,7 @@
             <kind>1</kind>
             <string>//Sets the starting temperature of nightvision//
 temperature=38;
+offset_x = round(random_range(-195, 195));
 </string>
           </argument>
         </arguments>
@@ -51,8 +52,9 @@ temperature=38;
             <kind>1</kind>
             <string>///DRAW NIGHTVISION
 if (global.nightvision_mode == 1) {
-    scr_draw_binary_NV();
     draw_sprite(spr_nightvision, 0, (350-540), 0);
+    scr_draw_binary_NV();
+    scr_NV_graphic();
     if (global.player_view_door == true &amp;&amp; !instance_exists(obj_flashbang)) {
         instance_create(0, 0, obj_flashbang);
 }
