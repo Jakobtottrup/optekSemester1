@@ -328,6 +328,7 @@
     <objects name="office">
       <object>objects\obj_maze_ver_seb</object>
       <object>objects\obj_maze_hor_seb</object>
+      <object>objects\obj_office_background</object>
       <object>objects\obj_player_seb</object>
       <object>objects\obj_nightvision</object>
       <objects name="buttons">
