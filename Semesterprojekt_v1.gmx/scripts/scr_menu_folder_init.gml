@@ -29,6 +29,6 @@ for (i = 0; i < 6; i++) {
 global.folder_x[5] -= 20;
 global.folder_y[5] += 40;
 
-
-
+//Starts the music in a loop
+audio_play_sound(snd_game_music,1,true);
 

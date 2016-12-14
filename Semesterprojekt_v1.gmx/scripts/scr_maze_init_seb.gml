@@ -33,7 +33,9 @@ global.button_scale = 1;
 global.tutorial_state = 0;
 global.nightvision_mode = 0;
 
-global.player_health = 100;
+//laser doors
+global.laser_door_life_span = 450;
+global.laser_door_amount = 0;
 
 //max number of goals
 maze_num_goals = global.custom_num_goal;
