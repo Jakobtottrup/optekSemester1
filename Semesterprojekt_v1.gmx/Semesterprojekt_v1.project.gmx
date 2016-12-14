@@ -302,6 +302,7 @@
       <script>scripts\scr_player_getView_seb.gml</script>
       <script>scripts\scr_vent_static.gml</script>
       <script>scripts\scr_vent_draw_arrows.gml</script>
+      <script>scripts\scr_create_flash.gml</script>
     </scripts>
     <scripts name="PDA">
       <script>scripts\scr_PDA_spawn.gml</script>
