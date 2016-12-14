@@ -189,12 +189,22 @@
       <sprite>sprites\spr_monitor_bluescreen</sprite>
       <sprite>sprites\spr_monitor_noise</sprite>
     </sprites>
-    <sprite>sprites\spr_thief_death</sprite>
-    <sprite>sprites\spr_fired</sprite>
-    <sprite>sprites\spr_slash</sprite>
-    <sprite>sprites\spr_arrow</sprite>
-    <sprite>sprites\sprite108</sprite>
-    <sprite>sprites\spr_flashbang</sprite>
+    <sprites name="vent direction arrows">
+      <sprite>sprites\spr_vent_arrow_up</sprite>
+      <sprite>sprites\spr_vent_arrow_down</sprite>
+      <sprite>sprites\spr_vent_arrow_left</sprite>
+      <sprite>sprites\spr_vent_arrow_right</sprite>
+      <sprite>sprites\spr_vent_arrow_return_left</sprite>
+      <sprite>sprites\spr_vent_arrow_return_right</sprite>
+    </sprites>
+    <sprites name="midlertidigt rod">
+      <sprite>sprites\spr_flashbang</sprite>
+      <sprite>sprites\sprite108</sprite>
+      <sprite>sprites\spr_arrow</sprite>
+      <sprite>sprites\spr_slash</sprite>
+      <sprite>sprites\spr_fired</sprite>
+      <sprite>sprites\spr_thief_death</sprite>
+    </sprites>
   </sprites>
   <backgrounds name="background">
     <backgrounds name="jade">
@@ -286,6 +296,7 @@
       <script>scripts\scr_vent_ani_start.gml</script>
       <script>scripts\scr_player_getView_seb.gml</script>
       <script>scripts\scr_vent_static.gml</script>
+      <script>scripts\scr_vent_draw_arrows.gml</script>
     </scripts>
     <scripts name="PDA">
       <script>scripts\scr_PDA_spawn.gml</script>
