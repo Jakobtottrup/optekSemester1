@@ -189,6 +189,7 @@
     </sprites>
     <sprites name="office">
       <sprite>sprites\spr_security_office</sprite>
+      <sprite>sprites\spr_monitorframe</sprite>
       <sprite>sprites\spr_monitor_bluescreen</sprite>
       <sprite>sprites\spr_monitor_noise</sprite>
     </sprites>
@@ -337,6 +338,7 @@
       <object>objects\obj_maze_ver_seb</object>
       <object>objects\obj_maze_hor_seb</object>
       <object>objects\obj_office_background</object>
+      <object>objects\obj_office_monitorframe</object>
       <object>objects\obj_player_seb</object>
       <object>objects\obj_theif_bulletholes</object>
       <object>objects\obj_nightvision</object>
