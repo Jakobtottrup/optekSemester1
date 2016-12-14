@@ -3,7 +3,7 @@
   <spriteName>&lt;undefined&gt;</spriteName>
   <solid>0</solid>
   <visible>-1</visible>
-  <depth>1</depth>
+  <depth>3</depth>
   <persistent>0</persistent>
   <parentName>&lt;undefined&gt;</parentName>
   <maskName>&lt;undefined&gt;</maskName>
@@ -55,10 +55,6 @@ if (global.nightvision_mode == 1) {
     draw_sprite(spr_nightvision, 0, (350-540), 0);
     if (global.player_view_door == true &amp;&amp; !instance_exists(obj_flashbang)) {
         instance_create(0, 0, obj_flashbang);
-        /*draw_set_colour(c_white)
-        draw_set_alpha(1) //sets alpha blend/opacity
-        draw_rectangle(0, 0, 800, room_height, false)
-        draw_set_alpha(1) //resets opacity*/
 }
 
 } else {
@@ -66,14 +62,6 @@ if (global.nightvision_mode == 1) {
     draw_set_alpha(0.8) //sets alpha blend/opacity
     draw_rectangle(0, 0, 800, room_height, false)
     draw_set_alpha(1) //resets opacity
-}
-
-
-///DRAW OFFICE BACKGROUND
-if (global.tutorial_state == 1 || global.tutorial_state == 2) {
-    draw_sprite(spr_security_monitor_border, 0, 0, 0); 
-} else {
-    draw_sprite(spr_security_office, 0, 0, 0); 
 }
 </string>
           </argument>

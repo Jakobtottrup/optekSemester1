@@ -155,8 +155,11 @@
       </sprites>
       <sprites name="vent 08">
         <sprite>sprites\spr_vent_08_entry</sprite>
+        <sprite>sprites\spr_vent_08_return_left</sprite>
+        <sprite>sprites\spr_vent_08_return_right</sprite>
         <sprite>sprites\spr_vent_08_exit</sprite>
       </sprites>
+      <sprite>sprites\spr_bulletanimation</sprite>
     </sprites>
     <sprites name="main">
       <sprite>sprites\spr_vent1</sprite>
@@ -305,11 +308,16 @@
     </scripts>
     <scripts name="Midlertidigt rod">
       <script>scripts\scr_draw_binary_NV.gml</script>
-      <script>scripts\scr_diode_volume.gml</script>
       <script>scripts\scr_mouse_hover.gml</script>
-      <script>scripts\scr_destroy_diode.gml</script>
+    </scripts>
+    <scripts name="button controls">
       <script>scripts\scr_destroy_diode_vert.gml</script>
       <script>scripts\scr_destroy_charge.gml</script>
+      <script>scripts\scr_destroy_diode.gml</script>
+      <script>scripts\scr_diode_volume.gml</script>
+      <script>scripts\scr_guard_life_h.gml</script>
+      <script>scripts\scr_guard_life_v.gml</script>
+      <script>scripts\scr_isFired_disable_buttons.gml</script>
     </scripts>
   </scripts>
   <fonts name="fonts">
@@ -330,6 +338,7 @@
       <object>objects\obj_maze_hor_seb</object>
       <object>objects\obj_office_background</object>
       <object>objects\obj_player_seb</object>
+      <object>objects\obj_theif_bulletholes</object>
       <object>objects\obj_nightvision</object>
       <objects name="buttons">
         <object>objects\obj_button_red_vertical</object>

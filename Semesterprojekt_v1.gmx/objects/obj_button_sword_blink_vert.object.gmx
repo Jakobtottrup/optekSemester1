@@ -109,7 +109,7 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>global.player_movementt</string>
+            <string>global.player_movement</string>
           </argument>
           <argument>
             <kind>0</kind>
@@ -147,48 +147,41 @@
     <event eventtype="3" enumb="0">
       <action>
         <libid>1</libid>
-        <id>603</id>
-        <kind>7</kind>
+        <id>601</id>
+        <kind>0</kind>
         <userelative>0</userelative>
         <isquestion>0</isquestion>
         <useapplyto>-1</useapplyto>
-        <exetype>2</exetype>
-        <functionname></functionname>
+        <exetype>1</exetype>
+        <functionname>action_execute_script</functionname>
         <codestring></codestring>
         <whoName>self</whoName>
         <relative>0</relative>
         <isnot>0</isnot>
         <arguments>
           <argument>
-            <kind>1</kind>
-            <string>if (instance_exists(obj_button_sword_blink_vert)) //is the instance  here?
-{
-    //check if instance is within vertical bounds of the room
-    if obj_button_sword_blink_vert.y  &lt;= 150 &amp;&amp; instance_exists(obj_player_seb)
-    {
-      instance_destroy();
-      if lives &gt; 0{
-      lives--;
-      }
-    
-    
-      if !instance_exists(obj_sword_spin){
-        if lives = 4{
-            instance_create(room_width-136, 60, obj_sword_spin);
-        } else if lives = 3{
-            instance_create(room_width-168, 60, obj_sword_spin);
-        } else if lives=2{
-            instance_create(room_width-200, 60, obj_sword_spin);
-        } else if lives = 1{
-            instance_create(room_width-232, 60, obj_sword_spin);
-        } else{
-            instance_create(room_width-264, 60, obj_sword_spin);
-        }
-      }
-      }
-}
-
-</string>
+            <kind>9</kind>
+            <script>scr_guard_life_v</script>
+          </argument>
+          <argument>
+            <kind>0</kind>
+            <string></string>
+          </argument>
+          <argument>
+            <kind>0</kind>
+            <string></string>
+          </argument>
+          <argument>
+            <kind>0</kind>
+            <string></string>
+          </argument>
+          <argument>
+            <kind>0</kind>
+            <string></string>
+          </argument>
+          <argument>
+            <kind>0</kind>
+            <string></string>
           </argument>
         </arguments>
       </action>
@@ -227,6 +220,34 @@
         <whoName>self</whoName>
         <relative>0</relative>
         <isnot>0</isnot>
+      </action>
+      <action>
+        <libid>1</libid>
+        <id>201</id>
+        <kind>0</kind>
+        <userelative>-1</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>1</exetype>
+        <functionname>action_create_object</functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>10</kind>
+            <object>obj_theif_bulletholes</object>
+          </argument>
+          <argument>
+            <kind>0</kind>
+            <string>0</string>
+          </argument>
+          <argument>
+            <kind>0</kind>
+            <string>0</string>
+          </argument>
+        </arguments>
       </action>
       <action>
         <libid>1</libid>
