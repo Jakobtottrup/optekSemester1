@@ -1,4 +1,4 @@
-
+instance_create(0,0,obj_menu_controller);
 global.folder_width = 1100;
 global.folder_height = 100;
 
@@ -29,6 +29,5 @@ for (i = 0; i < 6; i++) {
 global.folder_x[5] -= 20;
 global.folder_y[5] += 40;
 
-//Starts the music in a loop
-audio_play_sound(snd_game_music,1,true);
+
 
