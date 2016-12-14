@@ -294,11 +294,16 @@
     </scripts>
     <scripts name="Midlertidigt rod">
       <script>scripts\scr_draw_binary_NV.gml</script>
-      <script>scripts\scr_diode_volume.gml</script>
       <script>scripts\scr_mouse_hover.gml</script>
-      <script>scripts\scr_destroy_diode.gml</script>
+    </scripts>
+    <scripts name="button controls">
       <script>scripts\scr_destroy_diode_vert.gml</script>
       <script>scripts\scr_destroy_charge.gml</script>
+      <script>scripts\scr_destroy_diode.gml</script>
+      <script>scripts\scr_diode_volume.gml</script>
+      <script>scripts\scr_guard_life_h.gml</script>
+      <script>scripts\scr_guard_life_v.gml</script>
+      <script>scripts\scr_isFired_disable_buttons.gml</script>
     </scripts>
   </scripts>
   <fonts name="fonts">
