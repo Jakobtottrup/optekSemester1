@@ -4,11 +4,12 @@
 o_x = 375;
 o_y = 720;
 
+
 //offset_x = -180;
-//for(offset_x = -180; offset_x < 180; offset_x += 3)
+for(offset_x = -180; offset_x < 180; offset_x += 3)
 
 
-offset_x = round(random_range(-195, 195));
+//offset_x = round(random_range(-195, 195));
 //last_x = offset_x + 1;
 
 

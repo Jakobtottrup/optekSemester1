@@ -10,6 +10,7 @@
     <sound>sound\Sound_Button_Menu</sound>
     <sound>sound\snd_btn_click</sound>
     <sound>sound\snd_mission_impossible</sound>
+    <sound>sound\snd_windows_xp_boot</sound>
     <sound>sound\snd_static_tvnoise</sound>
     <sound>sound\snd_nightvision_activate</sound>
     <sound>sound\snd_ventilation_test</sound>
@@ -190,9 +191,11 @@
     </sprites>
     <sprites name="office">
       <sprite>sprites\spr_security_office</sprite>
+      <sprite>sprites\spr_monitor_blank</sprite>
       <sprite>sprites\spr_monitorframe</sprite>
       <sprite>sprites\spr_monitor_bluescreen</sprite>
       <sprite>sprites\spr_monitor_noise</sprite>
+      <sprite>sprites\spr_monitor_boot</sprite>
     </sprites>
     <sprites name="vent direction arrows">
       <sprite>sprites\spr_vent_arrow_up</sprite>
