@@ -270,18 +270,23 @@
       <script>scripts\scr_vent_position_details.gml</script>
     </scripts>
     <scripts name="tutorial">
-      <scripts name="create">
-        <script>scripts\scr_maze_init_tutorial.gml</script>
-        <script>scripts\scr_spawn_player_tutorial.gml</script>
-        <script>scripts\scr_hide_for_tutorial.gml</script>
-        <script>scripts\scr_tutorial_spawn_goal.gml</script>
+      <scripts name="actual tutorial">
+        <script>scripts\scr_tutorial_permissions.gml</script>
       </scripts>
-      <scripts name="manuskripts">
-        <script>scripts\scr_tuto_1_manuskript.gml</script>
-        <script>scripts\scr_tuto_2_manuskript.gml</script>
-        <script>scripts\scr_tuto_3_manuskript.gml</script>
+      <scripts name="old attempt">
+        <script>scripts\scr_tuto_1_mission_control.gml</script>
+        <scripts name="manuskripts">
+          <script>scripts\scr_tuto_1_manuskript.gml</script>
+          <script>scripts\scr_tuto_2_manuskript.gml</script>
+          <script>scripts\scr_tuto_3_manuskript.gml</script>
+        </scripts>
+        <scripts name="create">
+          <script>scripts\scr_maze_init_tutorial.gml</script>
+          <script>scripts\scr_spawn_player_tutorial.gml</script>
+          <script>scripts\scr_hide_for_tutorial.gml</script>
+          <script>scripts\scr_tutorial_spawn_goal.gml</script>
+        </scripts>
       </scripts>
-      <script>scripts\scr_tuto_1_mission_control.gml</script>
     </scripts>
     <scripts name="intro">
       <script>scripts\scr_intro_init.gml</script>
@@ -414,6 +419,7 @@
       <object>objects\obj_menu_controller</object>
       <object>objects\obj_control</object>
       <object>objects\obj_main</object>
+      <object>objects\obj_tutorial_control</object>
     </objects>
     <objects name="vent">
       <object>objects\obj_vent_ani_start</object>
@@ -460,6 +466,7 @@
       <room>rooms\rm_tuto_1</room>
       <room>rooms\rm_tuto_2</room>
       <room>rooms\rm_tuto_3</room>
+      <room>rooms\rm_tutorial</room>
     </rooms>
     <room>rooms\room1_jakob</room>
   </rooms>
