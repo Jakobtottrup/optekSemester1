@@ -27,8 +27,10 @@
             <kind>1</kind>
             <string>//Sets the starting temperature of nightvision//
 temperature=38;
-//offset_x = round(random_range(0, 360));
-//offset_x = global.player_view_id * 45;
+offset_x = round(random_range(-195, 195));
+
+global.nightvision_mode = 0;
+
 </string>
           </argument>
         </arguments>
@@ -56,9 +58,9 @@ if (global.nightvision_mode == 1) {
     scr_NV_graphic();
     scr_draw_binary_NV();
     draw_sprite(spr_nightvision, 0, (350-540), 0);
-    if (global.player_view_door == true &amp;&amp; !instance_exists(obj_flashbang)) {
+    /*if (global.player_view_door == true &amp;&amp; !instance_exists(obj_flashbang)) {
         instance_create(0, 0, obj_flashbang);
-}
+}*/
 
 } else {
     draw_set_colour(c_black)
@@ -74,37 +76,9 @@ if (global.nightvision_mode == 1) {
     <event eventtype="9" enumb="50">
       <action>
         <libid>1</libid>
-        <id>612</id>
-        <kind>0</kind>
+        <id>603</id>
+        <kind>7</kind>
         <userelative>0</userelative>
-        <isquestion>-1</isquestion>
-        <useapplyto>-1</useapplyto>
-        <exetype>1</exetype>
-        <functionname>action_if_variable</functionname>
-        <codestring></codestring>
-        <whoName>self</whoName>
-        <relative>0</relative>
-        <isnot>0</isnot>
-        <arguments>
-          <argument>
-            <kind>0</kind>
-            <string>global.nightvision_mode</string>
-          </argument>
-          <argument>
-            <kind>0</kind>
-            <string>0</string>
-          </argument>
-          <argument>
-            <kind>4</kind>
-            <string>0</string>
-          </argument>
-        </arguments>
-      </action>
-      <action>
-        <libid>1</libid>
-        <id>611</id>
-        <kind>6</kind>
-        <userelative>-1</userelative>
         <isquestion>0</isquestion>
         <useapplyto>-1</useapplyto>
         <exetype>2</exetype>
@@ -116,49 +90,15 @@ if (global.nightvision_mode == 1) {
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>global.nightvision_mode</string>
-          </argument>
-          <argument>
-            <kind>0</kind>
-            <string>1</string>
-          </argument>
-        </arguments>
-      </action>
-      <action>
-        <libid>1</libid>
-        <id>421</id>
-        <kind>3</kind>
-        <userelative>0</userelative>
-        <isquestion>0</isquestion>
-        <useapplyto>0</useapplyto>
-        <exetype>0</exetype>
-        <functionname></functionname>
-        <codestring></codestring>
-        <whoName>self</whoName>
-        <relative>0</relative>
-        <isnot>0</isnot>
-      </action>
-      <action>
-        <libid>1</libid>
-        <id>611</id>
-        <kind>6</kind>
-        <userelative>-1</userelative>
-        <isquestion>0</isquestion>
-        <useapplyto>-1</useapplyto>
-        <exetype>2</exetype>
-        <functionname></functionname>
-        <codestring></codestring>
-        <whoName>self</whoName>
-        <relative>0</relative>
-        <isnot>0</isnot>
-        <arguments>
-          <argument>
-            <kind>1</kind>
-            <string>global.nightvision_mode</string>
-          </argument>
-          <argument>
-            <kind>0</kind>
-            <string>0</string>
+            <string>if (global.permission_move) {
+    if (global.nightvision_mode == 0) {
+        global.nightvision_mode = 1;
+    } else {
+        global.nightvision_mode = 0;
+    }
+}
+
+</string>
           </argument>
         </arguments>
       </action>

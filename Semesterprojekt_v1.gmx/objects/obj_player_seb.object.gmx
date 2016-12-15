@@ -81,6 +81,46 @@
           </argument>
         </arguments>
       </action>
+      <action>
+        <libid>1</libid>
+        <id>601</id>
+        <kind>0</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>1</exetype>
+        <functionname>action_execute_script</functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>9</kind>
+            <script>scr_tutorial_permissions</script>
+          </argument>
+          <argument>
+            <kind>0</kind>
+            <string></string>
+          </argument>
+          <argument>
+            <kind>0</kind>
+            <string></string>
+          </argument>
+          <argument>
+            <kind>0</kind>
+            <string></string>
+          </argument>
+          <argument>
+            <kind>0</kind>
+            <string></string>
+          </argument>
+          <argument>
+            <kind>0</kind>
+            <string></string>
+          </argument>
+        </arguments>
+      </action>
     </event>
     <event eventtype="3" enumb="2">
       <action>
@@ -273,6 +313,20 @@
           </argument>
         </arguments>
       </action>
+      <action>
+        <libid>1</libid>
+        <id>500</id>
+        <kind>0</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>0</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring>draw_self();</codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+      </action>
     </event>
     <event eventtype="9" enumb="40">
       <action>
@@ -292,7 +346,7 @@
           <argument>
             <kind>1</kind>
             <string>if (global.player_movement) {
-    if ((global.tutorial_state == 0) || (global.tutorial_state == 2)) {
+    if (global.permission_move) {
         scr_player_move_down_seb();
     }
 }
@@ -319,7 +373,7 @@
           <argument>
             <kind>1</kind>
             <string>if (global.player_movement) {
-    if ((global.tutorial_state == 0) || (global.tutorial_state == 2)) {
+    if (global.permission_move) {
         scr_player_move_right_seb();
     }
 }
@@ -346,7 +400,7 @@
           <argument>
             <kind>1</kind>
             <string>if (global.player_movement) {
-    if ((global.tutorial_state == 0) || (global.tutorial_state == 2)) {
+    if (global.permission_move) {
         scr_player_move_up_seb();
     }
 }
@@ -373,7 +427,7 @@
           <argument>
             <kind>1</kind>
             <string>if (global.player_movement) {
-    if ((global.tutorial_state == 0) || (global.tutorial_state == 2)) {
+    if (global.permission_move) {
         scr_player_move_left_seb();
     }
 }
@@ -399,13 +453,16 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>///SPAWN OBJECTS
-if !instance_exists(obj_PDA_controller) {
-    if (global.player_view_id &gt;= 0 &amp;&amp; global.player_view_id &lt;= 7 &amp;&amp; global.player_movement == true) {
-        instance_create(500, 700, obj_PDA_controller);
-        global.player_movement = false;
+            <string>///SPAWN PDA
+if (global.permission_pda) {
+    if !instance_exists(obj_PDA_controller) {
+        if global.player_view_id &gt;= 0 &amp;&amp; global.player_view_id &lt;= 7 {
+            instance_create(500, 700, obj_PDA_controller);
+            global.player_movement = false;
+        }
     }
 }
+
 </string>
           </argument>
         </arguments>
