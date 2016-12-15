@@ -2,6 +2,9 @@
 global.player_view_id_old = global.player_view_id;
 global.player_movement = false;
 global.count_moves++;
+global.NV_last_direction = obj_player_seb.direction;
+global.NV_count_step = 0;
+
 
 //remove door before moving
 if (global.player_view_door) {
