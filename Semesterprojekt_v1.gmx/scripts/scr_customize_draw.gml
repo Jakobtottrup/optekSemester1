@@ -1,4 +1,4 @@
-//Drawing the x and y variables//
+    //Drawing the x and y variables//
 draw_set_font (font_customize);
 draw_set_colour(c_dkgray);
 draw_text(270 - (string_width(string(global.customize_grid_y)) / 4), 400, global.customize_grid_y);
@@ -29,15 +29,15 @@ for(i = 0; i < global.customize_grid_y; i++) {
     y += grid_hight / (global.customize_grid_y - 1);
 }
 
-    //Draw Goal variable in room//
+    //Draw Goal variable in Customize menu//
 
 draw_text(1685 - (string_width(string(global.custom_num_goal)) / 2), 275, global.custom_num_goal);
     
-    //Draw Door variable in room//
+    //Draw Door variable in Customize menu//
 
 draw_text(1685 - (string_width(string(global.custom_num_door)) / 2), 627, global.custom_num_door);
 
-//Draw test in Custumize menu//
+    //Draw text in Customize menu//
 
 draw_set_font(font_customize_text);
 draw_set_colour(c_black);

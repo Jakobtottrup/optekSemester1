@@ -252,6 +252,9 @@
         <script>scripts\scr_maze_generate_longest_distance.gml</script>
         <script>scripts\scr_maze_generate_choose_spawn.gml</script>
       </scripts>
+      <script>scripts\scr_level_generation.gml</script>
+      <script>scripts\scr_shake_player_pos.gml</script>
+      <script>scripts\scr_set_section_variables.gml</script>
     </scripts>
     <scripts name="player movement">
       <scripts name="player move">
@@ -308,6 +311,9 @@
         <script>scripts\scr_menu_folder_draw.gml</script>
         <script>scripts\scr_menu_folder_spawn.gml</script>
       </scripts>
+      <scripts name="Options">
+        <script>scripts\scr_options_draw.gml</script>
+      </scripts>
     </scripts>
     <scripts name="vent">
       <scripts name="nightvision">
@@ -358,6 +364,7 @@
     <font>fonts\fnt_tutorial</font>
     <font>fonts\fnt_intro</font>
     <font>fonts\fnt_intro_kinda</font>
+    <font>fonts\fnt_restart_prompt</font>
   </fonts>
   <objects name="objects">
     <object>objects\obj_firedtext</object>
@@ -389,6 +396,7 @@
       <object>objects\obj_door_open</object>
       <object>objects\obj_door_closed</object>
       <object>objects\obj_arrow</object>
+      <object>objects\obj_restart_prompt</object>
     </objects>
     <objects name="temp screen">
       <object>objects\obj_screen</object>
@@ -403,6 +411,11 @@
         <object>objects\obj_ExitGame</object>
         <object>objects\obj_NewGame</object>
         <object>objects\obj_start_game</object>
+      </objects>
+      <objects name="Options">
+        <object>objects\obj_gamma_plus</object>
+        <object>objects\obj_gamma_minus</object>
+        <object>objects\obj_Options_Controller</object>
       </objects>
       <objects name="Customize">
         <object>objects\obj_vertical_plus</object>
