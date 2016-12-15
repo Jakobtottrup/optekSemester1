@@ -77,3 +77,7 @@ player_breath_count = 0;
 
 //start maze generation
 scr_maze_generate_seb()
+
+
+//init tutorial permissions
+scr_tutorial_permissions();
