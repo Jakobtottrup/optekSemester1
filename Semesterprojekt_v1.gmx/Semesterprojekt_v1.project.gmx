@@ -309,6 +309,9 @@
         <script>scripts\scr_menu_folder_draw.gml</script>
         <script>scripts\scr_menu_folder_spawn.gml</script>
       </scripts>
+      <scripts name="Options">
+        <script>scripts\scr_options_draw.gml</script>
+      </scripts>
     </scripts>
     <scripts name="vent">
       <script>scripts\scr_vent_ani_end.gml</script>
@@ -402,6 +405,11 @@
         <object>objects\obj_ExitGame</object>
         <object>objects\obj_NewGame</object>
         <object>objects\obj_start_game</object>
+      </objects>
+      <objects name="Options">
+        <object>objects\obj_gamma_plus</object>
+        <object>objects\obj_gamma_minus</object>
+        <object>objects\obj_Options_Controller</object>
       </objects>
       <objects name="Customize">
         <object>objects\obj_vertical_plus</object>
