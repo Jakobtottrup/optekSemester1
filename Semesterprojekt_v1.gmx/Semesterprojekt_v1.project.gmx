@@ -273,7 +273,6 @@
       <scripts name="create">
         <script>scripts\scr_maze_init_tutorial.gml</script>
         <script>scripts\scr_spawn_player_tutorial.gml</script>
-        <script>scripts\scr_hide_for_tutorial.gml</script>
         <script>scripts\scr_tutorial_spawn_goal.gml</script>
       </scripts>
       <scripts name="manuskripts">
