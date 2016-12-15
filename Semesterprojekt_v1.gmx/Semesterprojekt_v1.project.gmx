@@ -34,6 +34,10 @@
     <sound>sound\snd_thief_death</sound>
     <sound>sound\snd_turning_page</sound>
     <sound>sound\snd_game_music</sound>
+    <sound>sound\snd_ventilation_movement1</sound>
+    <sound>sound\snd_ventilation_movement2</sound>
+    <sound>sound\snd_ventilation_movement3</sound>
+    <sound>sound\snd_ventilation_movement4</sound>
   </sounds>
   <sprites name="sprites">
     <sprites name="Main Menu">
@@ -322,6 +326,8 @@
       <script>scripts\scr_NV_graphic.gml</script>
       <script>scripts\scr_draw_binary_NV.gml</script>
       <script>scripts\scr_mouse_hover.gml</script>
+      <script>scripts\scr_ventilation_movent_sound.gml</script>
+      <script>scripts\scr_ventilation_sound_end.gml</script>
     </scripts>
     <scripts name="button controls">
       <script>scripts\scr_destroy_diode_vert.gml</script>
@@ -332,8 +338,6 @@
       <script>scripts\scr_guard_life_v.gml</script>
       <script>scripts\scr_isFired_disable_buttons.gml</script>
     </scripts>
-    <script>scripts\scr_ventilation_movent_sound.gml</script>
-    <script>scripts\scr_ventilation_sound_end.gml</script>
   </scripts>
   <fonts name="fonts">
     <font>fonts\fnt_testfont</font>
