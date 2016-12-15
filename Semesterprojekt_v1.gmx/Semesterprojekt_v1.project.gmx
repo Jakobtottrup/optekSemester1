@@ -50,6 +50,7 @@
         <sprite>sprites\spr_ExitGame</sprite>
         <sprite>sprites\spr_Options</sprite>
         <sprite>sprites\spr_NewGame</sprite>
+        <sprite>sprites\spr_start_game</sprite>
       </sprites>
       <sprites name="folders">
         <sprite>sprites\spr_menu_folder_block</sprite>
@@ -395,6 +396,7 @@
         <object>objects\obj_Options</object>
         <object>objects\obj_ExitGame</object>
         <object>objects\obj_NewGame</object>
+        <object>objects\obj_start_game</object>
       </objects>
       <objects name="Customize">
         <object>objects\obj_vertical_plus</object>
