@@ -27,7 +27,6 @@
             <kind>1</kind>
             <string>image_speed = 0;
 visible = false;
-draw_set_alpha(0.9);
 </string>
           </argument>
         </arguments>
@@ -76,6 +75,7 @@ draw_set_alpha(0.9);
             <kind>1</kind>
             <string>visible = true;
 image_speed = 0.7;
+global.player_dead = true;
 </string>
           </argument>
         </arguments>

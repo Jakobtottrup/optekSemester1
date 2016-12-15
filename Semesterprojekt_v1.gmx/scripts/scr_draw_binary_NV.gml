@@ -5,13 +5,13 @@ draw_set_colour(c_white)
 
 for(i=0; i<15; i++;){
     if(floor(random(2)) == 0){
-        draw_text(450+(i*10),320,string(floor(random_range(0,2))));
+        draw_text(450+(i*10),190,string(floor(random_range(0,2))));
     }
     if(floor(random(2)) == 0){
-        draw_text(450+(i*10),320+15,string(floor(random_range(0,2))));
+        draw_text(450+(i*10),190+15,string(floor(random_range(0,2))));
     }
     if(floor(random(2)) == 0){
-        draw_text(450+(i*10),320+30,string(floor(random_range(0,2))));
+        draw_text(450+(i*10),190+30,string(floor(random_range(0,2))));
     }
 }
 
@@ -32,5 +32,5 @@ if(random(100) < 2){
 
 //Draws temperature and the temperature number//
 draw_set_font(font_text_NV);
-draw_text(515,250+45,string("Temperature:"));
-draw_text(470+145,250+45,string(temperature));
+draw_text(515,190+45,string("Temperature:"));
+draw_text(470+145,190+45,string(temperature));
