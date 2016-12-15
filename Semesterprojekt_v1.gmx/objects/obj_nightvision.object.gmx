@@ -54,7 +54,7 @@ global.nightvision_mode = 0;
           <argument>
             <kind>1</kind>
             <string>///DRAW NIGHTVISION
-if (global.nightvision_mode == 1) {
+if (global.nightvision_mode == 1 &amp;&amp; instance_exists(obj_player_seb)) {
     scr_NV_graphic();
     scr_draw_binary_NV();
     draw_sprite(spr_nightvision, 0, (350-540), 0);
