@@ -4,7 +4,7 @@
 draw_set_colour(c_red); //Sets color to red
 
 //converts the countdown timer value into progressbar
-count_x = obj_PDA.x+((start+maxtime-current_time)/1000)*45 
+count_x = obj_PDA.x+((start+maxtime-current_time)/1000)*38 
 draw_rectangle(obj_PDA.x+10, obj_PDA.y+10, count_x, obj_PDA.y+30, false);
 
 
