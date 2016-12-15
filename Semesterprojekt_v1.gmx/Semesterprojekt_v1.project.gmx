@@ -255,6 +255,8 @@
         <script>scripts\scr_maze_generate_choose_spawn.gml</script>
       </scripts>
       <script>scripts\scr_level_generation.gml</script>
+      <script>scripts\scr_shake_player_pos.gml</script>
+      <script>scripts\scr_set_section_variables.gml</script>
     </scripts>
     <scripts name="player movement">
       <scripts name="player move">
@@ -361,6 +363,7 @@
     <font>fonts\fnt_tutorial</font>
     <font>fonts\fnt_intro</font>
     <font>fonts\fnt_intro_kinda</font>
+    <font>fonts\fnt_restart_prompt</font>
   </fonts>
   <objects name="objects">
     <object>objects\obj_firedtext</object>
@@ -394,6 +397,7 @@
       <object>objects\obj_door_open</object>
       <object>objects\obj_door_closed</object>
       <object>objects\obj_arrow</object>
+      <object>objects\obj_restart_prompt</object>
     </objects>
     <objects name="temp screen">
       <object>objects\obj_screen</object>
@@ -469,7 +473,6 @@
       <object>objects\obj_PDA_player</object>
       <object>objects\obj_PDA</object>
     </objects>
-    <object>objects\obj_level_generator</object>
   </objects>
   <timelines name="timelines">
     <timelines name="tutorial">
@@ -496,10 +499,6 @@
       <room>rooms\rm_tutorial</room>
     </rooms>
     <room>rooms\room1_jakob</room>
-    <room>rooms\room2</room>
-    <room>rooms\room3</room>
-    <room>rooms\room4</room>
-    <room>rooms\room5</room>
   </rooms>
   <help>
     <rtf>help.rtf</rtf>
