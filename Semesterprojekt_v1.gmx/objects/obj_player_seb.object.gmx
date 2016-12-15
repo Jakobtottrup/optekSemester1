@@ -401,7 +401,7 @@
             <kind>1</kind>
             <string>///SPAWN OBJECTS
 if !instance_exists(obj_PDA_controller) {
-    if global.player_view_id &gt;= 0 &amp;&amp; global.player_view_id &lt;= 7 {
+    if (global.player_view_id &gt;= 0 &amp;&amp; global.player_view_id &lt;= 7 &amp;&amp; global.player_movement == true) {
         instance_create(500, 700, obj_PDA_controller);
         global.player_movement = false;
     }

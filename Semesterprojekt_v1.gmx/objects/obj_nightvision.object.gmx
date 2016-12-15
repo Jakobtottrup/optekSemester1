@@ -27,7 +27,8 @@
             <kind>1</kind>
             <string>//Sets the starting temperature of nightvision//
 temperature=38;
-offset_x = round(random_range(-195, 195));
+//offset_x = round(random_range(0, 360));
+//offset_x = global.player_view_id * 45;
 </string>
           </argument>
         </arguments>
