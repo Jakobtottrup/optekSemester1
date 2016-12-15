@@ -310,12 +310,20 @@
       </scripts>
     </scripts>
     <scripts name="vent">
+      <scripts name="nightvision">
+        <script>scripts\scr_enable_nightvision.gml</script>
+        <script>scripts\scr_draw_nightvision.gml</script>
+        <script>scripts\scr_create_flash.gml</script>
+        <script>scripts\scr_NV_graphic.gml</script>
+        <script>scripts\scr_move_cursor_vert.gml</script>
+        <script>scripts\svr_move_cursor_horiz.gml</script>
+        <script>scripts\scr_draw_binary_NV.gml</script>
+      </scripts>
       <script>scripts\scr_vent_ani_end.gml</script>
       <script>scripts\scr_vent_ani_start.gml</script>
       <script>scripts\scr_player_getView_seb.gml</script>
       <script>scripts\scr_vent_static.gml</script>
       <script>scripts\scr_vent_draw_arrows.gml</script>
-      <script>scripts\scr_create_flash.gml</script>
     </scripts>
     <scripts name="PDA">
       <script>scripts\scr_PDA_spawn.gml</script>
@@ -325,8 +333,6 @@
       <script>scripts\scr_bluescreen_start.gml</script>
     </scripts>
     <scripts name="Midlertidigt rod">
-      <script>scripts\scr_NV_graphic.gml</script>
-      <script>scripts\scr_draw_binary_NV.gml</script>
       <script>scripts\scr_mouse_hover.gml</script>
       <script>scripts\scr_ventilation_movent_sound.gml</script>
       <script>scripts\scr_ventilation_sound_end.gml</script>
@@ -361,8 +367,6 @@
       <object>objects\obj_office_background</object>
       <object>objects\obj_office_monitorframe</object>
       <object>objects\obj_player_seb</object>
-      <object>objects\obj_theif_bulletholes</object>
-      <object>objects\obj_nightvision</object>
       <objects name="buttons">
         <object>objects\obj_button_red_vertical</object>
         <object>objects\obj_button_inactive_vertical</object>
@@ -432,12 +436,18 @@
       <object>objects\obj_main</object>
       <object>objects\obj_tutorial_control</object>
     </objects>
+    <objects name="nightvision">
+      <object>objects\obj_NV_cursor_vert</object>
+      <object>objects\obj_NV_cursor_horiz</object>
+      <object>objects\obj_nightvision</object>
+    </objects>
     <objects name="vent">
       <object>objects\obj_vent_ani_start</object>
       <object>objects\obj_vent_ani_end</object>
       <object>objects\obj_vent_static</object>
       <object>objects\obj_vent_door</object>
       <object>objects\obj_vent_door_remove</object>
+      <object>objects\obj_theif_bulletholes</object>
     </objects>
     <objects name="tutorial">
       <object>objects\obj_tuto_1_control</object>

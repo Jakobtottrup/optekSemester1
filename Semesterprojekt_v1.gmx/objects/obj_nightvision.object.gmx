@@ -27,10 +27,9 @@
             <kind>1</kind>
             <string>//Sets the starting temperature of nightvision//
 temperature=38;
-
 global.nightvision_mode = 0;
-NV_direction_steps = 60;
-global.NV_count_step = 0;
+
+random_offset = random_range(120, 520);
 </string>
           </argument>
         </arguments>
@@ -39,37 +38,41 @@ global.NV_count_step = 0;
     <event eventtype="8" enumb="0">
       <action>
         <libid>1</libid>
-        <id>603</id>
-        <kind>7</kind>
+        <id>601</id>
+        <kind>0</kind>
         <userelative>0</userelative>
         <isquestion>0</isquestion>
         <useapplyto>-1</useapplyto>
-        <exetype>2</exetype>
-        <functionname></functionname>
+        <exetype>1</exetype>
+        <functionname>action_execute_script</functionname>
         <codestring></codestring>
         <whoName>self</whoName>
         <relative>0</relative>
         <isnot>0</isnot>
         <arguments>
           <argument>
-            <kind>1</kind>
-            <string>///DRAW NIGHTVISION
-if (global.nightvision_mode == 1 &amp;&amp; instance_exists(obj_player_seb)) {
-    scr_NV_graphic();
-    scr_draw_binary_NV();
-    draw_sprite(spr_nightvision, 0, (350-540), 0);
-    /*if (global.player_view_door == true &amp;&amp; !instance_exists(obj_flashbang)) {
-        instance_create(0, 0, obj_flashbang);
-}*/
-
-
-} else {
-    draw_set_colour(c_black)
-    draw_set_alpha(global.vent_darkness) //sets alpha blend/opacity 
-    draw_rectangle(0, 0, 800, room_height, false)
-    draw_set_alpha(1) //resets opacity
-}
-</string>
+            <kind>9</kind>
+            <script>scr_draw_nightvision</script>
+          </argument>
+          <argument>
+            <kind>0</kind>
+            <string></string>
+          </argument>
+          <argument>
+            <kind>0</kind>
+            <string></string>
+          </argument>
+          <argument>
+            <kind>0</kind>
+            <string></string>
+          </argument>
+          <argument>
+            <kind>0</kind>
+            <string></string>
+          </argument>
+          <argument>
+            <kind>0</kind>
+            <string></string>
           </argument>
         </arguments>
       </action>
@@ -77,29 +80,41 @@ if (global.nightvision_mode == 1 &amp;&amp; instance_exists(obj_player_seb)) {
     <event eventtype="9" enumb="50">
       <action>
         <libid>1</libid>
-        <id>603</id>
-        <kind>7</kind>
+        <id>601</id>
+        <kind>0</kind>
         <userelative>0</userelative>
         <isquestion>0</isquestion>
         <useapplyto>-1</useapplyto>
-        <exetype>2</exetype>
-        <functionname></functionname>
+        <exetype>1</exetype>
+        <functionname>action_execute_script</functionname>
         <codestring></codestring>
         <whoName>self</whoName>
         <relative>0</relative>
         <isnot>0</isnot>
         <arguments>
           <argument>
-            <kind>1</kind>
-            <string>if (global.permission_move) {
-    if (global.nightvision_mode == 0) {
-        global.nightvision_mode = 1;
-    } else {
-        global.nightvision_mode = 0;
-    }
-}
-
-</string>
+            <kind>9</kind>
+            <script>scr_enable_nightvision</script>
+          </argument>
+          <argument>
+            <kind>0</kind>
+            <string></string>
+          </argument>
+          <argument>
+            <kind>0</kind>
+            <string></string>
+          </argument>
+          <argument>
+            <kind>0</kind>
+            <string></string>
+          </argument>
+          <argument>
+            <kind>0</kind>
+            <string></string>
+          </argument>
+          <argument>
+            <kind>0</kind>
+            <string></string>
           </argument>
         </arguments>
       </action>
