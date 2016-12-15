@@ -25,9 +25,9 @@ for (i = 0; i < 6; i++) {
     global.folder_x[i] = ((room_width/2) + (folder_left_offset * i)) - 200;
 }
 
-//special case for exit
+//special case for the exit button
 global.folder_x[5] -= 20;
 global.folder_y[5] += 40;
 
-
+global.tutorial_state = 0;
 
