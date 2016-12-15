@@ -159,7 +159,7 @@
         <arguments>
           <argument>
             <kind>11</kind>
-            <room>rm_tuto_1</room>
+            <room>rm_tutorial</room>
           </argument>
         </arguments>
       </action>

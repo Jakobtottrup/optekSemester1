@@ -1,5 +1,6 @@
 randomize(); //use new seed for every run
 
 global.tutorial_state = 0;
-global.gamemode = 0;
 
+global.sound_niveau_music = 50;
+global.sound_niveau_effect = 80;
