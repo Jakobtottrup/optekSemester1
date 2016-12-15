@@ -10,6 +10,7 @@
     <sound>sound\Sound_Button_Menu</sound>
     <sound>sound\snd_btn_click</sound>
     <sound>sound\snd_mission_impossible</sound>
+    <sound>sound\snd_windows_xp_boot</sound>
     <sound>sound\snd_static_tvnoise</sound>
     <sound>sound\snd_nightvision_activate</sound>
     <sound>sound\snd_ventilation_test</sound>
@@ -31,6 +32,8 @@
     <sound>sound\intro_mission_impossible_cut</sound>
     <sound>sound\snd_hello</sound>
     <sound>sound\snd_thief_death</sound>
+    <sound>sound\snd_turning_page</sound>
+    <sound>sound\snd_game_music</sound>
   </sounds>
   <sprites name="sprites">
     <sprites name="Main Menu">
@@ -154,8 +157,11 @@
       </sprites>
       <sprites name="vent 08">
         <sprite>sprites\spr_vent_08_entry</sprite>
+        <sprite>sprites\spr_vent_08_return_left</sprite>
+        <sprite>sprites\spr_vent_08_return_right</sprite>
         <sprite>sprites\spr_vent_08_exit</sprite>
       </sprites>
+      <sprite>sprites\spr_bulletanimation</sprite>
     </sprites>
     <sprites name="main">
       <sprite>sprites\spr_vent1</sprite>
@@ -169,7 +175,6 @@
       <sprite>sprites\spr_sword_spin</sprite>
       <sprite>sprites\spr_maze_door</sprite>
       <sprite>sprites\spr_door</sprite>
-      <sprite>sprites\spr_security_office</sprite>
     </sprites>
     <sprites name="PDA">
       <sprite>sprites\spr_PDA_Paper</sprite>
@@ -177,7 +182,6 @@
       <sprite>sprites\spr_PDA_player</sprite>
       <sprite>sprites\spr_PDA</sprite>
       <sprite>sprites\spr_PDA_folder</sprite>
-      <sprite>sprites\spr_PDA_tvnoise</sprite>
     </sprites>
     <sprites name="intro">
       <sprite>sprites\spr_intro_vent_1</sprite>
@@ -185,16 +189,39 @@
     <sprites name="tutorial">
       <sprite>sprites\spr_black_splitscreen</sprite>
     </sprites>
-    <sprite>sprites\spr_thief_death</sprite>
-    <sprite>sprites\spr_fired</sprite>
-    <sprite>sprites\spr_slash</sprite>
-    <sprite>sprites\spr_arrow</sprite>
+    <sprites name="office">
+      <sprite>sprites\spr_security_office</sprite>
+      <sprite>sprites\spr_monitor_blank</sprite>
+      <sprite>sprites\spr_monitorframe</sprite>
+      <sprite>sprites\spr_monitor_bluescreen</sprite>
+      <sprite>sprites\spr_monitor_noise</sprite>
+      <sprite>sprites\spr_monitor_boot</sprite>
+    </sprites>
+    <sprites name="vent direction arrows">
+      <sprite>sprites\spr_vent_arrow_up</sprite>
+      <sprite>sprites\spr_vent_arrow_down</sprite>
+      <sprite>sprites\spr_vent_arrow_left</sprite>
+      <sprite>sprites\spr_vent_arrow_right</sprite>
+      <sprite>sprites\spr_vent_arrow_return_left</sprite>
+      <sprite>sprites\spr_vent_arrow_return_right</sprite>
+    </sprites>
+    <sprites name="midlertidigt rod">
+      <sprite>sprites\spr_flashbang</sprite>
+      <sprite>sprites\sprite108</sprite>
+      <sprite>sprites\spr_arrow</sprite>
+      <sprite>sprites\spr_slash</sprite>
+      <sprite>sprites\spr_fired</sprite>
+      <sprite>sprites\spr_thief_death</sprite>
+    </sprites>
   </sprites>
   <backgrounds name="background">
     <backgrounds name="jade">
       <background>background\bkg_jade_spritesheet</background>
       <background>background\bkg_jade_pattern</background>
     </backgrounds>
+    <background>background\bkg_customize</background>
+    <background>background\bkg_options</background>
+    <background>background\bkg_credits</background>
   </backgrounds>
   <paths name="paths"/>
   <scripts name="scripts">
@@ -208,6 +235,7 @@
       <script>scripts\scr_screen_buttons_place_seb.gml</script>
       <script>scripts\scr_maze_build_seb.gml</script>
       <scripts name="generate maze data">
+        <script>scripts\scr_maze_data_tempdraw.gml</script>
         <script>scripts\scr_maze_generate_init_seb.gml</script>
         <script>scripts\scr_maze_generate_seb.gml</script>
         <script>scripts\scr_maze_generate_convert_seb.gml</script>
@@ -215,6 +243,9 @@
         <script>scripts\scr_maze_generate_main.gml</script>
         <script>scripts\scr_maze_create_extra_paths.gml</script>
         <script>scripts\scr_maze_generate_protect_tight_paths.gml</script>
+        <script>scripts\scr_maze_generate_goal_distance.gml</script>
+        <script>scripts\scr_maze_generate_longest_distance.gml</script>
+        <script>scripts\scr_maze_generate_choose_spawn.gml</script>
       </scripts>
     </scripts>
     <scripts name="player movement">
@@ -235,6 +266,8 @@
         <script>scripts\scr_player_moved_ani.gml</script>
       </scripts>
       <script>scripts\scr_player_init_seb.gml</script>
+      <script>scripts\scr_player_breathing.gml</script>
+      <script>scripts\scr_vent_position_details.gml</script>
     </scripts>
     <scripts name="tutorial">
       <scripts name="create">
@@ -271,6 +304,8 @@
       <script>scripts\scr_vent_ani_start.gml</script>
       <script>scripts\scr_player_getView_seb.gml</script>
       <script>scripts\scr_vent_static.gml</script>
+      <script>scripts\scr_vent_draw_arrows.gml</script>
+      <script>scripts\scr_create_flash.gml</script>
     </scripts>
     <scripts name="PDA">
       <script>scripts\scr_PDA_spawn.gml</script>
@@ -278,17 +313,24 @@
       <script>scripts\scr_end_minigame.gml</script>
     </scripts>
     <scripts name="Midlertidigt rod">
-      <script>scripts\draw_binary_NV.gml</script>
-      <script>scripts\scr_diode_volume.gml</script>
+      <script>scripts\scr_NV_graphic.gml</script>
+      <script>scripts\scr_draw_binary_NV.gml</script>
       <script>scripts\scr_mouse_hover.gml</script>
-      <script>scripts\scr_destroy_diode.gml</script>
+    </scripts>
+    <scripts name="button controls">
       <script>scripts\scr_destroy_diode_vert.gml</script>
       <script>scripts\scr_destroy_charge.gml</script>
+      <script>scripts\scr_destroy_diode.gml</script>
+      <script>scripts\scr_diode_volume.gml</script>
+      <script>scripts\scr_guard_life_h.gml</script>
+      <script>scripts\scr_guard_life_v.gml</script>
+      <script>scripts\scr_isFired_disable_buttons.gml</script>
     </scripts>
   </scripts>
   <fonts name="fonts">
     <font>fonts\fnt_testfont</font>
     <font>fonts\font_customize</font>
+    <font>fonts\font_customize_text</font>
     <font>fonts\font_binary_NV</font>
     <font>fonts\font_text_NV</font>
     <font>fonts\fnt_fired</font>
@@ -301,7 +343,10 @@
     <objects name="office">
       <object>objects\obj_maze_ver_seb</object>
       <object>objects\obj_maze_hor_seb</object>
+      <object>objects\obj_office_background</object>
+      <object>objects\obj_office_monitorframe</object>
       <object>objects\obj_player_seb</object>
+      <object>objects\obj_theif_bulletholes</object>
       <object>objects\obj_nightvision</object>
       <objects name="buttons">
         <object>objects\obj_button_red_vertical</object>
@@ -317,10 +362,11 @@
         <object>objects\obj_button_charge</object>
       </objects>
       <object>objects\obj_sword_spin</object>
-      <object>objects\obj_NV_code_creator</object>
       <object>objects\obj_win</object>
       <object>objects\obj_thief_death</object>
+      <object>objects\obj_monitor_bluescreen</object>
       <object>objects\obj_thief_win</object>
+      <object>objects\obj_flashbang</object>
       <object>objects\obj_door_open</object>
       <object>objects\obj_door_closed</object>
       <object>objects\obj_arrow</object>
@@ -404,10 +450,11 @@
   <rooms name="rooms">
     <room>rooms\rm_intro</room>
     <rooms name="menu">
-      <room>rooms\rm_MainMenu</room>
       <room>rooms\rm_MenuCabinet</room>
       <room>rooms\rm_options</room>
       <room>rooms\rm_customize</room>
+      <room>rooms\rm_credits</room>
+      <room>rooms\rm_MainMenu</room>
     </rooms>
     <rooms name="tutorial">
       <room>rooms\rm_tuto_1</room>

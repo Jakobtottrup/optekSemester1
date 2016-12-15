@@ -4,6 +4,8 @@ if (instance_exists(obj_button_blink_horiz)) //is the instance  here?
     if obj_button_blink_horiz.x  >= (room_width -170)
     {
       instance_destroy();
+      view_xview = 0;
+      view_yview = 0;
     }
 }
 

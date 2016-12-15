@@ -193,31 +193,3 @@ if (global.player_movement) {
 
 
 
-
-
-
-
-
-/*
-//check if the door is shown when it shouldn't
-//if (global.player_movement) {
-    if (global.player_view_door) {
-    //if the door is in front
-        if !instance_exists(obj_vent_door) {
-        //but doesn't exists
-            instance_create(0, 0, obj_vent_door);
-            //spawn door
-        }
-    } else {
-    //if the door is not in front
-        if instance_exists(obj_vent_door) {
-        //but it exists
-            instance_create(0, 0, obj_vent_door_remove);
-            //remove door
-        }
-    }
-//}
-*/
-
-
-

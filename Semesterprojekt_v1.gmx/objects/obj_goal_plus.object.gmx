@@ -91,7 +91,7 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>if (global.custom_num_goal &lt; 6) {
+            <string>if (global.custom_num_goal &lt; 12) {
     global.custom_num_goal += 1;
 }
 </string>

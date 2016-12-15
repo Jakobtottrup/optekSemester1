@@ -48,7 +48,7 @@
         <arguments>
           <argument>
             <kind>11</kind>
-            <room>rm_MainMenu</room>
+            <room>rm_MenuCabinet</room>
           </argument>
         </arguments>
       </action>

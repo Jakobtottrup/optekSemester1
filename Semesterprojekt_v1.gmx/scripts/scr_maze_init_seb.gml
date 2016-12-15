@@ -14,7 +14,7 @@ cpu_y = 130;
 cpu_offset_x = 0;
 cpu_offset_y = 0;
 
-cpu_button_offset = 60;
+cpu_button_offset = 70;
 
 //view id
 global.player_view_id = 0;
@@ -33,18 +33,47 @@ global.button_scale = 1;
 global.tutorial_state = 0;
 global.nightvision_mode = 0;
 
-global.player_health = 100;
+//laser doors
+global.laser_door_life_span = 450;
+global.laser_door_amount = 0;
 
 //max number of goals
-maze_num_goals = 3;
+maze_num_goals = global.custom_num_goal;
 //max number of doors
-maze_num_doors = 6;
+maze_num_doors = global.custom_num_door;
 //percent extra paths
 maze_extra_path_percent = 20;
+
+//the top percent distances to choose from
+//when choosing the player spawn point
+spawn_min_dist_goal = 30; //   '/.
+
+
+//this view adds an extra touch such as breathing and screenshake
+global.player_actual_view_x   = 0;
+global.player_actual_view_y   = 0;
+global.player_actual_view_dir = 0;
+global.shake_x = 0;
+global.shake_y = 0;
+
+
+//**** breathing ****//
+
+//steps pr breath cycle
+global.player_breath_cycle_steps = 60;
+//fastest allowed breathing for exhausting //fewest steps pr cycle
+player_breath_cycle_min = 20;
+//slowest allowed breathing //max steps pr cycle
+player_breath_cycle_max = 80;
+
+//steps shorter cycle each movement - cost of moving
+global.player_breath_move_cost = 15;
+//steps added to breath length each step - breath slower if exhausted
+player_breath_fitness = 0.08;
+//variable for x value in sin() and cos() curves
+player_breath_count = 0;
 
 
 
 //start maze generation
 scr_maze_generate_seb()
-
-

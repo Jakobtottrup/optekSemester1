@@ -1,14 +1,14 @@
-image_xscale = 4;
-image_yscale = 4;
+image_xscale = 2;
+image_yscale = 2;
 
 
 //animation moving forward or backwards
 if (global.player_last_dir == 0) {
     //backward speed
-    image_speed = -0.2;
+    image_speed = -0.4;
 } else {
     //forward speed
-    image_speed = 0.2;
+    image_speed = 0.4;
 }
 
 
@@ -158,9 +158,9 @@ switch (global.player_view_id_old) {
             if (global.player_return) {
 //MISSING!!!
                 if (global.player_last_dir == 1) {
-                    sprite_index = spr_vent_00_return_right;
+                    sprite_index = spr_vent_08_return_right;
                 } else {
-                    sprite_index = spr_vent_00_return_left;
+                    sprite_index = spr_vent_08_return_left;
                 }
             } else {
                 sprite_index = spr_vent_08_exit;
