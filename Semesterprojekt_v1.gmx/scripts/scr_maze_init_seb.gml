@@ -5,16 +5,16 @@ maze_width = global.customize_grid_x;  //horizontal paths  |  |  |
 maze_height = global.customize_grid_y; //vertical paths     -- --
 global.count_moves = 0;
 //security screen size
-cpu_width = 850;
-cpu_height = 630;
+cpu_width = 855;
+cpu_height = 635;
 
-cpu_x = 930;
-cpu_y = 130;
+cpu_x = 923;
+cpu_y = 143;
 
 cpu_offset_x = 0;
 cpu_offset_y = 0;
 
-cpu_button_offset = 70;
+cpu_button_offset = 60;
 
 //view id
 global.player_view_id = 0;
