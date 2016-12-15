@@ -253,6 +253,8 @@
         <script>scripts\scr_maze_generate_choose_spawn.gml</script>
       </scripts>
       <script>scripts\scr_level_generation.gml</script>
+      <script>scripts\scr_shake_player_pos.gml</script>
+      <script>scripts\scr_set_section_variables.gml</script>
     </scripts>
     <scripts name="player movement">
       <scripts name="player move">
