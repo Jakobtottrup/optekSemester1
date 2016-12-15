@@ -12,7 +12,7 @@ if shake_count > 0 && distance_to_object(obj_player_seb) <= (global.maze_steplen
 }
 shake_count--;
 if !instance_exists(obj_arrow){
-    shake_count = 5;
+    shake_count = 10;
 }
 
 
