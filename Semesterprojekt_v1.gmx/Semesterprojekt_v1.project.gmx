@@ -331,6 +331,8 @@
       <script>scripts\scr_guard_life_v.gml</script>
       <script>scripts\scr_isFired_disable_buttons.gml</script>
     </scripts>
+    <script>scripts\scr_ventilation_movent_sound.gml</script>
+    <script>scripts\scr_ventilation_sound_end.gml</script>
   </scripts>
   <fonts name="fonts">
     <font>fonts\fnt_testfont</font>
