@@ -62,6 +62,7 @@
     <instance objName="obj_goal_minus" x="1600" y="352" name="inst_D949DCC9" locked="0" code="" scaleX="0.853333353996277" scaleY="0.853333353996277" colour="4294967295" rotation="0"/>
     <instance objName="obj_door_minus" x="1600" y="704" name="inst_F0BF1EEB" locked="0" code="" scaleX="0.853333353996277" scaleY="0.853333353996277" colour="4294967295" rotation="0"/>
     <instance objName="obj_door_plus" x="1600" y="576" name="inst_0EC60CA7" locked="0" code="" scaleX="0.853333353996277" scaleY="0.853333353996277" colour="4294967295" rotation="0"/>
+    <instance objName="obj_start_game" x="1600" y="896" name="inst_DB657730" locked="0" code="" scaleX="0.740000009536743" scaleY="0.730000019073486" colour="4294967295" rotation="0"/>
   </instances>
   <tiles/>
   <PhysicsWorld>0</PhysicsWorld>
