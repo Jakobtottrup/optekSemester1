@@ -314,6 +314,7 @@
       <script>scripts\scr_PDA_spawn.gml</script>
       <script>scripts\scr_PDA_paper_spawn.gml</script>
       <script>scripts\scr_end_minigame.gml</script>
+      <script>scripts\scr_disable_laser.gml</script>
     </scripts>
     <scripts name="Midlertidigt rod">
       <script>scripts\scr_NV_graphic.gml</script>
