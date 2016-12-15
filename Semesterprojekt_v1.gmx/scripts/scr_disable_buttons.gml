@@ -4,7 +4,7 @@
 called in each button's step event
 */
 
-if global.permission_attack = false || global.permission_listen = false {
+if (global.permission_attack = false && global.permission_listen = false) {
     with(obj_button_red_jvt){
         instance_change(obj_button_inactive, false);
     }

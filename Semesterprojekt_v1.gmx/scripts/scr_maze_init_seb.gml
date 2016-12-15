@@ -30,7 +30,7 @@ global.player_return = false;
 global.sword_ani_id = 0;
 global.button_scale = 1;
 
-global.tutorial_state = 0;
+
 global.nightvision_mode = 0;
 
 //laser doors
@@ -75,9 +75,16 @@ player_breath_count = 0;
 
 
 
+if (global.tutorial_state == 0) {
+
 //start maze generation
 scr_maze_generate_seb()
 
 
 //init tutorial permissions
 scr_tutorial_permissions();
+
+} else {
+    //load special cases for the tutorial
+    scr_tutorial_init();
+}
