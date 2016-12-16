@@ -2,7 +2,8 @@
 
 draw_set_font (font_customize);
 draw_set_colour(c_dkgray);
-draw_text(550 - (string_width(string(global.option_gamma)) / 2), 610, global.option_gamma);
+draw_set_halign(fa_center);
+draw_text(528, 607, global.option_gamma);
 
 
 // Draws text for gamma level//
