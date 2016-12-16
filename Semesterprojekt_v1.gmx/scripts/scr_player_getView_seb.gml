@@ -1,4 +1,4 @@
-image_angle = direction; // DELETE THIS // points sprite in direction
+image_angle = direction;
 
 /*
 cos(0)  = 1     sin(0)  = 0     dir(0)  = x + step, y + 0

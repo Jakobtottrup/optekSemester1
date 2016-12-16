@@ -7,38 +7,60 @@
     <extension index="0">extensions\Jade UI</extension>
   </NewExtensions>
   <sounds name="sound">
-    <sound>sound\Sound_Button_Menu</sound>
-    <sound>sound\snd_btn_click</sound>
-    <sound>sound\snd_mission_impossible</sound>
-    <sound>sound\snd_windows_xp_boot</sound>
-    <sound>sound\snd_static_tvnoise</sound>
-    <sound>sound\snd_nightvision_activate</sound>
-    <sound>sound\snd_ventilation_test</sound>
-    <sound>sound\snd_constant</sound>
-    <sound>sound\snd_menu</sound>
-    <sound>sound\snd_machinegun</sound>
-    <sound>sound\snd_swing</sound>
-    <sound>sound\snd_charging</sound>
-    <sound>sound\snd_fired</sound>
-    <sound>sound\snd_squish</sound>
-    <sound>sound\snd_scream</sound>
     <sound>sound\snd_stamp</sound>
-    <sound>sound\snd_slash</sound>
-    <sound>sound\snd_alarm</sound>
-    <sound>sound\snd_laser1</sound>
-    <sound>sound\snd_laser_constant</sound>
-    <sound>sound\snd_laser_reverse</sound>
-    <sound>sound\intro_mission_impossible_uncut</sound>
-    <sound>sound\intro_mission_impossible_cut</sound>
-    <sound>sound\snd_hello</sound>
-    <sound>sound\snd_thief_death</sound>
-    <sound>sound\snd_turning_page</sound>
-    <sound>sound\snd_game_music</sound>
-    <sound>sound\snd_ventilation_movement1</sound>
-    <sound>sound\snd_ventilation_movement2</sound>
-    <sound>sound\snd_ventilation_movement3</sound>
-    <sound>sound\snd_ventilation_movement4</sound>
-    <sound>sound\snd_light_switch</sound>
+    <sounds name="music">
+      <sound>sound\intro_mission_impossible_uncut</sound>
+      <sound>sound\intro_mission_impossible_cut</sound>
+      <sound>sound\snd_game_music</sound>
+      <sound>sound\snd_mission_impossible</sound>
+      <sound>sound\snd_menu</sound>
+    </sounds>
+    <sounds name="thief">
+      <sounds name="movement">
+        <sound>sound\snd_ventilation_movement1</sound>
+        <sound>sound\snd_ventilation_movement2</sound>
+        <sound>sound\snd_ventilation_movement3</sound>
+        <sound>sound\snd_ventilation_movement4</sound>
+      </sounds>
+      <sounds name="effects">
+        <sound>sound\snd_nightvision_activate</sound>
+        <sound>sound\snd_laser1</sound>
+        <sound>sound\snd_laser_constant</sound>
+        <sound>sound\snd_laser_reverse</sound>
+      </sounds>
+    </sounds>
+    <sounds name="tutorial">
+      <sound>sound\snd_light_switch</sound>
+    </sounds>
+    <sounds name="menu">
+      <sound>sound\snd_turning_page</sound>
+      <sound>sound\snd_slash</sound>
+    </sounds>
+    <sounds name="death">
+      <sound>sound\snd_machinegun</sound>
+      <sound>sound\snd_fired</sound>
+      <sound>sound\snd_squish</sound>
+      <sound>sound\snd_scream</sound>
+      <sound>sound\snd_hello</sound>
+      <sound>sound\snd_thief_death</sound>
+    </sounds>
+    <sounds name="guard">
+      <sounds name="guard buttons">
+        <sound>sound\Sound_Button_Menu</sound>
+        <sound>sound\snd_btn_click</sound>
+        <sound>sound\snd_charging</sound>
+      </sounds>
+      <sounds name="guard screen">
+        <sound>sound\snd_windows_xp_boot</sound>
+        <sound>sound\snd_static_tvnoise</sound>
+        <sound>sound\snd_swing</sound>
+      </sounds>
+      <sounds name="guard listen">
+        <sound>sound\snd_constant</sound>
+        <sound>sound\snd_ventilation_test</sound>
+        <sound>sound\snd_alarm</sound>
+      </sounds>
+    </sounds>
   </sounds>
   <sprites name="sprites">
     <sprites name="Main Menu">
@@ -234,13 +256,15 @@
   <scripts name="scripts">
     <script>scripts\scr_game_init.gml</script>
     <scripts name="maze generation">
-      <script>scripts\scr_maze_init_seb.gml</script>
-      <script>scripts\scr_player_spawn_seb.gml</script>
-      <script>scripts\scr_maze_generate_steplength_seb.gml</script>
-      <script>scripts\scr_maze_spawn_goals.gml</script>
-      <script>scripts\scr_maze_spawn_doors.gml</script>
-      <script>scripts\scr_screen_buttons_place_seb.gml</script>
-      <script>scripts\scr_maze_build_seb.gml</script>
+      <scripts name="main maze generate">
+        <script>scripts\scr_maze_init_seb.gml</script>
+        <script>scripts\scr_player_spawn_seb.gml</script>
+        <script>scripts\scr_maze_generate_steplength_seb.gml</script>
+        <script>scripts\scr_maze_spawn_goals.gml</script>
+        <script>scripts\scr_maze_spawn_doors.gml</script>
+        <script>scripts\scr_screen_buttons_place_seb.gml</script>
+        <script>scripts\scr_maze_build_seb.gml</script>
+      </scripts>
       <scripts name="generate maze data">
         <script>scripts\scr_maze_data_tempdraw.gml</script>
         <script>scripts\scr_maze_generate_init_seb.gml</script>
@@ -289,16 +313,16 @@
         </scripts>
         <scripts name="create">
           <script>scripts\scr_maze_init_tutorial.gml</script>
-          <script>scripts\scr_spawn_player_tutorial.gml</script>
           <script>scripts\scr_hide_for_tutorial.gml</script>
-          <script>scripts\scr_tutorial_spawn_goal.gml</script>
         </scripts>
       </scripts>
       <scripts name="actual tutorial">
+        <script>scripts\scr_tutorial_init.gml</script>
         <script>scripts\scr_tutorial_permissions.gml</script>
         <script>scripts\scr_tutorial_manuskript.gml</script>
         <script>scripts\scr_tutorial_mission_control.gml</script>
-        <script>scripts\scr_tutorial_init.gml</script>
+        <script>scripts\scr_tutorial_spawn_goal.gml</script>
+        <script>scripts\scr_spawn_player_tutorial.gml</script>
       </scripts>
     </scripts>
     <scripts name="intro">
@@ -372,13 +396,24 @@
     <font>fonts\fnt_restart_prompt</font>
   </fonts>
   <objects name="objects">
-    <object>objects\obj_firedtext</object>
     <objects name="office">
-      <object>objects\obj_maze_ver_seb</object>
-      <object>objects\obj_maze_hor_seb</object>
-      <object>objects\obj_office_background</object>
-      <object>objects\obj_office_monitorframe</object>
-      <object>objects\obj_player_seb</object>
+      <objects name="on screen">
+        <object>objects\obj_maze_ver_seb</object>
+        <object>objects\obj_maze_hor_seb</object>
+        <object>objects\obj_player_seb</object>
+        <object>objects\obj_win</object>
+        <object>objects\obj_door_open</object>
+        <object>objects\obj_door_closed</object>
+        <object>objects\obj_monitor_bluescreen</object>
+        <object>objects\obj_firedtext</object>
+      </objects>
+      <objects name="around screen">
+        <object>objects\obj_office_background</object>
+        <object>objects\obj_office_monitorframe</object>
+        <object>objects\obj_sword_spin</object>
+        <object>objects\obj_arrow</object>
+        <object>objects\obj_restart_prompt</object>
+      </objects>
       <objects name="buttons">
         <object>objects\obj_button_red_vertical</object>
         <object>objects\obj_button_inactive_vertical</object>
@@ -392,16 +427,6 @@
         <object>objects\obj_big_circle_vert</object>
         <object>objects\obj_button_charge</object>
       </objects>
-      <object>objects\obj_sword_spin</object>
-      <object>objects\obj_win</object>
-      <object>objects\obj_thief_death</object>
-      <object>objects\obj_monitor_bluescreen</object>
-      <object>objects\obj_thief_win</object>
-      <object>objects\obj_flashbang</object>
-      <object>objects\obj_door_open</object>
-      <object>objects\obj_door_closed</object>
-      <object>objects\obj_arrow</object>
-      <object>objects\obj_restart_prompt</object>
     </objects>
     <objects name="temp screen">
       <object>objects\obj_screen</object>
@@ -466,6 +491,9 @@
       <object>objects\obj_vent_door</object>
       <object>objects\obj_vent_door_remove</object>
       <object>objects\obj_theif_bulletholes</object>
+      <object>objects\obj_thief_win</object>
+      <object>objects\obj_thief_death</object>
+      <object>objects\obj_flashbang</object>
     </objects>
     <objects name="tutorial">
       <object>objects\obj_tuto_1_control</object>

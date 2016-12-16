@@ -56,10 +56,10 @@
           <argument>
             <kind>1</kind>
             <string>///DRAW OFFICE BACKGROUND
-if (global.tutorial_state == 1 || global.tutorial_state == 2) {
-    draw_sprite(spr_security_monitor_border, 0, 0, 0); 
-} else {
+if (global.tutorial_state == 0 || global.tutorial_state &gt; 4) {
     draw_sprite(spr_security_office, 0, 0, 0); 
+} else {
+    draw_sprite(spr_black_splitscreen, 0, 0, 0); 
 }
 </string>
           </argument>

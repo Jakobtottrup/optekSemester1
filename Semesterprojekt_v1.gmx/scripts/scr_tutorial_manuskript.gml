@@ -28,3 +28,46 @@ draw_text(50, 250, "attack: " + string(global.permission_attack));
 
 draw_text(250,  50, "global.tutorial_state: " + string(global.tutorial_state));
 draw_text(250, 100, "tutorial_page: " + string(tutorial_page));
+
+
+
+if (global.tutorial_state == 1) {
+    draw_text(50, 400, "Bla bla thief info");
+}
+
+if (global.tutorial_state == 2) {
+    draw_text(50, 400, "thief task movement");
+}
+
+if (global.tutorial_state == 3) {
+    draw_text(50, 400, "get to the goal");
+}
+
+if (global.tutorial_state == 5) {
+    draw_text(50, 400, "bla bla guard info");
+}
+
+if (global.tutorial_state == 6) {
+    draw_text(50, 400, "guard task listen");
+}
+
+if (global.tutorial_state == 7) {
+    draw_text(50, 400, "guard task doors");
+}
+
+if (global.tutorial_state == 8) {
+    draw_text(50, 400, "thief task win pda");
+}
+
+if (global.tutorial_state == 10) {
+    draw_text(50, 400, "bla bla guard");
+}
+
+if (global.tutorial_state == 11) {
+    draw_text(50, 400, "guard task kill or lose");
+}
+
+if (global.tutorial_state == 12) {
+    draw_text(50, 400, "bla bla end info");
+}
+
