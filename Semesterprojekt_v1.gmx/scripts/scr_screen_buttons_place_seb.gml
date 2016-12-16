@@ -7,6 +7,7 @@ x = cpu_x - cpu_button_offset;
 //create button and move to next pos
 for (i=0; i<maze_height; i++) {
     instance_create(x, y, obj_button_red_jvt);
+    
     y += global.maze_steplength*2;
 }
 
