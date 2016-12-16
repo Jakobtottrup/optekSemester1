@@ -11,7 +11,7 @@ if (global.player_dead == false) {
 
     } else {
         draw_set_colour(c_black)
-        draw_set_alpha(global.vent_darkness) //sets alpha blend/opacity 
+        draw_set_alpha(global.vent_blend) //sets alpha blend/opacity 
         draw_rectangle(0, 0, 800, room_height, false)
         draw_set_alpha(1) //resets opacity
         if (instance_exists(obj_NV_cursor_vert)) { //destroy curser when nightvision is disabled

@@ -1,5 +1,5 @@
 //NV graphics overlay
-draw_set_color(c_green);
+draw_set_color(c_white);
 
 //origin of which the graphics are drawed from
 global.o_x = 50;
