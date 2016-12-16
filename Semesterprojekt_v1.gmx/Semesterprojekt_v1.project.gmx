@@ -404,6 +404,7 @@
     <font>fonts\font_text_NV</font>
     <font>fonts\fnt_fired</font>
     <font>fonts\fnt_tutorial</font>
+    <font>fonts\fnt_tutorial_bold</font>
     <font>fonts\fnt_intro</font>
     <font>fonts\fnt_intro_kinda</font>
     <font>fonts\fnt_restart_prompt</font>

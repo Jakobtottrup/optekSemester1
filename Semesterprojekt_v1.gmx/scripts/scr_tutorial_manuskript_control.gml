@@ -83,6 +83,7 @@ if (global.tutorial_state > 12) {
 
 
 
-//next step
+//next step if tutorial is running.
+if(global.tuto_running){
 tutorial_step ++;
-
+}
