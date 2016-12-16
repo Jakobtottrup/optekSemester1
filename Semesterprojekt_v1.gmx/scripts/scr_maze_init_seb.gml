@@ -88,3 +88,7 @@ scr_tutorial_permissions();
     //load special cases for the tutorial
     scr_tutorial_init();
 }
+
+//set player_dead to false
+global.player_dead = false;
+
