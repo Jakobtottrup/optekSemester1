@@ -26,6 +26,7 @@
           <argument>
             <kind>1</kind>
             <string>k = random_range(-130, -510);
+j = random_range(-20, 20);
 </string>
           </argument>
         </arguments>

@@ -7,13 +7,9 @@ if(keyboard_check_pressed(vk_anykey)) {
     k = random_range(-130, -510);
 }
 
-//calculate random offset for every 15 step
-for (i = 0; i < 60; i += 1) {
-   {
+if (irandom(30) == 0) {
     j = random_range(-20, 20);
-   }
 }
-
 
 //using player direction to calculate position for the cursor
 NV_offset_y = j + k;
@@ -22,7 +18,7 @@ NV_offset_y = j + k;
 cur_spd = (distance_to_point(global.o_x, global.o_y+NV_offset_y) / 50) + 2
 
 //move cursor towards distination
-if (point_distance(x, y, global.o_x, global.o_y+NV_offset_y) > 5)
+if (point_distance(x, y, global.o_x, global.o_y+NV_offset_y) > 4)
    {
    move_towards_point(global.o_x, global.o_y+NV_offset_y, cur_spd);
    }

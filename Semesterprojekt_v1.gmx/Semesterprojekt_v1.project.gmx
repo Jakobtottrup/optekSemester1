@@ -363,8 +363,8 @@
         <script>scripts\scr_draw_nightvision.gml</script>
         <script>scripts\scr_create_flash.gml</script>
         <script>scripts\scr_NV_graphic.gml</script>
-        <script>scripts\scr_move_cursor_vert.gml</script>
         <script>scripts\scr_move_cursor_horiz.gml</script>
+        <script>scripts\scr_move_cursor_vert.gml</script>
         <script>scripts\scr_draw_binary_NV.gml</script>
       </scripts>
       <script>scripts\scr_vent_ani_end.gml</script>

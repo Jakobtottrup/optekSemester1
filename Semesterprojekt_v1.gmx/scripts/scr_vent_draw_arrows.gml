@@ -1,5 +1,5 @@
 
-arrow_center_x = 330;
+arrow_center_x = 326;
 arrow_center_y = 1000;
 
 //image_xscale = 0.2;
