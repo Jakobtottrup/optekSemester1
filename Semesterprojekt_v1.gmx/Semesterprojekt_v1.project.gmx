@@ -512,6 +512,7 @@
       <object>objects\obj_tuto_1_control</object>
       <object>objects\obj_tuto_2_control</object>
       <object>objects\obj_tuto_3_control</object>
+      <object>objects\obj_tuto_test_position</object>
     </objects>
     <objects name="intro">
       <object>objects\obj_intro_controller</object>

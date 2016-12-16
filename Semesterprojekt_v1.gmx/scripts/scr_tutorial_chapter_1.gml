@@ -45,8 +45,6 @@ if (tutorial_step > 140 && tutorial_step < 590) {
 
 
 
-
-
 //END THIS CHAPTER
 if (tutorial_step > 600) {
     //next chapter

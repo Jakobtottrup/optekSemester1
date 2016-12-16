@@ -8,6 +8,7 @@ instance_create(x, y, obj_maze_ver_seb);
 x = cpu_x + cpu_offset_x + (global.maze_steplength * 8);
 y = cpu_y + cpu_offset_y + (global.maze_steplength * 3);
 instance_create(x, y, obj_maze_ver_seb);
+instance_create(x, y, obj_tuto_test_position);
 
 //maze sektion bot ver
 x = cpu_x + cpu_offset_x + (global.maze_steplength * 8);

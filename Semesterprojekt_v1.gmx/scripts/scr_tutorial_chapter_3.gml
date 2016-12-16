@@ -32,17 +32,37 @@ if (tutorial_step > START && tutorial_step < STOP) {
  //** Chapter 3 **//
 //***************//
 
-if (tutorial_step > 10 && tutorial_step < 100) {
-    draw_text(50, 400, "Bla bla go to goal");
+var text_spawned = false;
+draw_set_colour(tuto_col_nar);
+draw_set_font(tuto_fnt_nar);
+
+//aktiv i 5 sek
+if (tutorial_step > 10 && tutorial_step < 160 && text_spawned == false) {
+    draw_text(50, 100, "Try moving around and# find an entrance to the building");
+}
+if tutorial_step = 170 && text_spawned = false{
+    tutorial_step--;
 }
 
+draw_set_colour(tuto_col_player);
+draw_set_font(tuto_fnt_player);
+
+with(obj_player_seb){
+    if distance_to_object(obj_tuto_test_position) <=10 && text_spawned == false {
+        draw_text(100, 700, "WATCH OUT!!#The guard is here..#Don't Move!");
+        global.player_movement = false;
+        text_spawned = true;        
+    }
+
+    
+}
 
 
 
 //END THIS CHAPTER
-if (tutorial_step > 140) {
-    //next chapter
-    global.tutorial_state = 5;
-    tutorial_step = 0;
-}
+    if text_spawned == true && tutorial_step ==260 {
+        //next chapter
+        global.tutorial_state = 5;
+        tutorial_step = 0;
+    }
 
