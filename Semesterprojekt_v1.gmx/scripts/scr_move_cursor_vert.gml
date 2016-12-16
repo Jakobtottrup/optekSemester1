@@ -1,6 +1,6 @@
 //draw circle and set color
-draw_set_color(c_green);
-draw_circle(x, y, 6, true);
+draw_set_color(c_white);
+draw_circle(x, y, 8, false);
 
 //calculate random offset for every 15 step
 if(keyboard_check_pressed(vk_anykey)) {

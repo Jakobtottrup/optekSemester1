@@ -1,6 +1,6 @@
 //draw circle and set color
-draw_set_color(c_green);
-draw_circle(x, y, 6, true);
+draw_set_color(c_white);
+draw_circle(x, y, 8, false);
 
 //calculate random offset for every 15 step
 for (i = 0; i < 60; i += 1) {
@@ -8,7 +8,12 @@ for (i = 0; i < 60; i += 1) {
 }
 
 //using player direction to calculate position for the cursor
-NV_offset_x = 120 + j + (obj_player_seb.direction * (360/270));
+if (instance_exists(obj_player_seb)) {
+    NV_offset_x = 120 + j + (obj_player_seb.direction * (360/270));
+} else {
+    NV_offset_x = random_range(0, 270)
+}
+
 
 //sets velocity for cursor move, based on distance to endpoint
 cur_spd = (distance_to_point(global.o_x+NV_offset_x, global.o_y) / 50) + 2
