@@ -93,6 +93,7 @@
             <kind>1</kind>
             <string>if (global.option_gamma &gt; 3) {
     global.option_gamma -= 1;
+    global.vent_blend -= 0.1;
 }
 </string>
           </argument>

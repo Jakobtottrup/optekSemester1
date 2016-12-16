@@ -200,6 +200,7 @@
       <sprite>sprites\spr_maze_seb</sprite>
       <sprite>sprites\spr_player_seb</sprite>
       <sprite>sprites\spr_sword</sprite>
+      <sprite>sprites\spr_NV_cursor</sprite>
       <sprite>sprites\spr_sword_spin</sprite>
       <sprite>sprites\spr_maze_door</sprite>
       <sprite>sprites\spr_door</sprite>
@@ -351,7 +352,7 @@
         <script>scripts\scr_create_flash.gml</script>
         <script>scripts\scr_NV_graphic.gml</script>
         <script>scripts\scr_move_cursor_vert.gml</script>
-        <script>scripts\svr_move_cursor_horiz.gml</script>
+        <script>scripts\scr_move_cursor_horiz.gml</script>
         <script>scripts\scr_draw_binary_NV.gml</script>
       </scripts>
       <script>scripts\scr_vent_ani_end.gml</script>
