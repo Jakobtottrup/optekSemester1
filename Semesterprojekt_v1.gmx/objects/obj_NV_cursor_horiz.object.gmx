@@ -26,6 +26,7 @@
           <argument>
             <kind>1</kind>
             <string>NV_offset_x = obj_player_seb.direction * (360/270);
+j = random_range(-20, 20);
 </string>
           </argument>
         </arguments>
