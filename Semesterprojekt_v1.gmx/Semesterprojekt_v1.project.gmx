@@ -320,10 +320,22 @@
       <scripts name="actual tutorial">
         <script>scripts\scr_tutorial_init.gml</script>
         <script>scripts\scr_tutorial_permissions.gml</script>
-        <script>scripts\scr_tutorial_manuskript.gml</script>
+        <script>scripts\scr_tutorial_manuskript_control.gml</script>
         <script>scripts\scr_tutorial_mission_control.gml</script>
         <script>scripts\scr_tutorial_spawn_goal.gml</script>
         <script>scripts\scr_spawn_player_tutorial.gml</script>
+        <scripts name="Chapters">
+          <script>scripts\scr_tutorial_chapter_1.gml</script>
+          <script>scripts\scr_tutorial_chapter_2.gml</script>
+          <script>scripts\scr_tutorial_chapter_3.gml</script>
+          <script>scripts\scr_tutorial_chapter_5.gml</script>
+          <script>scripts\scr_tutorial_chapter_6.gml</script>
+          <script>scripts\scr_tutorial_chapter_7.gml</script>
+          <script>scripts\scr_tutorial_chapter_8.gml</script>
+          <script>scripts\scr_tutorial_chapter_10.gml</script>
+          <script>scripts\scr_tutorial_chapter_11.gml</script>
+          <script>scripts\scr_tutorial_chapter_12.gml</script>
+        </scripts>
       </scripts>
     </scripts>
     <scripts name="intro">

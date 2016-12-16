@@ -1,25 +1,10 @@
 draw_set_halign(fa_left);
 
-//narrator
-tuto_col_nar = c_lime;
-tuto_fnt_nar = fnt_tutorial;
-
-//thief
-tuto_col_player = c_red;
-tuto_fnt_player = fnt_tutorial;
-
-//guard
-tuto_col_guard = c_maroon;
-tuto_fnt_guard = fnt_tutorial;
-
-
-  //******  1 ******//
- //** thief view **//
-//****************//
 
 draw_set_color(tuto_col_nar);
 draw_set_font(tuto_fnt_nar);
 
+/*
 draw_text(50,  50, "move: " + string(global.permission_move));
 draw_text(50, 100, "listen: " + string(global.permission_listen));
 draw_text(50, 150, "doors: " + string(global.permission_doors));
@@ -27,47 +12,77 @@ draw_text(50, 200, "pda: " + string(global.permission_pda));
 draw_text(50, 250, "attack: " + string(global.permission_attack));
 
 draw_text(250,  50, "global.tutorial_state: " + string(global.tutorial_state));
-draw_text(250, 100, "tutorial_page: " + string(tutorial_page));
+draw_text(250, 100, "tutorial_step: " + string(tutorial_step));
+*/
 
-
-
+//1
 if (global.tutorial_state == 1) {
-    draw_text(50, 400, "Bla bla thief info");
+    scr_tutorial_chapter_1();
 }
 
+//2
 if (global.tutorial_state == 2) {
-    draw_text(50, 400, "thief task movement");
+    scr_tutorial_chapter_2();
 }
 
+//3
 if (global.tutorial_state == 3) {
-    draw_text(50, 400, "get to the goal");
+    scr_tutorial_chapter_3();
 }
 
+//skip
+if (global.tutorial_state == 4) {
+    global.tutorial_state = 5;
+}
+
+//5
 if (global.tutorial_state == 5) {
-    draw_text(50, 400, "bla bla guard info");
+    scr_tutorial_chapter_5();
 }
 
+//6
 if (global.tutorial_state == 6) {
-    draw_text(50, 400, "guard task listen");
+    scr_tutorial_chapter_6();
 }
 
+//7
 if (global.tutorial_state == 7) {
-    draw_text(50, 400, "guard task doors");
+    scr_tutorial_chapter_7();
 }
 
+//8
 if (global.tutorial_state == 8) {
-    draw_text(50, 400, "thief task win pda");
+    scr_tutorial_chapter_8();
 }
 
+//skip
+if (global.tutorial_state == 9) {
+    global.tutorial_state = 10;
+}
+
+//10
 if (global.tutorial_state == 10) {
-    draw_text(50, 400, "bla bla guard");
+    scr_tutorial_chapter_10();
 }
 
+//11
 if (global.tutorial_state == 11) {
-    draw_text(50, 400, "guard task kill or lose");
+    scr_tutorial_chapter_11();
 }
 
+//12
 if (global.tutorial_state == 12) {
-    draw_text(50, 400, "bla bla end info");
+    scr_tutorial_chapter_12();
 }
+
+//skip rest
+if (global.tutorial_state > 12) {
+    room_goto(rm_MenuCabinet);
+}
+
+
+
+
+//next step
+tutorial_step ++;
 
