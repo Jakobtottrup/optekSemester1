@@ -12,4 +12,4 @@ global.custom_num_door = 4;
 
 
 //sets the default gamme level of the ventilation shafts//
-global.option_gamma = 5;
+global.option_gamma = 8;
