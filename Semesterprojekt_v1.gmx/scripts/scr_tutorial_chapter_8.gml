@@ -1,0 +1,40 @@
+/*
+Indhold:
+
+Spilleren er omringet af laserdøre. Han skal lære at bruge PDA'en.
+Derefter kan han gå frit rundt. Kapitlet stopper, når spilleren kan se målet
+*/
+
+
+/*
+Template - sig noget fra START til STOP
+Husk at ændre starten af næste kapitel til EFTER din sidste sætning
+
+
+
+if (tutorial_step > START && tutorial_step < STOP) {
+    draw_text(X, Y, "Bla bla");
+}
+
+*/
+
+//Husk eventuelle 'afsnits'-noter
+
+
+  //***************//
+ //** Chapter 8 **//
+//***************//
+
+if (tutorial_step > 10 && tutorial_step < 100) {
+    draw_text(50, 400, "Bla bla pda");
+}
+
+
+
+
+//END THIS CHAPTER
+if (tutorial_step > 140) {
+    //next chapter
+    global.tutorial_state = 10;
+    tutorial_step = 0;
+}

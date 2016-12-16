@@ -2,11 +2,26 @@
 maze_width = 5;
 maze_height = 4;
 
-tutorial_page = 0;
 
 
+//own timeline step count
+tutorial_step = 0;
 
 
+//narrator
+tuto_col_nar = c_lime;
+tuto_fnt_nar = fnt_tutorial;
+tuto_fnt_nar_bold = fnt_tutorial_bold;
+
+//thief
+tuto_col_player = c_red;
+tuto_fnt_player = fnt_tutorial;
+tuto_fnt_player_bold = fnt_tutorial_bold;
+
+//guard
+tuto_col_guard = c_aqua;
+tuto_fnt_guard = fnt_tutorial;
+tuto_fnt_guard_bold = fnt_tutorial_bold;
 
 
 
