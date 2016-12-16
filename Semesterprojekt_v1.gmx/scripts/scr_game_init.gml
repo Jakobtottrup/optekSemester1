@@ -6,4 +6,3 @@ global.sound_niveau_music = 50;
 global.sound_niveau_effect = 80;
 global.vent_blend = 0.8;
 
-global.player_dead = false;
