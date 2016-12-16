@@ -39,3 +39,10 @@ if (global.player_movement) {
     draw_sprite(spr_vent_arrow_down, 1, arrow_center_x, arrow_center_y);
 }
 
+//draw player in tutorial
+if (global.tutorial_state > 0) {
+    draw_self();
+}
+
+
+
