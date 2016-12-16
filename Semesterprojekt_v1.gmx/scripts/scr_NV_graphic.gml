@@ -1,5 +1,7 @@
 //NV graphics overlay
 draw_set_color(c_white);
+draw_set_font(font_binary_NV);
+
 
 //origin of which the graphics are drawn from
 global.o_x = 50;
@@ -15,19 +17,27 @@ if !instance_exists(obj_NV_cursor_vert) && !instance_exists(obj_NV_cursor_horiz)
 draw_line_width(global.o_x, global.o_y-100, global.o_x, global.o_y-500, 3);    //long vertical line
 draw_line_width(global.o_x+100, global.o_y, global.o_x+500, global.o_y, 3);        //long horizontal line
 
-for(i = 120; i < 520; i += 40) {
-    draw_line_width(global.o_x-10, global.o_y-i, global.o_x+10, global.o_y-i, 2);    //short vertical lines 
-    draw_line_width(global.o_x+i, global.o_y-10, global.o_x+i, global.o_y+10, 2);     //short horizontal lines
+for(m = 120; m < 520; m += 40) {
+    draw_line_width(global.o_x-10, global.o_y-m, global.o_x+10, global.o_y-m, 2);    //short vertical lines 
+    draw_line_width(global.o_x+m, global.o_y-10, global.o_x+m, global.o_y+10, 2);     //short horizontal lines
 }
 
+txt_scl = 1.2;
+
 //vertical text
-draw_text(global.o_x-30, global.o_y-130, "20");
-draw_text(global.o_x-30, global.o_y-250, "40");
-draw_text(global.o_x-30, global.o_y-370, "60");
-draw_text(global.o_x-30, global.o_y-490, "80");
+draw_text_transformed(global.o_x-30, global.o_y-130, "20", txt_scl, txt_scl, 0);
+draw_text_transformed(global.o_x-30, global.o_y-250, "40", txt_scl, txt_scl, 0);
+draw_text_transformed(global.o_x-30, global.o_y-370, "60", txt_scl, txt_scl, 0);
+draw_text_transformed(global.o_x-30, global.o_y-490, "80", txt_scl, txt_scl, 0);
 
 //horizontal text
-draw_text(global.o_x+120, global.o_y+15, "0");
-draw_text(global.o_x+240, global.o_y+15, "90");
-draw_text(global.o_x+360, global.o_y+15, "180");
-draw_text(global.o_x+480, global.o_y+15, "270");
+draw_text_transformed(global.o_x+120, global.o_y+15, "0", txt_scl, txt_scl, 0);
+draw_text_transformed(global.o_x+240, global.o_y+15, "90", txt_scl, txt_scl, 0);
+draw_text_transformed(global.o_x+360, global.o_y+15, "180", txt_scl, txt_scl, 0);
+draw_text_transformed(global.o_x+480, global.o_y+15, "270", txt_scl, txt_scl, 0);
+
+//draw compass
+//draw_sprite(spr_compass, 0, global.o_x, global.o_y);
+
+//compass_rotation = obj_player_seb.direction * (360/270);
+//draw_sprite_ext(spr_compass, 1, global.o_x, global.o_y, 1, 1, 0, c_white, 1);
