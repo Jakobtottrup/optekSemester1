@@ -485,7 +485,7 @@
 if (global.permission_pda) {
     if !instance_exists(obj_PDA_controller) {
         if global.player_view_id &gt;= 0 &amp;&amp; global.player_view_id &lt;= 7 {
-            instance_create(500, 700, obj_PDA_controller);
+            instance_create(0, 0, obj_PDA_controller);
             global.player_movement = false;
         }
     }
