@@ -40,10 +40,9 @@ draw_set_font(tuto_fnt_nar);
 if (tutorial_step > 10 && tutorial_step < 160 && text_spawned == false) {
     draw_text(50, 100, "Try moving around and# find an entrance to the building");
 }
-if tutorial_step = 170 && text_spawned = false{
-    tutorial_step--;
+if (tutorial_step > 165){
+    global.tuto_running = false;
 }
-
 draw_set_colour(tuto_col_player);
 draw_set_font(tuto_fnt_player);
 
@@ -51,7 +50,8 @@ with(obj_player_seb){
     if distance_to_object(obj_tuto_test_position) <=10 && text_spawned == false {
         draw_text(100, 700, "WATCH OUT!!#The guard is here..#Don't Move!");
         global.player_movement = false;
-        text_spawned = true;        
+        text_spawned = true;
+        global.tuto_running = true;        
     }
 
     
@@ -60,7 +60,7 @@ with(obj_player_seb){
 
 
 //END THIS CHAPTER
-    if text_spawned == true && tutorial_step ==260 {
+    if text_spawned == true && tutorial_step ==255 {
         //next chapter
         global.tutorial_state = 5;
         tutorial_step = 0;
