@@ -6,6 +6,7 @@ global.permission_doors = false;
 global.permission_pda = false;
 global.permission_attack = false;
 
+
 /*
 |x| | | | | player move + nightvision
 | |x| | | | listen button

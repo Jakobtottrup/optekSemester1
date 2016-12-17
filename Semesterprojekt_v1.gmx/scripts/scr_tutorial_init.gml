@@ -1,3 +1,5 @@
+global.PDA_game_freeze = true;
+
 
 maze_width = 5;
 maze_height = 4;

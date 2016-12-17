@@ -19,6 +19,10 @@ if (tutorial_step > START && tutorial_step < STOP) {
 
 //Husk eventuelle 'afsnits'-noter
 
+//start chapter
+if (tutorial_step == 0) {
+    //init
+}
 
   //****************//
  //** Chapter 11 **//

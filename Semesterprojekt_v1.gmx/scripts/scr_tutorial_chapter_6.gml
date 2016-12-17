@@ -25,6 +25,10 @@ if (tutorial_step > START && tutorial_step < STOP) {
 
 //Husk eventuelle 'afsnits'-noter
 
+//start chapter
+if (tutorial_step == 0) {
+    //init
+}
 
   //***************//
  //** Chapter 6 **//
@@ -62,14 +66,14 @@ if (tutorial_step > 10 && global.tutorial_task[13]!=2 && task_complete == 0) {
 
 
 //draw_healthbar(left, top, right, bottom, amount, backcol, mincol, maxcol, direction, showback, showborder);
-        draw_healthbar(50, 300, 1500, 350, global.tutorial_task[10], c_black, c_red, c_green, 0, false, false);
-    draw_text(150, 300, "Total miss");
+        draw_healthbar(50, 300, 450, 350, (global.tutorial_task[10] / 2) * 100, c_black, c_red, c_green, 0, false, false);
+    draw_text(180, 300, "Total miss");
 
-        draw_healthbar(50, 400, 1500, 450, global.tutorial_task[11], c_black, c_red, c_green, 0, false, false);
-    draw_text(150, 400, "Near hit");
+        draw_healthbar(50, 400, 450, 450, (global.tutorial_task[11] / 2) * 100, c_black, c_red, c_green, 0, false, false);
+    draw_text(180, 400, "Near hit");
     
-        draw_healthbar(50, 500, 1500, 550, global.tutorial_task[12], c_black, c_red, c_green, 0, false, false);
-    draw_text(150, 500, "Direct hit");
+        draw_healthbar(50, 500, 450, 550, (global.tutorial_task[12] / 2) * 100, c_black, c_red, c_green, 0, false, false);
+    draw_text(180, 500, "Direct hit");
     
    /*     draw_healthbar(1100, 600, 1500, 650, global.tutorial_task[9], c_black, c_red, c_green, 0, false, false);
     draw_text(1300, 600, "Move backwards");*/
@@ -136,7 +140,15 @@ if(task_complete && !global.tuto_running){
     global.tuto_running = true;
 } 
 if(task_complete){
-    draw_text(50, 500, "Well done!#Now let's try activating laser grids!"); 
+    draw_text(50, 600, "Well done!#Now let's try activating laser grids!"); 
+            draw_healthbar(50, 300, 450, 350, (global.tutorial_task[10] / 2) * 100, c_black, c_red, c_green, 0, false, false);
+    draw_text(180, 300, "Total miss");
+
+        draw_healthbar(50, 400, 450, 450, (global.tutorial_task[11] / 2) * 100, c_black, c_red, c_green, 0, false, false);
+    draw_text(180, 400, "Near hit");
+    
+        draw_healthbar(50, 500, 450, 550, (global.tutorial_task[12] / 2) * 100, c_black, c_red, c_green, 0, false, false);
+    draw_text(180, 500, "Direct hit");
 }
 
 

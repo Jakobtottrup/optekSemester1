@@ -6,6 +6,7 @@ Der forklares, hvorfor han er i skakten, og hvad hans formål er
 */
 
 
+
 /*
 Template - sig noget fra START til STOP
 Husk at ændre starten af næste kapitel til EFTER din sidste sætning
@@ -20,6 +21,11 @@ if (tutorial_step > START && tutorial_step < STOP) {
 
 //Husk eventuelle 'afsnits'-noter
 //draw_text_transformed(x, y, string, xscale, yscale, angle);
+
+//start chapter
+if (tutorial_step == 0) {
+    //init
+}
 
   //***************//
  //** Chapter 1 **//

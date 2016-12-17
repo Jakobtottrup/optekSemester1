@@ -9,9 +9,7 @@ ex. "led efter et mål"
     "Kig efter en rist i gulvet"
 */
 
-if (tutorial_step == 0) {
-    scr_tutorial_spawn_goal();
-}
+
 
 /*
 Template - sig noget fra START til STOP
@@ -27,6 +25,11 @@ if (tutorial_step > START && tutorial_step < STOP) {
 
 //Husk eventuelle 'afsnits'-noter
 
+//start chapter
+if (tutorial_step == 0) {
+    //init
+    scr_tutorial_spawn_goal();
+}
 
   //***************//
  //** Chapter 3 **//
