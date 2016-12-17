@@ -2,7 +2,6 @@
 draw_set_color(c_white);
 draw_circle(x, y, 8, false);
 
-
 if (irandom(15) == 0) {
     j = random_range(-20, 20);
 }
@@ -10,18 +9,16 @@ if (irandom(15) == 0) {
 //using player direction to calculate position for the cursor
 NV_offset_y = j - (global.shake_x*10) - 250;
 
-if (NV_offset_y > -500) {
+if (NV_offset_y < -500) {
     cur_spd = 0;
-    NV_offset_y = -499;
 }
-if (NV_offset_y < -100) {
+if (NV_offset_y > -100) {
     cur_spd = 0;
-    NV_offset_y = -101;
+    
 } else {
     //sets velocity for cursor move, based on distance to endpoint
     cur_spd = (distance_to_point(global.o_x, global.o_y+NV_offset_y) / 50) + 2
 }
-
 
 //move cursor towards distination
 if (point_distance(x, y, global.o_x, global.o_y+NV_offset_y) > 4)

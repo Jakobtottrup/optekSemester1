@@ -94,9 +94,10 @@ if (global.bluescreen_exists == false && finish_chapter8 == true) {
         instance_destroy();
     }
 }
-
+/*
 draw_text(1000, 500, "computer hacked "+string(computer_hacked));
 draw_text(1000, 600, "bluescreen exists "+string(global.bluescreen_exists));
 draw_text(1000, 700, "finish chapter8 "+string(finish_chapter8));
 draw_text(1000, 800, "PDA spawn "+string(PDA_spawn));
 draw_text(1000, 900, "PDA game freeze "+string(global.PDA_game_freeze));
+*/

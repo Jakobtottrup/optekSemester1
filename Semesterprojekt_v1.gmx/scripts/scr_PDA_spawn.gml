@@ -5,3 +5,7 @@ instance_create(370, 600, obj_PDA_player);
 
 timer_set = true;
 global.pda_destroy_folder = false;
+
+offsetx_jump = random_range(-10, 10)
+offsety_jump = random_range(-10, 10)
+

@@ -25,6 +25,3 @@ if (point_distance(x, y, global.o_x+global.NV_offset_x, global.o_y) > 4)
 } else {
     speed = 0;
 }
-
-
-

@@ -39,6 +39,7 @@
     <sounds name="death">
       <sound>sound\snd_machinegun</sound>
       <sound>sound\snd_fired</sound>
+      <sound>sound\snd_splatsound</sound>
       <sound>sound\snd_squish</sound>
       <sound>sound\snd_scream</sound>
       <sound>sound\snd_hello</sound>
@@ -197,6 +198,7 @@
       <sprite>sprites\spr_security_monitor_border</sprite>
       <sprite>sprites\spr_nightvision</sprite>
       <sprite>sprites\spr_maze_dot_seb</sprite>
+      <sprite>sprites\spr_bloodsplash</sprite>
       <sprite>sprites\spr_maze_seb</sprite>
       <sprite>sprites\spr_player_seb</sprite>
       <sprite>sprites\spr_sword</sprite>
@@ -418,6 +420,7 @@
         <object>objects\obj_maze_ver_seb</object>
         <object>objects\obj_maze_hor_seb</object>
         <object>objects\obj_player_seb</object>
+        <object>objects\obj_bloodsplash</object>
         <object>objects\obj_win</object>
         <object>objects\obj_door_open</object>
         <object>objects\obj_door_closed</object>
