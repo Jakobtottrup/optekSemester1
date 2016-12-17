@@ -92,3 +92,4 @@ scr_tutorial_permissions();
 //set player_dead to false
 global.player_dead = false;
 
+global.PDA_game_freeze = false;

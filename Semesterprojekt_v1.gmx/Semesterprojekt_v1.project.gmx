@@ -378,6 +378,7 @@
     <scripts name="PDA">
       <script>scripts\scr_PDA_spawn.gml</script>
       <script>scripts\scr_PDA_paper_spawn.gml</script>
+      <script>scripts\scr_PDA_move_player.gml</script>
       <script>scripts\scr_end_minigame.gml</script>
       <script>scripts\scr_bluescreen_fade.gml</script>
       <script>scripts\scr_bluescreen_start.gml</script>
