@@ -39,9 +39,17 @@ if (global.player_movement) {
     draw_sprite(spr_vent_arrow_down, 1, arrow_center_x, arrow_center_y);
 }
 
+
+
 //draw_self();
+if (global.player_dead) {
+    image_index = 1;
+} else {
+    image_index = 0;
+}
+
 //draw player in tutorial
-if (global.tutorial_state > 0) {
+if (global.tutorial_state > 0 || global.player_dead) {
     draw_self();
 }
 

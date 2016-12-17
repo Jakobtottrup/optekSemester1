@@ -77,8 +77,17 @@ if (global.tutorial_state == 12) {
     scr_tutorial_chapter_12();
 }
 
-//skip rest
+
+
+
+//stop tutorial
 if (global.tutorial_state > 12) {
+    global.tutorial_state = 0;
+    
+    if audio_is_playing(snd_tutorial_music) == true {
+        audio_stop_sound(snd_tutorial_music)
+    }
+    
     room_goto(rm_MenuCabinet);
 }
 

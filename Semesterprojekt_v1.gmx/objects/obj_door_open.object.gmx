@@ -29,7 +29,7 @@
           </argument>
           <argument>
             <kind>0</kind>
-            <string>0</string>
+            <string>4</string>
           </argument>
           <argument>
             <kind>0</kind>
@@ -53,11 +53,11 @@
         <arguments>
           <argument>
             <kind>0</kind>
-            <string>global.maze_steplength / 85</string>
+            <string>global.maze_steplength / 70</string>
           </argument>
           <argument>
             <kind>0</kind>
-            <string>global.maze_steplength / 85</string>
+            <string>global.maze_steplength / 70</string>
           </argument>
           <argument>
             <kind>0</kind>
@@ -165,7 +165,7 @@
           </argument>
           <argument>
             <kind>0</kind>
-            <string>0</string>
+            <string>4</string>
           </argument>
           <argument>
             <kind>0</kind>
@@ -195,7 +195,7 @@
           </argument>
           <argument>
             <kind>0</kind>
-            <string>1</string>
+            <string>5</string>
           </argument>
           <argument>
             <kind>0</kind>

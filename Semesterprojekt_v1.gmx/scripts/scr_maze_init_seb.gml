@@ -34,7 +34,7 @@ global.button_scale = 1;
 global.nightvision_mode = 0;
 
 //laser doors
-global.laser_door_life_span = 450;
+global.laser_door_life_span = 960; //one door is locked for 32 sec
 global.laser_door_amount = 0;
 
 //max number of goals
@@ -74,22 +74,25 @@ player_breath_fitness = 0.08;
 player_breath_count = 0;
 
 
-
+//if the tutorial is not running
 if (global.tutorial_state == 0) {
 
-//start maze generation
-scr_maze_generate_seb()
+    //start maze generation
+    scr_maze_generate_seb()
 
+    //init tutorial permissions
+    scr_tutorial_permissions();
 
-//init tutorial permissions
-scr_tutorial_permissions();
-
+//if the tutorial is running
 } else {
+
     //load special cases for the tutorial
     scr_tutorial_init();
 }
+
 
 //set player_dead to false
 global.player_dead = false;
 
 global.PDA_game_freeze = false;
+

@@ -495,28 +495,19 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>
+            <string>//when enter is pressed
+
 //wait a while before skip is possible
 if (tutorial_step &gt; 1) {
-
-    //if it hasn't reached the last page yet
-    if (global.tutorial_state &lt; 12) {
     
-        //go to next page
-        global.tutorial_state += 1;
-        
-        //reset step counter
-        tutorial_step = 0;
-        //start step count
-        global.tuto_running = true;
-        
-    //if it has reached the last page
-    } else {
-        
-        //stop tutorial
-        room_goto(rm_MenuCabinet);
-        audio_stop_sound(snd_tutorial_music);
-    }
+    //go to next page
+    global.tutorial_state += 1;
+
+    //reset step counter
+    tutorial_step = 0;
+    
+    //start step count
+    global.tuto_running = true;
 }
 
 </string>

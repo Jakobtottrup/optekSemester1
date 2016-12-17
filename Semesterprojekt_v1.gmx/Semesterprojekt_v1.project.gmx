@@ -65,7 +65,7 @@
     </sounds>
   </sounds>
   <sprites name="sprites">
-    <sprites name="Main Menu">
+    <sprites name="menu">
       <sprite>sprites\spr_Cursor</sprite>
       <sprite>sprites\spr_bulletholes</sprite>
       <sprites name="buttons">
@@ -88,44 +88,11 @@
         <sprite>sprites\spr_menu_folder_drawer</sprite>
         <sprite>sprites\spr_menu_folder_exit</sprite>
       </sprites>
-    </sprites>
-    <sprites name="Customize Menu">
-      <sprite>sprites\spr_Vertical_Plus</sprite>
-      <sprite>sprites\spr_Vertical_Minus</sprite>
-      <sprite>sprites\spr_Horizontal_Plus</sprite>
-      <sprite>sprites\spr_Horizontal_Minus</sprite>
-    </sprites>
-    <sprites name="jade">
-      <sprites name="buttons">
-        <sprite>sprites\spr_jade_btn_end</sprite>
-        <sprite>sprites\spr_jade_btn</sprite>
-        <sprite>sprites\spr_jade_tabs</sprite>
-        <sprite>sprites\spr_jade_btn_single</sprite>
-        <sprite>sprites\spr_jade_btn_sm</sprite>
-      </sprites>
-      <sprites name="header">
-        <sprite>sprites\spr_jade_head_small_btn</sprite>
-        <sprite>sprites\spr_jade_head</sprite>
-        <sprite>sprites\spr_jade_head_arr_btn</sprite>
-        <sprite>sprites\spr_jade_head_sm</sprite>
-        <sprite>sprites\spr_jade_head_btn</sprite>
-        <sprite>sprites\spr_jade_head_btn_end</sprite>
-      </sprites>
-      <sprites name="controls">
-        <sprite>sprites\spr_jade_switch</sprite>
-        <sprite>sprites\spr_jade_checkbox</sprite>
-        <sprite>sprites\spr_jade_radio</sprite>
-      </sprites>
-      <sprites name="textfields">
-        <sprite>sprites\spr_jade_field</sprite>
-        <sprite>sprites\spr_jade_field_sm_round</sprite>
-        <sprite>sprites\spr_jade_field_sm</sprite>
-      </sprites>
-      <sprites name="misc">
-        <sprite>sprites\spr_jade_stage</sprite>
-        <sprite>sprites\spr_jade_stars</sprite>
-        <sprite>sprites\spr_jade_panel</sprite>
-        <sprite>sprites\spr_jade_list</sprite>
+      <sprites name="Customize Menu">
+        <sprite>sprites\spr_Vertical_Plus</sprite>
+        <sprite>sprites\spr_Vertical_Minus</sprite>
+        <sprite>sprites\spr_Horizontal_Plus</sprite>
+        <sprite>sprites\spr_Horizontal_Minus</sprite>
       </sprites>
     </sprites>
     <sprites name="buttons">
@@ -137,6 +104,39 @@
       <sprite>sprites\spr_button_inactive</sprite>
       <sprite>sprites\spr_button_inactive_nomouse</sprite>
       <sprite>sprites\spr_big_circle</sprite>
+      <sprites name="jade">
+        <sprites name="buttons">
+          <sprite>sprites\spr_jade_btn_end</sprite>
+          <sprite>sprites\spr_jade_btn</sprite>
+          <sprite>sprites\spr_jade_tabs</sprite>
+          <sprite>sprites\spr_jade_btn_single</sprite>
+          <sprite>sprites\spr_jade_btn_sm</sprite>
+        </sprites>
+        <sprites name="header">
+          <sprite>sprites\spr_jade_head_small_btn</sprite>
+          <sprite>sprites\spr_jade_head</sprite>
+          <sprite>sprites\spr_jade_head_arr_btn</sprite>
+          <sprite>sprites\spr_jade_head_sm</sprite>
+          <sprite>sprites\spr_jade_head_btn</sprite>
+          <sprite>sprites\spr_jade_head_btn_end</sprite>
+        </sprites>
+        <sprites name="controls">
+          <sprite>sprites\spr_jade_switch</sprite>
+          <sprite>sprites\spr_jade_checkbox</sprite>
+          <sprite>sprites\spr_jade_radio</sprite>
+        </sprites>
+        <sprites name="textfields">
+          <sprite>sprites\spr_jade_field</sprite>
+          <sprite>sprites\spr_jade_field_sm_round</sprite>
+          <sprite>sprites\spr_jade_field_sm</sprite>
+        </sprites>
+        <sprites name="misc">
+          <sprite>sprites\spr_jade_stage</sprite>
+          <sprite>sprites\spr_jade_stars</sprite>
+          <sprite>sprites\spr_jade_panel</sprite>
+          <sprite>sprites\spr_jade_list</sprite>
+        </sprites>
+      </sprites>
     </sprites>
     <sprites name="vent animations">
       <sprites name="vent 00">
@@ -499,6 +499,7 @@
       <object>objects\obj_control</object>
       <object>objects\obj_main</object>
       <object>objects\obj_tutorial_control</object>
+      <object>objects\obj_PDA_controller</object>
     </objects>
     <objects name="nightvision">
       <object>objects\obj_NV_cursor_vert</object>
@@ -528,7 +529,6 @@
     </objects>
     <objects name="PDA">
       <object>objects\obj_PDA_folder</object>
-      <object>objects\obj_PDA_controller</object>
       <object>objects\obj_PDA_paper</object>
       <object>objects\obj_PDA_frame</object>
       <object>objects\obj_PDA_player</object>
