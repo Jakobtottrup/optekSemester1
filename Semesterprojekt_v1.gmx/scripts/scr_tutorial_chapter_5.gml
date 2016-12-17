@@ -8,10 +8,7 @@ Spilleren skal have lyst til at løbe ned ad gangen inden næste kapitel
 for at sikre, at han ved hvad den røde cirkel egentligt er
 */
 
-if (tutorial_step == 0) {
-    scr_screen_buttons_place_seb();
-    audio_play_sound(snd_light_switch, 1, false);
-}
+
 
 /*
 Template - sig noget fra START til STOP
@@ -27,6 +24,12 @@ if (tutorial_step > START && tutorial_step < STOP) {
 
 //Husk eventuelle 'afsnits'-noter
 
+//start chapter
+if (tutorial_step == 0) {
+    //init
+    scr_screen_buttons_place_seb();
+    audio_play_sound(snd_light_switch, 1, false);
+}
 
   //***************//
  //** Chapter 5 **//

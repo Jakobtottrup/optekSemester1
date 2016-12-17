@@ -33,6 +33,7 @@ if (global.tutorial_state == 3) {
 //skip
 if (global.tutorial_state == 4) {
     global.tutorial_state = 5;
+    tutorial_step = 0;
 }
 
 //5
@@ -58,6 +59,7 @@ if (global.tutorial_state == 8) {
 //skip
 if (global.tutorial_state == 9) {
     global.tutorial_state = 10;
+    tutorial_step = 0;
 }
 
 //10
@@ -85,5 +87,6 @@ if (global.tutorial_state > 12) {
 
 //next step if tutorial is running.
 if(global.tuto_running){
-tutorial_step ++;
+    tutorial_step ++;
 }
+
