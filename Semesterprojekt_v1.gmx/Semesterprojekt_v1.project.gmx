@@ -31,6 +31,7 @@
     </sounds>
     <sounds name="tutorial">
       <sound>sound\snd_light_switch</sound>
+      <sound>sound\snd_tutorial_music</sound>
     </sounds>
     <sounds name="menu">
       <sound>sound\snd_turning_page</sound>
@@ -520,6 +521,7 @@
       <object>objects\obj_tuto_2_control</object>
       <object>objects\obj_tuto_3_control</object>
       <object>objects\obj_tuto_test_position</object>
+      <object>objects\obj_tutorial_healthbar</object>
     </objects>
     <objects name="intro">
       <object>objects\obj_intro_controller</object>

@@ -61,6 +61,11 @@ if (global.tutorial_state == 8) {
     global.permission_pda    = true;
 }
 
+if (global.tutorial_state == 10) {
+    global.permission_attack = true;
+}
+
+
 if (global.tutorial_state == 11) {
     global.permission_listen = true;
     global.permission_doors  = true;

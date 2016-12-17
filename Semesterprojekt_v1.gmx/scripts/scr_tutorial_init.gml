@@ -4,7 +4,8 @@ global.PDA_game_freeze = true;
 maze_width = 5;
 maze_height = 4;
 
-
+//Plays song when tutorial starts//
+audio_play_sound(snd_tutorial_music,1,true);
 
 //own timeline step count
 tutorial_step = 0;

@@ -39,6 +39,10 @@ if (tutorial_step > 10 && tutorial_step < 100) {
 
 //END THIS CHAPTER
 if (tutorial_step > 140) {
+    if audio_is_playing(snd_tutorial_music) == true {
+    audio_stop_sound(snd_tutorial_music)
+    }
+
     //next chapter
     global.tutorial_state = 0;
     room_goto(rm_MenuCabinet);
