@@ -49,7 +49,7 @@
         <arguments>
           <argument>
             <kind>6</kind>
-            <sound>snd_game_music</sound>
+            <sound>-100</sound>
           </argument>
         </arguments>
       </action>
