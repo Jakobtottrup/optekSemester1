@@ -33,21 +33,21 @@ if (tutorial_step > START && tutorial_step < STOP) {
 //***************//
 draw_set_colour(tuto_col_nar);
 draw_set_font(tuto_fnt_nar);
-if (tutorial_step > 10 && tutorial_step < 70) {
+if (tutorial_step > 10 && tutorial_step < 100) {
     draw_text(50, 200, "*Security guard ID DW590 #checking in*");
 }
 
-if (tutorial_step > 75 && tutorial_step < 135) {
+if (tutorial_step > 105 && tutorial_step < 195) {
     draw_set_colour(tuto_col_nar);
     draw_set_font(tuto_fnt_nar_bold);
     draw_text(1100, 600, "HM!?##Is Someone here??");
 }
 
-if (tutorial_step > 140 && tutorial_step < 230){
+if (tutorial_step > 200 && tutorial_step < 290){
     draw_text(1200, 850, "I should probably send someone#to check the ventilation ducts!");
 }
 
-if (tutorial_step > 200 && tutorial_step < 290) {
+if (tutorial_step > 300 && tutorial_step < 390) {
     draw_set_colour(tuto_col_player);
     draw_set_font(tuto_fnt_player);
     draw_text(100, 400, "Don't move a muscle!##If you move while guards #are checking you will #trigger the alarm!");
@@ -55,7 +55,7 @@ if (tutorial_step > 200 && tutorial_step < 290) {
 
 
 //END THIS CHAPTER
-if (tutorial_step > 320) {
+if (tutorial_step > 520) {
     //next chapter
     global.tutorial_state = 6;
     tutorial_step = 0;

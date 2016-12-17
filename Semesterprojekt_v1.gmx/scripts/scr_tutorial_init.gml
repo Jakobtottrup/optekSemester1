@@ -1,3 +1,5 @@
+global.PDA_game_freeze = true;
+
 
 maze_width = 5;
 maze_height = 4;
@@ -83,7 +85,7 @@ maze_data_ver[14] = 0;
 //reset tutorial tasks
 global.tutorial_task[0] = 0; //move forward
 global.tutorial_task[1] = 0; //turn
-global.tutorial_task[2] = 0; //move back
+global.tutorial_task[2] = 0; //move back 
 global.tutorial_task[3] = 0; //turn around
 
 global.tutorial_task[4] = 0;
@@ -93,3 +95,10 @@ global.tutorial_task[6] = 0; //slow move forward
 global.tutorial_task[7] = 0; //slow turn
 global.tutorial_task[8] = 0; //slow move back
 global.tutorial_task[9] = 0; //slow turn around
+
+
+//guard tasks
+global.tutorial_task[10] = 0; // total miss diode
+global.tutorial_task[11] = 0; // near diode
+global.tutorial_task[12] = 0; // direct hit diode
+global.tutorial_task[13] = 0; // completed task
