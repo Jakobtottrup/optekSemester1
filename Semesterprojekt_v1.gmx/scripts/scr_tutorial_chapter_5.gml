@@ -29,6 +29,13 @@ if (tutorial_step == 0) {
     //init
     scr_screen_buttons_place_seb();
     audio_play_sound(snd_light_switch, 1, false);
+    
+    //move player
+    with (obj_player_seb) {
+        x = obj_tuto_test_position.x;
+        y = obj_tuto_test_position.y;
+        direction = 90;
+    }
 }
 
   //***************//
