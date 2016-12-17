@@ -16,3 +16,4 @@ with(obj_button_inactive_vertical){
     instance_change(obj_button_red_vertical, false)
 }
 
+global.bluescreen_exists = false;

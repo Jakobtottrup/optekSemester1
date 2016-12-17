@@ -37,48 +37,51 @@ if (tutorial_step > 10 && tutorial_step < 130) {
 
 if (tutorial_step > 140 && !keyboard_check(vk_space) && !instance_exists(obj_PDA_controller) && tutorial_step < 300) { 
     draw_text(text_center, 875, "Press <space> to bring up the PDA");
+    PDA_spawn = true;
+    global.player_movement = false;
 }
 
-if (tutorial_step > 30 && tutorial_step < 120 && (instance_exists(obj_PDA))) {
-   draw_text(text_center, 300, "Use the arrow keys#to catch all the#papers within the time!");
+if (instance_exists(obj_PDA) && tutorial_step < 350) {
+   draw_text_transformed(text_center+14, 450, "Use the arrow keys#to catch all the#papers within the time!", 0.75, 0.75, 0);
 }
-if (tutorial_step > 130 && tutorial_step < 420) {
-   draw_text(text_center, 400, "If you complete the task,#the security guards computer#will be disabled for a short period");
+if (tutorial_step > 350 && tutorial_step < 490) {
+   draw_text_transformed(text_center+14, 450, "If you complete the task,#the security guards computer#will be disabled for a short period", 0.75, 0.75, 0);
 }
-if (tutorial_step > 440 && tutorial_step < 470) {
+if (tutorial_step > 500 && tutorial_step < 530) {
    draw_text(text_center+30, 400, "Ready?");
 }
-if (tutorial_step > 480 && tutorial_step < 510) {
+if (tutorial_step > 530 && tutorial_step < 545) {
    draw_text(text_center+30, 400, "Set!");
 }
-if (tutorial_step > 515 && tutorial_step < 530) {
+if (tutorial_step > 545 && tutorial_step < 565) {
     draw_text(text_center+30, 400, "Go!");
 }
-if (tutorial_step > 535 && tutorial_step < 550) {
+if (tutorial_step > 570 && tutorial_step < 1000) {
     global.PDA_game_freeze = false;
-}
-if (instance_exists(obj_monitor_bluescreen)) {
+    if (instance_exists(obj_monitor_bluescreen)) {
     computer_hacked = true;
-    draw_text(text_center, 400, "Congratulations!#You've disabled the guards computer#It is now rebooting,#and you have time to escape!")
+    } else {
+        computer_hacked = false;
+    }
 }
 
+//if game lost - try again
+if (global.PDA_game_freeze == false && computer_hacked == false && PDA_spawn == true) {
+    if(!instance_exists(obj_PDA) && !instance_exists(obj_monitor_bluescreen)) {
+        draw_text(text_center, 400, "Woops, bad luck! Try again!#Press the spacebar again")
+    }
+}
 
-
-
-
-
-
-
-
-
-
-
-
+//when successful hack
+if (computer_hacked == true && global.PDA_game_freeze == false) {
+    draw_text(text_center, 400, "Congratulations!#You've disabled the guards computer#It is now rebooting,#and you have time to escape!")
+    //global.tuto_running = false;
+}
 
 //END THIS CHAPTER
-if (tutorial_step > 1500) {
+if (computer_hacked == true && global.bluescreen_exists == false) {
     //next chapter
+    global.player_movement = true;
     global.tutorial_state = 10;
     tutorial_step = 0;
 }
-

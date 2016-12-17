@@ -52,6 +52,7 @@
             <string>///SET VARIABLE
 //global.computer_hacked = true;
 image_speed = 0;
+global.bluescreen_exists = true;
 </string>
           </argument>
         </arguments>
