@@ -57,7 +57,7 @@ if (global.tutorial_state == 7) {
 }
 
 if (global.tutorial_state == 8) {
-    global.permission_pda    = true;
+    global.permission_pda    = false;   //bliver sat til true i scriptet
 }
 
 if (global.tutorial_state == 10) {

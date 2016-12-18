@@ -74,6 +74,12 @@ player_breath_fitness = 0.08;
 player_breath_count = 0;
 
 
+//set player_dead to false
+global.player_dead = false;
+//freeze PDA game for tutorial use
+global.PDA_game_freeze = false;
+
+
 //if the tutorial is not running
 if (global.tutorial_state == 0) {
 
@@ -83,16 +89,11 @@ if (global.tutorial_state == 0) {
     //init tutorial permissions
     scr_tutorial_permissions();
 
+    
+    
 //if the tutorial is running
 } else {
 
     //load special cases for the tutorial
     scr_tutorial_init();
 }
-
-
-//set player_dead to false
-global.player_dead = false;
-
-global.PDA_game_freeze = false;
-
