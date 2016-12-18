@@ -22,6 +22,7 @@ if (tutorial_step > START && tutorial_step < STOP) {
 //start chapter
 if (tutorial_step == 0) {
     //init
+    audio_sound_gain(snd_tutorial_music, 1, 100);
 }
 
   //****************//

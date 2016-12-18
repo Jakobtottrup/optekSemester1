@@ -30,12 +30,17 @@ if (tutorial_step == 0) {
     //init
     tutorial_step = 100;
     global.nightvision_mode = true;
+    
+    audio_sound_gain(snd_tutorial_music, 1, 0);
 }
+
+draw_set_halign(fa_center);
 
   //***************//
  //** Chapter 6 **//
 //***************//
-if global.tuto_running == true{
+
+if (global.tuto_running == true) {
     miss = 0;
     near = 0;
     hit = 0;
@@ -47,6 +52,9 @@ if (tutorial_step > 110 && global.tutorial_task[13] !=2 && task_complete == 0) {
     global.tuto_running = false;
     draw_set_colour(tuto_col_guard);
     draw_set_font(tuto_fnt_guard);
+    
+    
+    
 //  Development data  
     
 /*    draw_text(50, 700, string(hit));
@@ -64,18 +72,18 @@ if (tutorial_step > 110 && global.tutorial_task[13] !=2 && task_complete == 0) {
     }
  */
     
-    draw_text(50, 100, "Initiate sweeping search..#Press a button on the screen#to send a guard down that hall.");
+    draw_text(340, 270, "Initiate sweeping search..#Press a button on the screen#to send a guard down that hall.");
 
 
 //draw_healthbar(left, top, right, bottom, amount, backcol, mincol, maxcol, direction, showback, showborder);
-        draw_healthbar(50, 300, 450, 350, (global.tutorial_task[10] / 2) * 100, c_black, c_red, c_green, 0, false, false);
-    draw_text(180, 300, "Total miss");
+        draw_healthbar(140, 470, 540, 520, (global.tutorial_task[10] / 2) * 100, c_black, c_red, c_green, 0, false, false);
+    draw_text(340, 470, "Total miss");
 
-        draw_healthbar(50, 400, 450, 450, (global.tutorial_task[11] / 2) * 100, c_black, c_red, c_green, 0, false, false);
-    draw_text(180, 400, "Near hit");
+        draw_healthbar(140, 570, 540, 620, (global.tutorial_task[11] / 2) * 100, c_black, c_red, c_green, 0, false, false);
+    draw_text(340, 570, "Near hit");
     
-        draw_healthbar(50, 500, 450, 550, (global.tutorial_task[12] / 2) * 100, c_black, c_red, c_green, 0, false, false);
-    draw_text(180, 500, "Direct hit");
+        draw_healthbar(140, 670, 540, 720, (global.tutorial_task[12] / 2) * 100, c_black, c_red, c_green, 0, false, false);
+    draw_text(340, 670, "Direct hit");
     
    /*     draw_healthbar(1100, 600, 1500, 650, global.tutorial_task[9], c_black, c_red, c_green, 0, false, false);
     draw_text(1300, 600, "Move backwards");*/
@@ -115,33 +123,37 @@ if instance_exists(obj_button_blink_horiz){
 
 //increment appropriate task (only if no diodes exist)
 if !instance_exists(obj_button_blink_horiz) && !instance_exists(obj_button_blink_vert){
-    if hit == 1 && global.tutorial_task[12] < 2 && task_complete = 0 {
+    if (hit == 1 && global.tutorial_task[12] < 2 && task_complete == 0) {
         global.tutorial_task[12]++;
         tutorial_step = 110;
         global.tuto_running = true;
     } else
-    if near == 1 && global.tutorial_task[11] < 2 && task_complete = 0 {
+    if (near == 1 && global.tutorial_task[11] < 2 && task_complete == 0) {
         global.tutorial_task[11]++;
         tutorial_step = 110;
         global.tuto_running = true;
     } else
-    if miss == 1 && global.tutorial_task[10] < 2 && task_complete = 0 {
+    if (miss == 1 && global.tutorial_task[10] < 2 && task_complete == 0) {
         global.tutorial_task[10]++;
         tutorial_step = 110;
         global.tuto_running = true;
     }
 }    
-if (global.tutorial_task[10] == 2) && (global.tutorial_task[11] == 2) && (global.tutorial_task[12] == 2) && task_complete = 0{
+if ((global.tutorial_task[10] == 2) && (global.tutorial_task[11] == 2) && (global.tutorial_task[12] == 2) && task_complete == 0) {
     global.tutorial_task[13] = 2;
     
     task_complete = 1;  
         
 }
-if(task_complete && !global.tuto_running){
+if (task_complete && !global.tuto_running) {
     tutorial_step = 110;
     global.tuto_running = true;
 } 
-if(task_complete){
+
+
+if (task_complete) {
+    draw_text(340, 600, "I know exactly#where that thief is now!"); 
+/*
     draw_text(50, 600, "Well done!#Now let's try activating laser grids!"); 
             draw_healthbar(50, 300, 450, 350, (global.tutorial_task[10] / 2) * 100, c_black, c_red, c_green, 0, false, false);
     draw_text(180, 300, "Total miss");
@@ -151,6 +163,7 @@ if(task_complete){
     
         draw_healthbar(50, 500, 450, 550, (global.tutorial_task[12] / 2) * 100, c_black, c_red, c_green, 0, false, false);
     draw_text(180, 500, "Direct hit");
+*/
 }
 
 

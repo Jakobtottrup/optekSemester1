@@ -2,6 +2,8 @@
 draw_set_color(c_white);
 draw_set_font(font_binary_NV);
 
+draw_set_halign(fa_center);
+
 
 //origin of which the graphics are drawn from
 global.o_x = 50;

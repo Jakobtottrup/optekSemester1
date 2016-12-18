@@ -10,7 +10,7 @@ if (global.permission_move) {
                 //and the task needs more to be finished
                 if (global.tutorial_task[4] < 100) {
                     //add more to nightvision task
-                    global.tutorial_task[4] += 100/3;
+                    global.tutorial_task[4] += 100;
                 }
             }
         }
