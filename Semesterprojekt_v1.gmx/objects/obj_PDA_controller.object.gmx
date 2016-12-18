@@ -267,16 +267,6 @@ global.player_movement = true;
             <string>///TELEVISION NOISE
 image_index = round(random_range(1, sprite_get_number(spr_monitor_noise)));
 draw_sprite_ext(spr_monitor_noise, image_index, 0, 0, 1, 1, 0, -1, 0.75);
-/*
-if (irandom(10) = 10) {
-    offsetx_jump = random_range(-10, 10)
-    offsety_jump = random_range(-10, 10)
-}
-
-with(obj_cursor) {
-    position_change(offsetx_jump, offsety_jump, obj_cursor, false)
-}    
-*/
 
 
 with (obj_cursor) {
