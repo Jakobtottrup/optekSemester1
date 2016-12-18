@@ -89,9 +89,9 @@ if (tutorial_step > 204 && tutorial_step < 1000) {
 //Loading
 if (tutorial_step > 220 && tutorial_step < 540) {
     if (tutorial_step < 520) {
-        draw_healthbar(74, 778, 554, 810, ((tutorial_step - 220) / 3), c_dkgray, c_fuchsia, c_blue, 0, true, true);
+        draw_healthbar(74, 778, 554, 810, ((tutorial_step - 220) / 3), c_dkgray, make_color_rgb(51, 102, 204), make_color_rgb(0, 0, 204), 0, true, true);
     } else {
-        draw_healthbar(74, 778, 554, 810, (100), c_dkgray, c_fuchsia, c_blue, 0, true, true);
+        draw_healthbar(74, 778, 554, 810, (100), c_dkgray, c_blue, c_blue, 0, true, true);
     }
 }
 

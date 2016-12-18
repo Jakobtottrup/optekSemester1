@@ -5,15 +5,19 @@ draw_set_color(tuto_col_nar);
 draw_set_font(tuto_fnt_nar);
 
 /*
+permissions
 draw_text(50,  50, "move: " + string(global.permission_move));
 draw_text(50, 100, "listen: " + string(global.permission_listen));
 draw_text(50, 150, "doors: " + string(global.permission_doors));
 draw_text(50, 200, "pda: " + string(global.permission_pda));
 draw_text(50, 250, "attack: " + string(global.permission_attack));
 */
+
+/*
+step and chapter
 draw_text(250,  50, "global.tutorial_state: " + string(global.tutorial_state));
 draw_text(250, 100, "tutorial_step: " + string(tutorial_step));
-
+*/
 
 //1
 if (global.tutorial_state == 1) {

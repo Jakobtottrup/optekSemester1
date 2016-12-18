@@ -155,7 +155,7 @@ if(task_complete){
 
 
 //END THIS CHAPTER
-if (global.tutorial_task[13] == 2) && task_complete == 1 && tutorial_step > 120{
+if (global.tutorial_task[13] == 2) && task_complete == 1 && tutorial_step > 150{
     //next chapter
     global.tutorial_state = 7;
     tutorial_step = 0;

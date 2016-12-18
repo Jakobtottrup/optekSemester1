@@ -88,7 +88,7 @@ if (tutorial_step > 350 && tutorial_step < 500) {
 
 //first door pressed
 if (tutorial_step > 1040 && tutorial_step < 1300) {
-    draw_text(300, 300, "Did you see how the#thief got blinded");
+    draw_text(300, 300, "Do you see how the#thief gets blinded");
 }
 
 if (tutorial_step > 1200 && tutorial_step < 1300) {

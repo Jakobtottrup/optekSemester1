@@ -35,13 +35,21 @@ if (tutorial_step == 0) {
  //** Chapter 3 **//
 //***************//
 
-draw_set_colour(tuto_col_nar);
-draw_set_font(tuto_fnt_nar);
+draw_set_colour(tuto_col_player);
+draw_set_font(tuto_fnt_player);
+
+draw_set_halign(fa_center);
+
 
 //aktiv i 5 sek
 if (tutorial_step > 10 && tutorial_step < 160) {
-    draw_text(50, 100, "Try moving around and# find an entrance to the building");
+    draw_text(1520, 800, "Look for an entrace to the building");
 }
+
+if (tutorial_step > 165 && tutorial_step < 170) {
+    draw_text(1520, 800, "There should be a vent in the floor");
+}
+
 if (tutorial_step > 165){
     global.tuto_running = false;
 }
@@ -49,6 +57,7 @@ if (tutorial_step > 165){
 with(obj_player_seb){
     if (distance_to_object(obj_tuto_test_position) <= 10) {
         global.tuto_running = true; 
+        tutorial_step = 170;
     }
 }
 
