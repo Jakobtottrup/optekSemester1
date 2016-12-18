@@ -19,11 +19,11 @@ global.permission_attack = false;
 | | | | | | -  1 - nothing allowed - thief view
 |x| | | | | -  2 - movement allowed - tasks
 |x| | | | | -  3 - movement allowed
-
+| | | | | | -  4 - nothing allowed
 | | | | | | -  5 - nothing allowed
 | |x| | | | -  6 - listen allowed
 | |x|x| | | -  7 - doors allowed
-|x| | |x| | -  8 - pda allowed
+| | | |x| | -  8 - pda allowed
 
 | | | | | | - 10 - nothing allowed
 | |x|x| |x| - 11 - attack allowed
@@ -57,7 +57,6 @@ if (global.tutorial_state == 7) {
 }
 
 if (global.tutorial_state == 8) {
-    global.permission_move   = true;
     global.permission_pda    = true;
 }
 

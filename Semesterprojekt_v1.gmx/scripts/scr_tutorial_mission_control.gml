@@ -1,5 +1,5 @@
 
-/*
+
 
 //go to next mission when every task is finished
 if (global.tutorial_state == 2) {
@@ -12,9 +12,10 @@ if (global.tutorial_state == 2) {
                     if (global.tutorial_task[3] > 99) {
                         with (obj_tuto_1_control) {
                             //first mission is deactivated
-                            global.tutorial_task[5] = 1
+                            global.tutorial_task[5] = 1;
                             
-                            //START RUNNING IGEN
+                            //continue tutorial
+                            global.tuto_running = true;
                             
                         }
                     }
@@ -24,5 +25,5 @@ if (global.tutorial_state == 2) {
     }
 }
 
-*/
+
 

@@ -32,8 +32,7 @@ if (global.tutorial_state == 3) {
 
 //skip
 if (global.tutorial_state == 4) {
-    global.tutorial_state = 5;
-    tutorial_step = 0;
+    scr_tutorial_chapter_4();
 }
 
 //5
@@ -84,7 +83,7 @@ if (global.tutorial_state == 12) {
 if (global.tutorial_state > 12) {
     global.tutorial_state = 0;
     
-    if audio_is_playing(snd_tutorial_music) == true {
+    if (audio_is_playing(snd_tutorial_music) == true) {
         audio_stop_sound(snd_tutorial_music)
     }
     
@@ -92,6 +91,13 @@ if (global.tutorial_state > 12) {
 }
 
 
+//'enter to skip' text
+if (tutorial_step > 100) {
+    draw_set_halign(fa_left);
+    draw_set_color(c_dkgray);
+    draw_set_font(fnt_tutorial);
+    draw_text(950, 40, "press enter to skip this part");
+}
 
 
 //next step if tutorial is running.
