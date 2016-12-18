@@ -25,8 +25,6 @@ if (tutorial_step == 0) {
     //init
 }
 
-draw_set_halign(fa_center);
-
   //*****************//
  //** bar control **//
 //*****************//
@@ -168,6 +166,8 @@ if (global.tutorial_task[5] == 1) {
 
 draw_set_font(tuto_fnt_player);
 draw_set_color(tuto_col_player);
+
+draw_set_halign(fa_center);
 
 
 

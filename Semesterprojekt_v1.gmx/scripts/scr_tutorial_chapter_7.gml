@@ -24,30 +24,59 @@ if (tutorial_step > START && tutorial_step < STOP) {
 //start chapter
 if (tutorial_step == 0) {
     //init
+    //spawn door in front of player
+    instance_create(cpu_x + cpu_offset_x + (global.maze_steplength * 8),
+                    cpu_y + cpu_offset_y + (global.maze_steplength * 2),
+                    obj_door_open);
+    //reset task mamager
+    global.tutorial_task[5] = 0;
+    //turn on nightvision
+    global.nightvision_mode = true;
 }
+
+if (global.tutorial_task[5] == 0) {
+    if (tutorial_step > 550 && tutorial_step < 1000) {
+        tutorial_step = 150;
+    }
+}
+
+
+
+
+
 
   //***************//
  //** Chapter 7 **//
 //***************//
 
+draw_set_font(tuto_fnt_guard);
+draw_set_color(tuto_col_guard);
 
-global.permission_doors = true;
-global.permission_move = true;
-global.player_movement = true;
-//instance_create(obj_player_seb.x, obj_player_seb.y-global.maze_steplength, obj_door_open);
+draw_set_halign(fa_center);
 
-if (tutorial_step > 10 && tutorial_step < 100) {
-    global.tuto_running = true; //pause tutorial - development
-    draw_text(50, 800, "player x: "+string(obj_player_seb.x));
-    draw_text(50, 900, "player y: "+string(obj_player_seb.y));
-     draw_text(50, 400, "*Laser grid installed!*##Activate it by clicking#the empty square");
+
+
+
+if (tutorial_step > 40 && tutorial_step < 150) {
+    draw_text(300, 300, "The gray box is a laser door");
+}
+
+if (tutorial_step > 120 && tutorial_step < 300) {
+    draw_text(300, 360, "Press the door to close it");
+}
+
+if (tutorial_step > 350 && tutorial_step < 500) {
+    draw_text(300, 360, "Use the mouse cursor to#press the door");
 }
 
 
 
 
+
+
+
 //END THIS CHAPTER
-if (tutorial_step > 140) {
+if (tutorial_step > 10000) {
     //next chapter
     global.tutorial_state = 8;
     tutorial_step = 0;
