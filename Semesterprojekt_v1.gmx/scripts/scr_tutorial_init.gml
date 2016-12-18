@@ -46,6 +46,7 @@ global.PDA_game_freeze = true;
 computer_hacked = false;
 PDA_spawn = false;
 finish_chapter8 = false;
+blink_existed = false;
 
 
 scr_tutorial_maze_data();

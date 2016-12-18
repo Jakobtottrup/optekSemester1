@@ -39,19 +39,24 @@ if (tutorial_step > 10 && tutorial_step < 130) {
     draw_text(text_center, 400, "The security guard is watching!#Use your hacking device#to disable his computer!");
 }
 
+if (tutorial_step > 140 && PDA_spawn == false) {
+    global.tuto_running = true;
+}
+
 if (tutorial_step > 140 && !keyboard_check(vk_space) && !instance_exists(obj_PDA_controller) && tutorial_step < 300) {
     global.permission_pda = true;
     draw_text(text_center, 875, "Press <space> to bring up the PDA");
     global.player_movement = false;
+    global.tuto_running = false;
 }
 
 if (instance_exists(obj_PDA) && tutorial_step < 350) {
-   draw_text_transformed(text_center+14, 450, "Use the arrow keys#to catch all the#papers within time!", 0.75, 0.75, 0);
+   draw_text_transformed(text_center+12, 450, "Use the arrow keys#to catch all the#papers within time!", 0.75, 0.75, 0);
    PDA_spawn = true;
 }
 
 if (tutorial_step > 350 && tutorial_step < 490) {
-   draw_text_transformed(text_center+13, 450, "If you complete the task,#the security guards computer#will be disabled for a short period", 0.75, 0.75, 0);
+   draw_text_transformed(text_center+12, 450, "If you complete the task,#the security guards computer#will be disabled for a short period", 0.75, 0.75, 0);
 }
 
 if (tutorial_step > 500 && tutorial_step < 530) {
@@ -87,7 +92,7 @@ if (global.PDA_game_freeze == false && computer_hacked == false && PDA_spawn == 
 
 //when successful hack
 if (computer_hacked == true && global.PDA_game_freeze == false) {
-    draw_text(text_center, 400, "Congratulations!#You've disabled the guards computer#It is now rebooting,#and you have time to escape!")
+    draw_text(text_center, 400, "Succes!#You've disabled the guards computer#It is now rebooting,#and you have time to escape!")
     finish_chapter8 = true;
 }
 

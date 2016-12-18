@@ -31,6 +31,17 @@ if (tutorial_step == 0) {
  //** Chapter 10 **//
 //****************//
 
+
+//destroys the PDA, if player skips from previous chapter while it exists
+if instance_exists(obj_PDA_controller) {
+    with(obj_PDA) instance_destroy();
+    with(obj_PDA_frame) instance_destroy();
+    with(obj_PDA_controller) instance_destroy();
+    with(obj_PDA_player) instance_destroy();
+}
+
+
+
 //creates the lives in the tutorial//
 instance_create(room_width-250,60,obj_tutorial_healthbar)
 

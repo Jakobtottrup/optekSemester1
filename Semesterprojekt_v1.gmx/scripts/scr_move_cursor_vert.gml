@@ -28,3 +28,4 @@ if (point_distance(x, y, global.o_x, global.o_y+NV_offset_y) > 4)
 else speed = 0;
 
 //draw_text(500, 500, "pitch "+string(NV_offset_y));
+
