@@ -45,7 +45,7 @@ if (tutorial_step > 10 && global.tutorial_task[13]!=2 && task_complete == 0) {
     global.tuto_running = false;
     draw_set_colour(tuto_col_guard);
     draw_set_font(tuto_fnt_guard);
-/*  Development data  
+//  Development data  
     
     draw_text(50, 700, string(hit));
     draw_text(100, 700, string(near));
@@ -60,7 +60,7 @@ if (tutorial_step > 10 && global.tutorial_task[13]!=2 && task_complete == 0) {
     if instance_exists(obj_button_blink_vert){
     draw_text(50, 650, "diode x: "+string(obj_button_blink_vert.x));
     }
-  */  
+ 
     
     draw_text(50, 100, "Initiate sweeping search..#Press a button on the screen#to send a guard down that hall.");
 
@@ -98,7 +98,7 @@ if instance_exists(obj_button_blink_horiz){
 //vertical diode check
 } else if instance_exists(obj_button_blink_vert){
 //      -------- Check if diode x-position is the same as player position ---------    
-        if obj_button_blink_vert.x = obj_player_seb.x{
+        if obj_button_blink_vert.x > 1740 && obj_button_blink_vert.x < 1750{
             hit = 1;
         } else 
 //      --------Check if diode x-position is between 1 and 2 steplengths LEFT of player position --------         >> OR <<   
