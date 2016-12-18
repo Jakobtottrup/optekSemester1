@@ -47,7 +47,7 @@ if (tutorial_step > 10 && global.tutorial_task[13]!=2 && task_complete == 0) {
     draw_set_font(tuto_fnt_guard);
 //  Development data  
     
-    draw_text(50, 700, string(hit));
+/*    draw_text(50, 700, string(hit));
     draw_text(100, 700, string(near));
     draw_text(150, 700, string(miss));
     draw_text(50, 800, "player x: "+string(obj_player_seb.x));
@@ -60,7 +60,7 @@ if (tutorial_step > 10 && global.tutorial_task[13]!=2 && task_complete == 0) {
     if instance_exists(obj_button_blink_vert){
     draw_text(50, 650, "diode x: "+string(obj_button_blink_vert.x));
     }
- 
+ */
     
     draw_text(50, 100, "Initiate sweeping search..#Press a button on the screen#to send a guard down that hall.");
 
