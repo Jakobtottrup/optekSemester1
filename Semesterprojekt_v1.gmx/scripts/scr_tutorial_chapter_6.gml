@@ -28,26 +28,28 @@ if (tutorial_step > START && tutorial_step < STOP) {
 //start chapter
 if (tutorial_step == 0) {
     //init
+    tutorial_step = 100;
+    global.nightvision_mode = true;
 }
 
   //***************//
  //** Chapter 6 **//
 //***************//
 if global.tuto_running == true{
-miss = 0;
-near = 0;
-hit = 0;
-task_complete = 0;
+    miss = 0;
+    near = 0;
+    hit = 0;
+    task_complete = 0;
 }
 
-if (tutorial_step > 10 && global.tutorial_task[13]!=2 && task_complete == 0) {
+if (tutorial_step > 110 && global.tutorial_task[13] !=2 && task_complete == 0) {
     
     global.tuto_running = false;
     draw_set_colour(tuto_col_guard);
     draw_set_font(tuto_fnt_guard);
 //  Development data  
     
-    draw_text(50, 700, string(hit));
+/*    draw_text(50, 700, string(hit));
     draw_text(100, 700, string(near));
     draw_text(150, 700, string(miss));
     draw_text(50, 800, "player x: "+string(obj_player_seb.x));
@@ -60,7 +62,7 @@ if (tutorial_step > 10 && global.tutorial_task[13]!=2 && task_complete == 0) {
     if instance_exists(obj_button_blink_vert){
     draw_text(50, 650, "diode x: "+string(obj_button_blink_vert.x));
     }
- 
+ */
     
     draw_text(50, 100, "Initiate sweeping search..#Press a button on the screen#to send a guard down that hall.");
 
@@ -115,17 +117,17 @@ if instance_exists(obj_button_blink_horiz){
 if !instance_exists(obj_button_blink_horiz) && !instance_exists(obj_button_blink_vert){
     if hit == 1 && global.tutorial_task[12] < 2 && task_complete = 0 {
         global.tutorial_task[12]++;
-        tutorial_step = 0;
+        tutorial_step = 110;
         global.tuto_running = true;
     } else
     if near == 1 && global.tutorial_task[11] < 2 && task_complete = 0 {
         global.tutorial_task[11]++;
-        tutorial_step = 0;
+        tutorial_step = 110;
         global.tuto_running = true;
     } else
     if miss == 1 && global.tutorial_task[10] < 2 && task_complete = 0 {
         global.tutorial_task[10]++;
-        tutorial_step = 0;
+        tutorial_step = 110;
         global.tuto_running = true;
     }
 }    
@@ -136,7 +138,7 @@ if (global.tutorial_task[10] == 2) && (global.tutorial_task[11] == 2) && (global
         
 }
 if(task_complete && !global.tuto_running){
-    tutorial_step = 0;
+    tutorial_step = 110;
     global.tuto_running = true;
 } 
 if(task_complete){
@@ -153,7 +155,7 @@ if(task_complete){
 
 
 //END THIS CHAPTER
-if (global.tutorial_task[13]==2) && task_complete == 1 && tutorial_step == 90{
+if (global.tutorial_task[13] == 2) && task_complete == 1 && tutorial_step > 150{
     //next chapter
     global.tutorial_state = 7;
     tutorial_step = 0;

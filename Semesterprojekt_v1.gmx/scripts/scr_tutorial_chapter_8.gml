@@ -23,6 +23,17 @@ if (tutorial_step > START && tutorial_step < STOP) {
 //start chapter
 if (tutorial_step == 0) {
     //init
+    global.nightvision_mode = false;
+    //remove doors
+    with (obj_door_open) {instance_destroy();}
+    with (obj_door_closed) {instance_destroy();}
+    //spawn new, locked doors
+    instance_create(cpu_x + cpu_offset_x + (global.maze_steplength * 8),
+                    cpu_y + cpu_offset_y + (global.maze_steplength * 2),
+                    obj_door_closed);
+    instance_create(cpu_x + cpu_offset_x + (global.maze_steplength * 8),
+                    cpu_y + cpu_offset_y + (global.maze_steplength * 4),
+                    obj_door_closed);
 }
 
   //***************//

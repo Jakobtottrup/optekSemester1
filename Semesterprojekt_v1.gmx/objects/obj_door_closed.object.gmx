@@ -165,6 +165,33 @@
           </argument>
         </arguments>
       </action>
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>
+if (global.tutorial_state == 7) {
+    if (global.tutorial_task[5] == 0) {
+        global.tutorial_task[5] = 1;
+    }
+}
+
+</string>
+          </argument>
+        </arguments>
+      </action>
     </event>
     <event eventtype="2" enumb="0">
       <action>
@@ -220,7 +247,9 @@
 
 */
 
-laser_door_life -= 0.25 * power(global.laser_door_amount, 4);
+if (global.tutorial_state == 0) {
+    laser_door_life -= 0.25 * power(global.laser_door_amount, 4);
+}
 
 </string>
           </argument>
