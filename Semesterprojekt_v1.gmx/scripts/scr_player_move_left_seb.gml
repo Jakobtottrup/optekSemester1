@@ -2,9 +2,11 @@ if (!instance_exists(obj_vent_ani_start) && !instance_exists(obj_vent_ani_end)) 
     if (player_move_left) {
         //tutorial task take a turn
         if (global.tutorial_state == 2) {
-            if (global.tutorial_task[1] < 100) {
-                //turn 5 times
-                global.tutorial_task[1] += 20;
+            if (global.tutorial_task[5] == 1) {
+                if (global.tutorial_task[1] < 100) {
+                    //turn 5 times
+                    global.tutorial_task[1] += 20;
+                }
             }
         }
         
@@ -29,9 +31,11 @@ if (!instance_exists(obj_vent_ani_start) && !instance_exists(obj_vent_ani_end)) 
     } else {
         //tutorial task turn around
         if (global.tutorial_state == 2) {
-            if (global.tutorial_task[2] < 100) {
-                //turn around 2 times
-                global.tutorial_task[2] += 50;
+            if (global.tutorial_task[5] == 1) {
+                if (global.tutorial_task[2] < 100) {
+                    //turn around 2 times
+                    global.tutorial_task[2] += 50;
+                }
             }
         }
         

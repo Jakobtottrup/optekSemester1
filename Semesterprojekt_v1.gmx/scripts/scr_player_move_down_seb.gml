@@ -2,9 +2,11 @@ if (!instance_exists(obj_vent_ani_start) && !instance_exists(obj_vent_ani_end)) 
     if (player_move_down) {
         //tutorial task move backwards
         if (global.tutorial_state == 2) {
-            if (global.tutorial_task[3] < 100) {
-                //move backwards 2 times
-                global.tutorial_task[3] += 50;
+            if (global.tutorial_task[5] == 1) {
+                if (global.tutorial_task[3] < 100) {
+                    //move backwards 2 times
+                    global.tutorial_task[3] += 50;
+                }
             }
         }
         

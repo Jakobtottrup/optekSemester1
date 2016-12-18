@@ -418,6 +418,7 @@
     <font>fonts\fnt_intro</font>
     <font>fonts\fnt_intro_kinda</font>
     <font>fonts\fnt_restart_prompt</font>
+    <font>fonts\fnt_tutorial_pda</font>
   </fonts>
   <objects name="objects">
     <objects name="office">
