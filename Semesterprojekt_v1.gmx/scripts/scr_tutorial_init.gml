@@ -15,7 +15,7 @@ tutorial_step = 0;
 //********************//
 
 //narrator
-tuto_col_nar = c_lime;
+tuto_col_nar = make_colour_rgb(0, 153, 0);
 tuto_fnt_nar = fnt_tutorial;
 tuto_fnt_nar_bold = fnt_tutorial_bold;
 
@@ -25,7 +25,7 @@ tuto_fnt_player = fnt_tutorial;
 tuto_fnt_player_bold = fnt_tutorial_bold;
 
 //guard
-tuto_col_guard = c_aqua;
+tuto_col_guard = make_colour_rgb(255, 128, 0);
 tuto_fnt_guard = fnt_tutorial;
 tuto_fnt_guard_bold = fnt_tutorial_bold;
 

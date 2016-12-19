@@ -76,13 +76,13 @@ if (tutorial_step > 110 && global.tutorial_task[13] !=2 && task_complete == 0) {
 
 
 //draw_healthbar(left, top, right, bottom, amount, backcol, mincol, maxcol, direction, showback, showborder);
-        draw_healthbar(140, 470, 540, 520, (global.tutorial_task[10] / 2) * 100, c_black, c_red, c_green, 0, false, false);
+        draw_healthbar(140, 470, 540, 520, (global.tutorial_task[10] / 2) * 100, c_black, make_colour_rgb(0, 102, 255), make_colour_rgb(0, 0, 153), 0, false, false);
     draw_text(340, 470, "Total miss");
 
-        draw_healthbar(140, 570, 540, 620, (global.tutorial_task[11] / 2) * 100, c_black, c_red, c_green, 0, false, false);
+        draw_healthbar(140, 570, 540, 620, (global.tutorial_task[11] / 2) * 100, c_black, make_colour_rgb(0, 102, 255), make_colour_rgb(0, 0, 153), 0, false, false);
     draw_text(340, 570, "Near hit");
     
-        draw_healthbar(140, 670, 540, 720, (global.tutorial_task[12] / 2) * 100, c_black, c_red, c_green, 0, false, false);
+        draw_healthbar(140, 670, 540, 720, (global.tutorial_task[12] / 2) * 100, c_black, make_colour_rgb(0, 102, 255), make_colour_rgb(0, 0, 153), 0, false, false);
     draw_text(340, 670, "Direct hit");
     
    /*     draw_healthbar(1100, 600, 1500, 650, global.tutorial_task[9], c_black, c_red, c_green, 0, false, false);
