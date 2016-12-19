@@ -25,6 +25,9 @@ if (tutorial_step > START && tutorial_step < STOP) {
 //start chapter
 if (tutorial_step == 0) {
     //init
+    
+    //limit the volumen, hence the guard is thinking
+    audio_sound_gain(snd_tutorial_music, 0.4, 0);
 }
 
   //****************//

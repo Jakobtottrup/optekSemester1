@@ -36,6 +36,8 @@ if (tutorial_step == 0) {
         y = obj_tuto_test_position.y;
         direction = 90;
     }
+    
+    audio_sound_gain(snd_tutorial_music, 0.4, 0);
 }
 
   //***************//

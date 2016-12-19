@@ -32,6 +32,7 @@ if (tutorial_step == 0) {
     global.tutorial_task[5] = 0;
     //turn on nightvision
     global.nightvision_mode = true;
+    audio_sound_gain(snd_tutorial_music, 0.6, 0);
 }
 
 //loop "close one door"
@@ -75,24 +76,24 @@ draw_set_halign(fa_center);
 
 //press one door
 if (tutorial_step > 40 && tutorial_step < 150) {
-    draw_text(300, 300, "The gray box is a laser door");
+    draw_text(340, 300, "The gray box is a laser door");
 }
 
 if (tutorial_step > 120 && tutorial_step < 300) {
-    draw_text(300, 360, "Press the door to close it");
+    draw_text(340, 360, "Press the door to close it");
 }
 
 if (tutorial_step > 350 && tutorial_step < 500) {
-    draw_text(300, 360, "Use the mouse cursor to#press the door");
+    draw_text(340, 360, "Use the mouse cursor to#press the door");
 }
 
 //first door pressed
 if (tutorial_step > 1040 && tutorial_step < 1300) {
-    draw_text(300, 300, "Do you see how the#thief gets blinded");
+    draw_text(340, 300, "Do you see how the#thief gets blinded");
 }
 
 if (tutorial_step > 1200 && tutorial_step < 1300) {
-    draw_text(300, 460, "Nightvision and lasers#doesn't work well together");
+    draw_text(340, 460, "Nightvision and lasers#doesn't work well together");
 }
 
 if (tutorial_step == 1250) {
@@ -104,24 +105,24 @@ if (tutorial_step == 1250) {
 
 //use both doors
 if (tutorial_step > 1350 && tutorial_step < 1500) {
-    draw_text(300, 300, "Now lock him in using#both doors at once");
+    draw_text(340, 300, "Now lock him in using#both doors at once");
 }
 
 if (tutorial_step > 1550 && tutorial_step < 1700) {
-    draw_text(300, 300, "Close both doors at once");
+    draw_text(340, 300, "Close both doors at once");
 }
 
 if (tutorial_step > 1550 && tutorial_step < 1700) {
-    draw_text(300, 300, "Close both doors at once");
+    draw_text(340, 300, "Close both doors at once");
 }
 
 if (tutorial_step > 1750 && tutorial_step < 1900) {
-    draw_text(300, 300, "Use your mouse to close both doors");
+    draw_text(340, 300, "Use your mouse to close both doors");
 }
 
 //both doors closed
 if (tutorial_step > 2030 && tutorial_step < 2100) {
-    draw_text(300, 300, "He got nowhere to run!");
+    draw_text(340, 300, "He got nowhere to run!");
 }
 
 if (tutorial_step == 2050) {

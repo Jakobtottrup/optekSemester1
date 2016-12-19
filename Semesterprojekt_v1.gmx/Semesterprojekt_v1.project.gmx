@@ -377,11 +377,13 @@
         <script>scripts\scr_move_cursor_vert.gml</script>
         <script>scripts\scr_draw_binary_NV.gml</script>
       </scripts>
-      <script>scripts\scr_vent_ani_end.gml</script>
-      <script>scripts\scr_vent_ani_start.gml</script>
-      <script>scripts\scr_player_getView_seb.gml</script>
-      <script>scripts\scr_vent_static.gml</script>
-      <script>scripts\scr_vent_draw_arrows.gml</script>
+      <scripts name="vent view">
+        <script>scripts\scr_vent_ani_end.gml</script>
+        <script>scripts\scr_vent_ani_start.gml</script>
+        <script>scripts\scr_player_getView_seb.gml</script>
+        <script>scripts\scr_vent_static.gml</script>
+        <script>scripts\scr_vent_draw_arrows.gml</script>
+      </scripts>
     </scripts>
     <scripts name="PDA">
       <script>scripts\scr_PDA_spawn.gml</script>

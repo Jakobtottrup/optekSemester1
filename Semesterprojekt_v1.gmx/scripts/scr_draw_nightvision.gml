@@ -1,4 +1,6 @@
 ///DRAW NIGHTVISION
+draw_set_font(font_text_NV);
+
 if (global.player_dead == false) {
     if (global.nightvision_mode == 1 && instance_exists(obj_player_seb)) {
         scr_NV_graphic(); //draw cursor overlay

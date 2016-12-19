@@ -174,7 +174,7 @@ draw_set_halign(fa_center);
 
 //nightvision
 if (tutorial_step > 20 && tutorial_step < 100) {
-    draw_text(300, 300, "It's kinda dark in here");
+    draw_text(300, 300, "It's really dark in here");
 }
 
 if (tutorial_step > 80 && tutorial_step < 240) {

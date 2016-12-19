@@ -34,6 +34,9 @@ if (tutorial_step == 0) {
     instance_create(cpu_x + cpu_offset_x + (global.maze_steplength * 8),
                     cpu_y + cpu_offset_y + (global.maze_steplength * 4),
                     obj_door_closed);
+    
+    //set columen to normal over 100 millisec
+    audio_sound_gain(snd_tutorial_music, 1, 100);
 }
 
   //***************//
