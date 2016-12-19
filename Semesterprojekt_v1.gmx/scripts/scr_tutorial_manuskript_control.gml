@@ -13,11 +13,11 @@ draw_text(50, 200, "pda: " + string(global.permission_pda));
 draw_text(50, 250, "attack: " + string(global.permission_attack));
 */
 
-/*
-step and chapter
+
+//step and chapter
 draw_text(250,  50, "global.tutorial_state: " + string(global.tutorial_state));
 draw_text(250, 100, "tutorial_step: " + string(tutorial_step));
-*/
+
 
 //1
 if (global.tutorial_state == 1) {

@@ -47,6 +47,8 @@ computer_hacked = false;
 PDA_spawn = false;
 finish_chapter8 = false;
 blink_existed = false;
+player_hit = false;
+guard_dead = false;
 
 
 scr_tutorial_maze_data();

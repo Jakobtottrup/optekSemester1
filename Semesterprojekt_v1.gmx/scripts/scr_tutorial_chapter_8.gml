@@ -103,7 +103,7 @@ if (global.PDA_game_freeze == false && computer_hacked == false && PDA_spawn == 
 
 //when successful hack
 if (computer_hacked == true && global.PDA_game_freeze == false) {
-    draw_text(text_center, 400, "Succes!#You've disabled the guards computer#It is now rebooting,#and you have time to escape!")
+    draw_text(text_center, 400, "Succes!#You've disabled the guards computer.#It is now rebooting,#and you have time to escape!")
     finish_chapter8 = true;
 }
 
