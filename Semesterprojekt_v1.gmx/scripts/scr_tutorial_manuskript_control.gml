@@ -1,6 +1,5 @@
 draw_set_halign(fa_left);
 
-
 draw_set_color(tuto_col_nar);
 draw_set_font(tuto_fnt_nar);
 
@@ -100,6 +99,7 @@ if (tutorial_step > 100) {
     draw_set_halign(fa_left);
     draw_set_color(c_dkgray);
     draw_set_font(fnt_tutorial);
+    draw_set_alpha(1);
     draw_text(950, 40, "press enter to skip this part");
 }
 
