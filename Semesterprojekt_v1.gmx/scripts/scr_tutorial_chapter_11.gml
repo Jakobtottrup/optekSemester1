@@ -139,7 +139,7 @@ if (tutorial_step > 1300 && player_hit == true) {
     global.tutorial_state = 12;
     tutorial_step = 0;
 }
-
+/*
 draw_text(1000, 100, "Player alive "+string(instance_exists(obj_player_seb)));
 draw_text(1000, 150, "Player dead "+string(global.player_dead));
 draw_text(1000, 200, "blink existed "+string(blink_existed));
