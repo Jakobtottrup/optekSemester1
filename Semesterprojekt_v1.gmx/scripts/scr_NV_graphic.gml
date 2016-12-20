@@ -33,10 +33,10 @@ draw_text_transformed(global.o_x-30, global.o_y-370, "60", txt_scl, txt_scl, 0);
 draw_text_transformed(global.o_x-30, global.o_y-490, "80", txt_scl, txt_scl, 0);
 
 //horizontal text
-draw_text_transformed(global.o_x+120, global.o_y+15, "0", txt_scl, txt_scl, 0);
-draw_text_transformed(global.o_x+240, global.o_y+15, "90", txt_scl, txt_scl, 0);
-draw_text_transformed(global.o_x+360, global.o_y+15, "180", txt_scl, txt_scl, 0);
-draw_text_transformed(global.o_x+480, global.o_y+15, "270", txt_scl, txt_scl, 0);
+draw_text_transformed(global.o_x+120, global.o_y+15, "E", txt_scl, txt_scl, 0);
+draw_text_transformed(global.o_x+240, global.o_y+15, "N", txt_scl, txt_scl, 0);
+draw_text_transformed(global.o_x+360, global.o_y+15, "W", txt_scl, txt_scl, 0);
+draw_text_transformed(global.o_x+480, global.o_y+15, "S", txt_scl, txt_scl, 0);
 
 //draw compass
 //draw_sprite(spr_compass, 0, global.o_x, global.o_y);

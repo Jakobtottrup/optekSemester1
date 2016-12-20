@@ -9,7 +9,8 @@ if (irandom(15) == 0) {
 
 //using player direction to calculate position for the cursor
 if (instance_exists(obj_player_seb)) {
-    global.NV_offset_x = 120 + j + (obj_player_seb.direction * (360/270));
+    global.NV_offset_x = 120 + j + ((obj_player_seb.direction) * (360/270));
+    global.NV_offset_x = global.NV_offset_x;
 } else {
     global.NV_offset_x = random_range(0, 270)
 }
